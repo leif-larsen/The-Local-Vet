@@ -1,0 +1,20 @@
+2014-06-11 20:48:47.413 HelloCordova[50627:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-11 20:48:47.814 HelloCordova[50627:70b] Unlimited access to network resources
+2014-06-11 20:48:49.626 HelloCordova[50627:70b] [CDVTimer][keyboard] 0.729978ms
+2014-06-11 20:48:49.627 HelloCordova[50627:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-11 20:48:49.628 HelloCordova[50627:70b] [CDVTimer][statusbar] 0.518978ms
+2014-06-11 20:48:49.628 HelloCordova[50627:70b] [CDVTimer][TotalPluginStartup] 2.484977ms
+2014-06-11 20:48:50.411 HelloCordova[50627:70b] Resetting plugins due to page load.
+2014-06-11 20:48:51.132 HelloCordova[50627:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/173A90D8-15A7-4760-A501-175D5611CDA5/HelloCordova.app/www/index.html#/tab/dash
+2014-06-11 20:48:51.350 HelloCordova[50627:70b] THREAD WARNING: ['Device'] took '30.326172' ms. Plugin should use a background thread.
+Terminating in response to SpringBoard's termination.
+2014-06-11 21:13:25.172 Din Lokale Dyrlege[51106:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-11 21:13:25.178 Din Lokale Dyrlege[51106:70b] Unlimited access to network resources
+2014-06-11 21:13:25.181 Din Lokale Dyrlege[51106:70b] Fix applied for database locations?: YES
+2014-06-11 21:13:25.197 Din Lokale Dyrlege[51106:70b] [CDVTimer][keyboard] 0.063002ms
+2014-06-11 21:13:25.197 Din Lokale Dyrlege[51106:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-11 21:13:25.197 Din Lokale Dyrlege[51106:70b] [CDVTimer][statusbar] 0.333011ms
+2014-06-11 21:13:25.198 Din Lokale Dyrlege[51106:70b] [CDVTimer][TotalPluginStartup] 1.253009ms
+2014-06-11 21:13:25.269 Din Lokale Dyrlege[51106:70b] Resetting plugins due to page load.
+2014-06-11 21:13:25.427 Din Lokale Dyrlege[51106:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+Terminating in response to SpringBoard's termination.
