@@ -18,3 +18,91 @@ Terminating in response to SpringBoard's termination.
 2014-06-11 21:13:25.269 Din Lokale Dyrlege[51106:70b] Resetting plugins due to page load.
 2014-06-11 21:13:25.427 Din Lokale Dyrlege[51106:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
 Terminating in response to SpringBoard's termination.
+2014-06-12 18:00:08.447 Din Lokale Dyrlege[53211:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:00:08.478 Din Lokale Dyrlege[53211:70b] Unlimited access to network resources
+2014-06-12 18:00:08.521 Din Lokale Dyrlege[53211:70b] [CDVTimer][keyboard] 0.064969ms
+2014-06-12 18:00:08.521 Din Lokale Dyrlege[53211:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:00:08.521 Din Lokale Dyrlege[53211:70b] [CDVTimer][statusbar] 0.320017ms
+2014-06-12 18:00:08.522 Din Lokale Dyrlege[53211:70b] [CDVTimer][TotalPluginStartup] 1.201034ms
+2014-06-12 18:00:08.673 Din Lokale Dyrlege[53211:70b] Resetting plugins due to page load.
+2014-06-12 18:00:09.116 Din Lokale Dyrlege[53211:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+2014-06-12 18:18:11.664 Din Lokale Dyrlege[53553:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:18:11.671 Din Lokale Dyrlege[53553:70b] Unlimited access to network resources
+2014-06-12 18:18:11.685 Din Lokale Dyrlege[53553:70b] [CDVTimer][keyboard] 0.061989ms
+2014-06-12 18:18:11.686 Din Lokale Dyrlege[53553:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:18:11.686 Din Lokale Dyrlege[53553:70b] [CDVTimer][statusbar] 0.336051ms
+2014-06-12 18:18:11.687 Din Lokale Dyrlege[53553:70b] [CDVTimer][TotalPluginStartup] 1.390994ms
+2014-06-12 18:18:11.767 Din Lokale Dyrlege[53553:70b] Resetting plugins due to page load.
+2014-06-12 18:18:11.875 Din Lokale Dyrlege[53553:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+Terminating in response to SpringBoard's termination.
+2014-06-12 18:18:49.425 Din Lokale Dyrlege[53755:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:18:49.431 Din Lokale Dyrlege[53755:70b] Unlimited access to network resources
+2014-06-12 18:18:49.447 Din Lokale Dyrlege[53755:70b] [CDVTimer][keyboard] 0.055969ms
+2014-06-12 18:18:49.447 Din Lokale Dyrlege[53755:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:18:49.447 Din Lokale Dyrlege[53755:70b] [CDVTimer][statusbar] 0.355005ms
+2014-06-12 18:18:49.448 Din Lokale Dyrlege[53755:70b] [CDVTimer][TotalPluginStartup] 1.213014ms
+2014-06-12 18:18:49.533 Din Lokale Dyrlege[53755:70b] Resetting plugins due to page load.
+2014-06-12 18:18:49.643 Din Lokale Dyrlege[53755:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+2014-06-12 18:19:30.420 Din Lokale Dyrlege[54069:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:19:30.426 Din Lokale Dyrlege[54069:70b] Unlimited access to network resources
+2014-06-12 18:19:30.442 Din Lokale Dyrlege[54069:70b] [CDVTimer][keyboard] 0.060976ms
+2014-06-12 18:19:30.443 Din Lokale Dyrlege[54069:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:19:30.443 Din Lokale Dyrlege[54069:70b] [CDVTimer][statusbar] 0.353038ms
+2014-06-12 18:19:30.443 Din Lokale Dyrlege[54069:70b] [CDVTimer][TotalPluginStartup] 1.190960ms
+2014-06-12 18:19:30.475 Din Lokale Dyrlege[54069:70b] Resetting plugins due to page load.
+2014-06-12 18:19:30.574 Din Lokale Dyrlege[54069:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+Terminating in response to SpringBoard's termination.
+2014-06-12 18:20:00.864 Din Lokale Dyrlege[54269:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:20:00.870 Din Lokale Dyrlege[54269:70b] Unlimited access to network resources
+2014-06-12 18:20:00.885 Din Lokale Dyrlege[54269:70b] [CDVTimer][keyboard] 0.058949ms
+2014-06-12 18:20:00.886 Din Lokale Dyrlege[54269:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:20:00.886 Din Lokale Dyrlege[54269:70b] [CDVTimer][statusbar] 0.331044ms
+2014-06-12 18:20:00.887 Din Lokale Dyrlege[54269:70b] [CDVTimer][TotalPluginStartup] 1.264036ms
+2014-06-12 18:20:00.956 Din Lokale Dyrlege[54269:70b] Resetting plugins due to page load.
+2014-06-12 18:20:01.064 Din Lokale Dyrlege[54269:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+Terminating in response to SpringBoard's termination.
+2014-06-12 18:42:38.777 Din Lokale Dyrlege[54789:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:42:38.783 Din Lokale Dyrlege[54789:70b] Unlimited access to network resources
+2014-06-12 18:42:38.814 Din Lokale Dyrlege[54789:70b] [CDVTimer][keyboard] 0.061989ms
+2014-06-12 18:42:38.814 Din Lokale Dyrlege[54789:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:42:38.815 Din Lokale Dyrlege[54789:70b] [CDVTimer][statusbar] 0.335991ms
+2014-06-12 18:42:38.815 Din Lokale Dyrlege[54789:70b] [CDVTimer][TotalPluginStartup] 1.254976ms
+2014-06-12 18:42:38.881 Din Lokale Dyrlege[54789:70b] Resetting plugins due to page load.
+2014-06-12 18:42:38.994 Din Lokale Dyrlege[54789:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+Terminating in response to SpringBoard's termination.
+2014-06-12 18:46:32.128 Din Lokale Dyrlege[55144:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 18:46:32.134 Din Lokale Dyrlege[55144:70b] Unlimited access to network resources
+2014-06-12 18:46:32.149 Din Lokale Dyrlege[55144:70b] [CDVTimer][keyboard] 0.057995ms
+2014-06-12 18:46:32.149 Din Lokale Dyrlege[55144:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 18:46:32.150 Din Lokale Dyrlege[55144:70b] [CDVTimer][statusbar] 0.339985ms
+2014-06-12 18:46:32.150 Din Lokale Dyrlege[55144:70b] [CDVTimer][TotalPluginStartup] 1.199961ms
+2014-06-12 18:46:32.218 Din Lokale Dyrlege[55144:70b] Resetting plugins due to page load.
+2014-06-12 18:46:32.343 Din Lokale Dyrlege[55144:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/tab/dash
+Terminating in response to SpringBoard's termination.
+2014-06-12 21:49:48.677 Din Lokale Dyrlege[55897:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 21:49:48.683 Din Lokale Dyrlege[55897:70b] Unlimited access to network resources
+2014-06-12 21:49:48.724 Din Lokale Dyrlege[55897:70b] [CDVTimer][keyboard] 0.061989ms
+2014-06-12 21:49:48.724 Din Lokale Dyrlege[55897:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 21:49:48.725 Din Lokale Dyrlege[55897:70b] [CDVTimer][statusbar] 0.325978ms
+2014-06-12 21:49:48.725 Din Lokale Dyrlege[55897:70b] [CDVTimer][TotalPluginStartup] 1.190960ms
+2014-06-12 21:49:48.798 Din Lokale Dyrlege[55897:70b] Resetting plugins due to page load.
+2014-06-12 21:49:48.938 Din Lokale Dyrlege[55897:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/
+Terminating in response to SpringBoard's termination.
+2014-06-12 21:50:48.683 Din Lokale Dyrlege[56244:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 21:50:48.689 Din Lokale Dyrlege[56244:70b] Unlimited access to network resources
+2014-06-12 21:50:48.706 Din Lokale Dyrlege[56244:70b] [CDVTimer][keyboard] 0.060022ms
+2014-06-12 21:50:48.706 Din Lokale Dyrlege[56244:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 21:50:48.706 Din Lokale Dyrlege[56244:70b] [CDVTimer][statusbar] 0.327051ms
+2014-06-12 21:50:48.707 Din Lokale Dyrlege[56244:70b] [CDVTimer][TotalPluginStartup] 1.206994ms
+2014-06-12 21:50:48.783 Din Lokale Dyrlege[56244:70b] Resetting plugins due to page load.
+2014-06-12 21:50:48.889 Din Lokale Dyrlege[56244:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/
+Terminating in response to SpringBoard's termination.
+2014-06-12 21:55:52.553 Din Lokale Dyrlege[56614:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-12 21:55:52.560 Din Lokale Dyrlege[56614:70b] Unlimited access to network resources
+2014-06-12 21:55:52.627 Din Lokale Dyrlege[56614:70b] [CDVTimer][keyboard] 0.056982ms
+2014-06-12 21:55:52.628 Din Lokale Dyrlege[56614:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-12 21:55:52.628 Din Lokale Dyrlege[56614:70b] [CDVTimer][statusbar] 0.306010ms
+2014-06-12 21:55:52.628 Din Lokale Dyrlege[56614:70b] [CDVTimer][TotalPluginStartup] 1.121998ms
+2014-06-12 21:55:52.700 Din Lokale Dyrlege[56614:70b] Resetting plugins due to page load.
+2014-06-12 21:55:52.882 Din Lokale Dyrlege[56614:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html
+Terminating in response to SpringBoard's termination.
