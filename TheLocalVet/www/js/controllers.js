@@ -1,8 +1,8 @@
-angular.module('starter.controllers', [])
+angular.module('thelocalvet.controllers', [])
 
 .controller('MainCtrl', function($scope, $state) {
   $scope.searchMyLocation = function () {
-    $state.go('mylocation')
+    $state.go('MyLoc')
   }
 })
 
