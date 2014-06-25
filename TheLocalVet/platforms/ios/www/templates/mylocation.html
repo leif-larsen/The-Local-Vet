@@ -1,0 +1,10 @@
+
+  <ion-view title="Finn dyrlege">
+    <ion-content class="has-header">
+      <ion-list>
+          <ion-item ng-repeat="vet in vets" href="#/details/{{vet.id}}">
+            {{vet.name}}
+          </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>
