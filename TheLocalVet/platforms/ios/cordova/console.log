@@ -258,3 +258,370 @@ objc[7207]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.ap
 2014-06-20 22:23:57.299 Din Lokale Dyrlege[7207:70b] [CDVTimer][TotalPluginStartup] 1.157999ms
 2014-06-20 22:23:57.336 Din Lokale Dyrlege[7207:70b] Resetting plugins due to page load.
 2014-06-20 22:23:57.440 Din Lokale Dyrlege[7207:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+objc[15241]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 14:45:16.660 Din Lokale Dyrlege[15241:70b] Cannot find executable for CFBundle 0xa2b7e80 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 14:45:16.663 Din Lokale Dyrlege[15241:70b] Cannot find executable for CFBundle 0xba90d20 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 14:45:16.732 Din Lokale Dyrlege[15241:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 14:45:16.992 Din Lokale Dyrlege[15241:70b] Unlimited access to network resources
+2014-06-24 14:45:17.265 Din Lokale Dyrlege[15241:70b] [CDVTimer][keyboard] 0.070989ms
+2014-06-24 14:45:17.265 Din Lokale Dyrlege[15241:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 14:45:17.266 Din Lokale Dyrlege[15241:70b] [CDVTimer][statusbar] 0.333011ms
+2014-06-24 14:45:17.266 Din Lokale Dyrlege[15241:70b] [CDVTimer][TotalPluginStartup] 1.175046ms
+2014-06-24 14:45:17.395 Din Lokale Dyrlege[15241:70b] Resetting plugins due to page load.
+2014-06-24 14:45:18.159 Din Lokale Dyrlege[15241:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 14:45:18.187 Din Lokale Dyrlege[15241:70b] THREAD WARNING: ['Device'] took '16.206055' ms. Plugin should use a background thread.
+2014-06-24 14:45:19.549 Din Lokale Dyrlege[15241:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+done@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16770:51
+completeRequest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16971:15
+onreadystatechange@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16914:26
+2014-06-24 14:45:30.456 Din Lokale Dyrlege[15241:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41591:19
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11545:14
+forEach@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:9239:24
+eventHandler@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11544:12
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2691:20
+tapClick@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2680:20
+tapTouchEnd@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2798:13
+Terminating in response to SpringBoard's termination.
+objc[15446]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 14:46:24.147 Din Lokale Dyrlege[15446:70b] Cannot find executable for CFBundle 0xa63eed0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 14:46:24.154 Din Lokale Dyrlege[15446:70b] Cannot find executable for CFBundle 0xad40860 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 14:46:24.272 Din Lokale Dyrlege[15446:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 14:46:24.277 Din Lokale Dyrlege[15446:70b] Unlimited access to network resources
+2014-06-24 14:46:24.293 Din Lokale Dyrlege[15446:70b] [CDVTimer][keyboard] 0.064015ms
+2014-06-24 14:46:24.293 Din Lokale Dyrlege[15446:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 14:46:24.294 Din Lokale Dyrlege[15446:70b] [CDVTimer][statusbar] 0.337005ms
+2014-06-24 14:46:24.294 Din Lokale Dyrlege[15446:70b] [CDVTimer][TotalPluginStartup] 1.173019ms
+2014-06-24 14:46:24.420 Din Lokale Dyrlege[15446:70b] Resetting plugins due to page load.
+2014-06-24 14:46:24.636 Din Lokale Dyrlege[15446:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 14:46:26.816 Din Lokale Dyrlege[15446:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+done@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16770:51
+completeRequest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16971:15
+onreadystatechange@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16914:26
+2014-06-24 14:46:29.888 Din Lokale Dyrlege[15446:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41591:19
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11545:14
+forEach@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:9239:24
+eventHandler@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11544:12
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2691:20
+tapClick@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2680:20
+tapTouchEnd@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2798:13
+2014-06-24 14:46:32.517 Din Lokale Dyrlege[15446:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41591:19
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11545:14
+forEach@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:9239:24
+eventHandler@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11544:12
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2691:20
+tapClick@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2680:20
+tapTouchEnd@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2798:13
+2014-06-24 14:47:02.161 Din Lokale Dyrlege[15446:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41591:19
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11545:14
+forEach@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:9239:24
+eventHandler@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:11544:12
+dispatchEvent@[native code]
+triggerMouseEvent@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2691:20
+tapClick@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2680:20
+tapTouchEnd@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:2798:13
+Terminating in response to SpringBoard's termination.
+objc[15653]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 14:48:30.499 Din Lokale Dyrlege[15653:70b] Cannot find executable for CFBundle 0xa4669d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 14:48:30.508 Din Lokale Dyrlege[15653:70b] Cannot find executable for CFBundle 0xa5a46a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 14:48:30.597 Din Lokale Dyrlege[15653:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 14:48:30.606 Din Lokale Dyrlege[15653:70b] Unlimited access to network resources
+2014-06-24 14:48:30.644 Din Lokale Dyrlege[15653:70b] [CDVTimer][keyboard] 0.084996ms
+2014-06-24 14:48:30.645 Din Lokale Dyrlege[15653:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 14:48:30.645 Din Lokale Dyrlege[15653:70b] [CDVTimer][statusbar] 0.494957ms
+2014-06-24 14:48:30.646 Din Lokale Dyrlege[15653:70b] [CDVTimer][TotalPluginStartup] 1.561999ms
+2014-06-24 14:48:30.747 Din Lokale Dyrlege[15653:70b] Resetting plugins due to page load.
+2014-06-24 14:48:31.128 Din Lokale Dyrlege[15653:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 14:48:33.041 Din Lokale Dyrlege[15653:70b] ERROR: Error: 'undefined' is not an object (evaluating '$scope.client.getTable')
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/js/controllers.js:11:16
+invoke@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12639:22
+instantiate@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:12650:29
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:15709:39
+updateView@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41554:41
+eventHook@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:41501:27
+$broadcast@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21190:33
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:33975:32
+wrappedCallback@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19894:81
+file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:19980:34
+$eval@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20906:28
+$digest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:20732:36
+$apply@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:21012:31
+done@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16770:51
+completeRequest@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16971:15
+onreadystatechange@file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/lib/ionic/js/ionic.bundle.js:16914:26
+Terminating in response to SpringBoard's termination.
+objc[16489]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 15:45:41.385 Din Lokale Dyrlege[16489:70b] Cannot find executable for CFBundle 0xa791270 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 15:45:41.391 Din Lokale Dyrlege[16489:70b] Cannot find executable for CFBundle 0xa7d0e80 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 15:45:41.565 Din Lokale Dyrlege[16489:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 15:45:41.664 Din Lokale Dyrlege[16489:70b] Unlimited access to network resources
+2014-06-24 15:45:43.033 Din Lokale Dyrlege[16489:70b] [CDVTimer][keyboard] 0.084043ms
+2014-06-24 15:45:43.034 Din Lokale Dyrlege[16489:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 15:45:43.034 Din Lokale Dyrlege[16489:70b] [CDVTimer][statusbar] 0.349998ms
+2014-06-24 15:45:43.034 Din Lokale Dyrlege[16489:70b] [CDVTimer][TotalPluginStartup] 1.297951ms
+2014-06-24 15:45:43.454 Din Lokale Dyrlege[16489:70b] Resetting plugins due to page load.
+2014-06-24 15:45:44.226 Din Lokale Dyrlege[16489:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 15:45:44.444 Din Lokale Dyrlege[16489:70b] THREAD WARNING: ['Device'] took '19.805176' ms. Plugin should use a background thread.
+2014-06-24 15:45:49.145 Din Lokale Dyrlege[16489:70b] ERROR: Azure Error: Error: Table 'Vets' does not exist.
+Terminating in response to SpringBoard's termination.
+objc[16710]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 15:46:47.276 Din Lokale Dyrlege[16710:70b] Cannot find executable for CFBundle 0xa291c00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 15:46:47.281 Din Lokale Dyrlege[16710:70b] Cannot find executable for CFBundle 0xa7a3fa0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 15:46:47.323 Din Lokale Dyrlege[16710:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 15:46:47.328 Din Lokale Dyrlege[16710:70b] Unlimited access to network resources
+2014-06-24 15:46:47.349 Din Lokale Dyrlege[16710:70b] [CDVTimer][keyboard] 0.062943ms
+2014-06-24 15:46:47.349 Din Lokale Dyrlege[16710:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 15:46:47.349 Din Lokale Dyrlege[16710:70b] [CDVTimer][statusbar] 0.325978ms
+2014-06-24 15:46:47.350 Din Lokale Dyrlege[16710:70b] [CDVTimer][TotalPluginStartup] 1.141012ms
+2014-06-24 15:46:47.423 Din Lokale Dyrlege[16710:70b] Resetting plugins due to page load.
+2014-06-24 15:46:47.687 Din Lokale Dyrlege[16710:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 15:47:01.390 Din Lokale Dyrlege[16710:70b] Query Successful
+Terminating in response to SpringBoard's termination.
+objc[17425]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:05:47.278 Din Lokale Dyrlege[17425:70b] Cannot find executable for CFBundle 0xa68cd30 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:05:47.283 Din Lokale Dyrlege[17425:70b] Cannot find executable for CFBundle 0xb634390 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:05:47.338 Din Lokale Dyrlege[17425:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:05:47.366 Din Lokale Dyrlege[17425:70b] Unlimited access to network resources
+2014-06-24 17:05:47.853 Din Lokale Dyrlege[17425:70b] [CDVTimer][keyboard] 0.073016ms
+2014-06-24 17:05:47.853 Din Lokale Dyrlege[17425:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:05:47.854 Din Lokale Dyrlege[17425:70b] [CDVTimer][statusbar] 0.334978ms
+2014-06-24 17:05:47.854 Din Lokale Dyrlege[17425:70b] [CDVTimer][TotalPluginStartup] 1.203001ms
+2014-06-24 17:05:47.985 Din Lokale Dyrlege[17425:70b] Resetting plugins due to page load.
+2014-06-24 17:05:48.489 Din Lokale Dyrlege[17425:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 17:05:48.513 Din Lokale Dyrlege[17425:70b] THREAD WARNING: ['Device'] took '15.708984' ms. Plugin should use a background thread.
+objc[17635]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:06:44.599 Din Lokale Dyrlege[17635:70b] Cannot find executable for CFBundle 0xa85cc00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:06:44.607 Din Lokale Dyrlege[17635:70b] Cannot find executable for CFBundle 0xa35e1a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:06:44.632 Din Lokale Dyrlege[17635:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:06:44.638 Din Lokale Dyrlege[17635:70b] Unlimited access to network resources
+2014-06-24 17:06:44.656 Din Lokale Dyrlege[17635:70b] [CDVTimer][keyboard] 0.061989ms
+2014-06-24 17:06:44.657 Din Lokale Dyrlege[17635:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:06:44.657 Din Lokale Dyrlege[17635:70b] [CDVTimer][statusbar] 0.343978ms
+2014-06-24 17:06:44.657 Din Lokale Dyrlege[17635:70b] [CDVTimer][TotalPluginStartup] 1.347959ms
+2014-06-24 17:06:44.748 Din Lokale Dyrlege[17635:70b] Resetting plugins due to page load.
+2014-06-24 17:06:44.953 Din Lokale Dyrlege[17635:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+Terminating in response to SpringBoard's termination.
+objc[17862]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:09:06.919 Din Lokale Dyrlege[17862:70b] Cannot find executable for CFBundle 0xa536260 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:09:06.924 Din Lokale Dyrlege[17862:70b] Cannot find executable for CFBundle 0xa276440 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:09:06.977 Din Lokale Dyrlege[17862:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:09:06.982 Din Lokale Dyrlege[17862:70b] Unlimited access to network resources
+2014-06-24 17:09:06.999 Din Lokale Dyrlege[17862:70b] [CDVTimer][keyboard] 0.066996ms
+2014-06-24 17:09:06.999 Din Lokale Dyrlege[17862:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:09:07.000 Din Lokale Dyrlege[17862:70b] [CDVTimer][statusbar] 0.326991ms
+2014-06-24 17:09:07.000 Din Lokale Dyrlege[17862:70b] [CDVTimer][TotalPluginStartup] 1.156986ms
+2014-06-24 17:09:07.054 Din Lokale Dyrlege[17862:70b] Resetting plugins due to page load.
+2014-06-24 17:09:07.258 Din Lokale Dyrlege[17862:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 17:09:22.302 Din Lokale Dyrlege[17862:70b] searching
+Terminating in response to SpringBoard's termination.
+objc[18079]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:11:10.436 Din Lokale Dyrlege[18079:70b] Cannot find executable for CFBundle 0xa67c2d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:11:10.442 Din Lokale Dyrlege[18079:70b] Cannot find executable for CFBundle 0xa38e750 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:11:10.494 Din Lokale Dyrlege[18079:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:11:10.500 Din Lokale Dyrlege[18079:70b] Unlimited access to network resources
+2014-06-24 17:11:10.516 Din Lokale Dyrlege[18079:70b] [CDVTimer][keyboard] 0.072002ms
+2014-06-24 17:11:10.517 Din Lokale Dyrlege[18079:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:11:10.517 Din Lokale Dyrlege[18079:70b] [CDVTimer][statusbar] 0.405014ms
+2014-06-24 17:11:10.518 Din Lokale Dyrlege[18079:70b] [CDVTimer][TotalPluginStartup] 1.293957ms
+2014-06-24 17:11:10.598 Din Lokale Dyrlege[18079:70b] Resetting plugins due to page load.
+2014-06-24 17:11:10.796 Din Lokale Dyrlege[18079:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 17:11:16.116 Din Lokale Dyrlege[18079:70b] searching for undefined
+Terminating in response to SpringBoard's termination.
+objc[18292]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:13:37.438 Din Lokale Dyrlege[18292:70b] Cannot find executable for CFBundle 0xa467450 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:13:37.443 Din Lokale Dyrlege[18292:70b] Cannot find executable for CFBundle 0x10031160 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:13:37.489 Din Lokale Dyrlege[18292:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:13:37.495 Din Lokale Dyrlege[18292:70b] Unlimited access to network resources
+2014-06-24 17:13:37.512 Din Lokale Dyrlege[18292:70b] [CDVTimer][keyboard] 0.069976ms
+2014-06-24 17:13:37.512 Din Lokale Dyrlege[18292:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:13:37.513 Din Lokale Dyrlege[18292:70b] [CDVTimer][statusbar] 0.382006ms
+2014-06-24 17:13:37.513 Din Lokale Dyrlege[18292:70b] [CDVTimer][TotalPluginStartup] 1.286983ms
+2014-06-24 17:13:37.566 Din Lokale Dyrlege[18292:70b] Resetting plugins due to page load.
+2014-06-24 17:13:37.766 Din Lokale Dyrlege[18292:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 17:13:48.745 Din Lokale Dyrlege[18292:70b] searching for undefined
+2014-06-24 17:13:49.958 Din Lokale Dyrlege[18292:70b] searching for undefined
+Terminating in response to SpringBoard's termination.
+objc[18534]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:25:20.100 Din Lokale Dyrlege[18534:70b] Cannot find executable for CFBundle 0xa8856d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:25:20.105 Din Lokale Dyrlege[18534:70b] Cannot find executable for CFBundle 0xa9862f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:25:20.371 Din Lokale Dyrlege[18534:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:25:20.376 Din Lokale Dyrlege[18534:70b] Unlimited access to network resources
+2014-06-24 17:25:20.392 Din Lokale Dyrlege[18534:70b] [CDVTimer][keyboard] 0.068009ms
+2014-06-24 17:25:20.393 Din Lokale Dyrlege[18534:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:25:20.393 Din Lokale Dyrlege[18534:70b] [CDVTimer][statusbar] 0.358999ms
+2014-06-24 17:25:20.393 Din Lokale Dyrlege[18534:70b] [CDVTimer][TotalPluginStartup] 1.254022ms
+2014-06-24 17:25:20.499 Din Lokale Dyrlege[18534:70b] Resetting plugins due to page load.
+2014-06-24 17:25:20.710 Din Lokale Dyrlege[18534:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 17:25:38.762 Din Lokale Dyrlege[18534:70b] searching for Hei e
+2014-06-24 17:25:50.200 Din Lokale Dyrlege[18534:70b] searching for Hei
+2014-06-24 17:25:50.874 Din Lokale Dyrlege[18534:70b] searching for 
+2014-06-24 17:25:52.582 Din Lokale Dyrlege[18534:70b] searching for Drammen
+objc[18749]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:36:14.207 Din Lokale Dyrlege[18749:70b] Cannot find executable for CFBundle 0xb86a590 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:36:14.211 Din Lokale Dyrlege[18749:70b] Cannot find executable for CFBundle 0xbb3d6a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:36:14.233 Din Lokale Dyrlege[18749:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:36:14.238 Din Lokale Dyrlege[18749:70b] Unlimited access to network resources
+2014-06-24 17:36:14.253 Din Lokale Dyrlege[18749:70b] [CDVTimer][keyboard] 0.066996ms
+2014-06-24 17:36:14.254 Din Lokale Dyrlege[18749:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:36:14.254 Din Lokale Dyrlege[18749:70b] [CDVTimer][statusbar] 0.319958ms
+2014-06-24 17:36:14.254 Din Lokale Dyrlege[18749:70b] [CDVTimer][TotalPluginStartup] 1.201987ms
+2014-06-24 17:36:14.574 Din Lokale Dyrlege[18749:70b] Resetting plugins due to page load.
+2014-06-24 17:36:14.777 Din Lokale Dyrlege[18749:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+Terminating in response to SpringBoard's termination.
+objc[18954]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 17:36:37.878 Din Lokale Dyrlege[18954:70b] Cannot find executable for CFBundle 0xa28f9b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 17:36:37.883 Din Lokale Dyrlege[18954:70b] Cannot find executable for CFBundle 0xa78fc50 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 17:36:37.925 Din Lokale Dyrlege[18954:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 17:36:37.930 Din Lokale Dyrlege[18954:70b] Unlimited access to network resources
+2014-06-24 17:36:37.948 Din Lokale Dyrlege[18954:70b] [CDVTimer][keyboard] 0.065982ms
+2014-06-24 17:36:37.949 Din Lokale Dyrlege[18954:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 17:36:37.949 Din Lokale Dyrlege[18954:70b] [CDVTimer][statusbar] 0.378013ms
+2014-06-24 17:36:37.950 Din Lokale Dyrlege[18954:70b] [CDVTimer][TotalPluginStartup] 1.398027ms
+2014-06-24 17:36:38.045 Din Lokale Dyrlege[18954:70b] Resetting plugins due to page load.
+2014-06-24 17:36:38.248 Din Lokale Dyrlege[18954:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+2014-06-24 17:36:47.857 Din Lokale Dyrlege[18954:70b] searching for drammen
+2014-06-24 17:36:59.845 Din Lokale Dyrlege[18954:70b] searching for Drammen
+Terminating in response to SpringBoard's termination.
+objc[19838]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 21:56:21.727 Din Lokale Dyrlege[19838:70b] Cannot find executable for CFBundle 0xa55a930 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 21:56:21.732 Din Lokale Dyrlege[19838:70b] Cannot find executable for CFBundle 0xa572680 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 21:56:21.805 Din Lokale Dyrlege[19838:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 21:56:21.904 Din Lokale Dyrlege[19838:70b] Unlimited access to network resources
+2014-06-24 21:56:22.367 Din Lokale Dyrlege[19838:70b] [CDVTimer][keyboard] 0.064969ms
+2014-06-24 21:56:22.368 Din Lokale Dyrlege[19838:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 21:56:22.368 Din Lokale Dyrlege[19838:70b] [CDVTimer][statusbar] 0.346005ms
+2014-06-24 21:56:22.368 Din Lokale Dyrlege[19838:70b] [CDVTimer][TotalPluginStartup] 1.583040ms
+2014-06-24 21:56:22.500 Din Lokale Dyrlege[19838:70b] Resetting plugins due to page load.
+2014-06-24 21:56:22.952 Din Lokale Dyrlege[19838:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+Terminating in response to SpringBoard's termination.
+objc[20045]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 21:57:45.024 Din Lokale Dyrlege[20045:70b] Cannot find executable for CFBundle 0xa3a7d00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 21:57:45.028 Din Lokale Dyrlege[20045:70b] Cannot find executable for CFBundle 0xa29b7f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 21:57:45.055 Din Lokale Dyrlege[20045:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 21:57:45.063 Din Lokale Dyrlege[20045:70b] Unlimited access to network resources
+2014-06-24 21:57:45.099 Din Lokale Dyrlege[20045:70b] [CDVTimer][keyboard] 0.106990ms
+2014-06-24 21:57:45.099 Din Lokale Dyrlege[20045:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 21:57:45.100 Din Lokale Dyrlege[20045:70b] [CDVTimer][statusbar] 0.413001ms
+2014-06-24 21:57:45.100 Din Lokale Dyrlege[20045:70b] [CDVTimer][TotalPluginStartup] 1.528025ms
+2014-06-24 21:57:45.216 Din Lokale Dyrlege[20045:70b] Resetting plugins due to page load.
+2014-06-24 21:57:45.576 Din Lokale Dyrlege[20045:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+Terminating in response to SpringBoard's termination.
+objc[20263]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 22:00:29.570 Din Lokale Dyrlege[20263:70b] Cannot find executable for CFBundle 0xb99b570 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 22:00:29.575 Din Lokale Dyrlege[20263:70b] Cannot find executable for CFBundle 0xb9c5400 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 22:00:29.703 Din Lokale Dyrlege[20263:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 22:00:29.708 Din Lokale Dyrlege[20263:70b] Unlimited access to network resources
+2014-06-24 22:00:29.724 Din Lokale Dyrlege[20263:70b] [CDVTimer][keyboard] 0.063002ms
+2014-06-24 22:00:29.725 Din Lokale Dyrlege[20263:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 22:00:29.725 Din Lokale Dyrlege[20263:70b] [CDVTimer][statusbar] 0.326991ms
+2014-06-24 22:00:29.725 Din Lokale Dyrlege[20263:70b] [CDVTimer][TotalPluginStartup] 1.128018ms
+2014-06-24 22:00:29.839 Din Lokale Dyrlege[20263:70b] Resetting plugins due to page load.
+2014-06-24 22:00:30.045 Din Lokale Dyrlege[20263:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+Terminating in response to SpringBoard's termination.
+objc[20479]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 22:02:08.478 Din Lokale Dyrlege[20479:70b] Cannot find executable for CFBundle 0xa921a80 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 22:02:08.484 Din Lokale Dyrlege[20479:70b] Cannot find executable for CFBundle 0xa9401c0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 22:02:08.585 Din Lokale Dyrlege[20479:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 22:02:08.593 Din Lokale Dyrlege[20479:70b] Unlimited access to network resources
+2014-06-24 22:02:08.613 Din Lokale Dyrlege[20479:70b] [CDVTimer][keyboard] 0.095010ms
+2014-06-24 22:02:08.614 Din Lokale Dyrlege[20479:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 22:02:08.614 Din Lokale Dyrlege[20479:70b] [CDVTimer][statusbar] 0.423014ms
+2014-06-24 22:02:08.615 Din Lokale Dyrlege[20479:70b] [CDVTimer][TotalPluginStartup] 1.468956ms
+2014-06-24 22:02:08.714 Din Lokale Dyrlege[20479:70b] Resetting plugins due to page load.
+2014-06-24 22:02:09.029 Din Lokale Dyrlege[20479:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main
+Terminating in response to SpringBoard's termination.
+objc[20747]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-06-24 22:12:00.032 Din Lokale Dyrlege[20747:70b] Cannot find executable for CFBundle 0xb851f00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-06-24 22:12:00.038 Din Lokale Dyrlege[20747:70b] Cannot find executable for CFBundle 0xb874710 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-06-24 22:12:00.119 Din Lokale Dyrlege[20747:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-24 22:12:00.125 Din Lokale Dyrlege[20747:70b] Unlimited access to network resources
+2014-06-24 22:12:00.141 Din Lokale Dyrlege[20747:70b] [CDVTimer][keyboard] 0.065982ms
+2014-06-24 22:12:00.141 Din Lokale Dyrlege[20747:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-06-24 22:12:00.141 Din Lokale Dyrlege[20747:70b] [CDVTimer][statusbar] 0.351012ms
+2014-06-24 22:12:00.142 Din Lokale Dyrlege[20747:70b] [CDVTimer][TotalPluginStartup] 1.164973ms
+2014-06-24 22:12:00.312 Din Lokale Dyrlege[20747:70b] Resetting plugins due to page load.
+2014-06-24 22:12:00.528 Din Lokale Dyrlege[20747:70b] Finished load of: file:///Users/leiflarsen/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/134598C5-6955-4426-8DF0-8CFFD6F12807/Din%20Lokale%20Dyrlege.app/www/index.html#/main

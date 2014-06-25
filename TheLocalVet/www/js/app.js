@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('thelocalvet', ['ionic', 'thelocalvet.controllers', 'thelocalvet.services'])
+angular.module('thelocalvet', ['ionic', 'thelocalvet.controllers', 'thelocalvet.services', 'azure-mobile-service.module'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -26,7 +26,18 @@ angular.module('thelocalvet', ['ionic', 'thelocalvet.controllers', 'thelocalvet.
     templateUrl: 'templates/mylocation.html',
     controller: 'MyLocCtrl'
   })
-
+  
+  .state('Details', {
+    url: '/details/:vetid',
+    templateUrl: 'templates/details.html',
+    controller: 'DetailCtrl'
+  })
+  
+  .state('PlaceSearch', {
+    url: '/searchPlace',
+    templateUrl: 'templates/placesearch.html',
+    controller: 'PlaceSearchCtrl'
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/main');
