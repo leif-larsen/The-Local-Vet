@@ -55,6 +55,13 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.core.phonedialer/www/dialer.js",
+        "id": "com.phonegap.core.phonedialer.phonedialer",
+        "merges": [
+            "phonedialer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -63,7 +70,8 @@ module.exports.metadata =
     "com.ionic.keyboard": "0.0.1",
     "org.apache.cordova.console": "0.2.8",
     "org.apache.cordova.device": "0.2.9",
-    "org.apache.cordova.geolocation": "0.3.7"
+    "org.apache.cordova.geolocation": "0.3.7",
+    "com.phonegap.core.phonedialer": "0.2.0"
 }
 // BOTTOM OF METADATA
 });

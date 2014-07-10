@@ -31,6 +31,9 @@
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation" />
     </feature>
+    <feature name="PhoneDialer">
+        <param name="ios-package" value="PhoneDialer" />
+    </feature>
     <name>Din Lokale Dyrlege</name>
     <description>
         An app with listing of nearest vets, based on your location.

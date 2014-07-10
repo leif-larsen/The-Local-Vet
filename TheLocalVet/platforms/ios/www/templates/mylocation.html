@@ -3,7 +3,8 @@
     <ion-content class="has-header">
       <ion-list>
           <ion-item ng-repeat="vet in vets" href="#/details/{{vet.id}}">
-            {{vet.name}}
+            {{vet.name}} <br />
+            <p>Distanse: {{distance}}</p>
           </ion-item>
       </ion-list>
     </ion-content>

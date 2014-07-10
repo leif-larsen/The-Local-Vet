@@ -1,4 +1,11 @@
 <ion-view title="{{vetItem.name}}">
   <ion-content class="has-header">
+    <p><strong>Adresse:</strong> {{vetItem.adr_cli_street}}</p>
+    <p><strong>Postnr og sted:</strong> {{vetItem.adr_cli_zip}} {{vetItem.adr_cli_place}}</p>
+    <p><strong>Telefon:</strong> <span ng-click="callVet({{vetItem.phone}})">{{vetItem.phone}}</span> </p>
+    <p><strong>Webside:</strong> {{vetItem.url}} </p>
+    <p><strong>E-post:</strong> {{vetItem.email}} </p>
+    <p><strong>&Aring;pningstider:</strong> Kl. {{vetItem.hours}} </p>
+    <p><strong>Fagfelt:</strong> {{vetItem.field1_name}}, {{vetItem.field2_name}}, {{vetItem.field2_name}} </p>
   </ion-content>
 </ion-view>

@@ -43,6 +43,7 @@
 		BCE4160423DB4A779C71119A /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 546B22B6738D4129896BEA7D /* CDVLogger.m */; };
 		3A88DDCF3891476299B902CA /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 47251D4C59E14BF8BE003D98 /* CDVDevice.m */; };
 		0F0F63836C854F4A8B2086E8 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF11BB7326844B594C5728E /* CDVLocation.m */; };
+		213B7B3FA9E14FC8993C88D5 /* PhoneDialer.m in Sources */ = {isa = PBXBuildFile; fileRef = 201436A9084F49DBA2F80418 /* PhoneDialer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		D467822A15B44A96A7446D0A /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		8DF11BB7326844B594C5728E /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		E3EB317D3E3D460E82E53F68 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		201436A9084F49DBA2F80418 /* PhoneDialer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PhoneDialer.m"; path = "com.phonegap.core.phonedialer/PhoneDialer.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C81E4FB2FE884310A7D1BD7F /* PhoneDialer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PhoneDialer.h"; path = "com.phonegap.core.phonedialer/PhoneDialer.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +250,8 @@
 				D467822A15B44A96A7446D0A /* CDVDevice.h */,
 				8DF11BB7326844B594C5728E /* CDVLocation.m */,
 				E3EB317D3E3D460E82E53F68 /* CDVLocation.h */,
+				201436A9084F49DBA2F80418 /* PhoneDialer.m */,
+				C81E4FB2FE884310A7D1BD7F /* PhoneDialer.h */,
 			);
 			name = Plugins;
 			path = "Din Lokale Dyrlege/Plugins";
@@ -446,6 +451,7 @@
 				BCE4160423DB4A779C71119A /* CDVLogger.m in Sources */,
 				3A88DDCF3891476299B902CA /* CDVDevice.m in Sources */,
 				0F0F63836C854F4A8B2086E8 /* CDVLocation.m in Sources */,
+				213B7B3FA9E14FC8993C88D5 /* PhoneDialer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
