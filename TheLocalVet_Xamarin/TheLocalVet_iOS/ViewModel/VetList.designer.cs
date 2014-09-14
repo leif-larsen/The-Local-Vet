@@ -11,7 +11,7 @@ using System.CodeDom.Compiler;
 
 namespace TheLocalVet_iOS
 {
-	[Register ("ViewModel/VetList")]
+	[Register ("VetList")]
 	partial class VetList
 	{
 		void ReleaseDesignerOutlets ()

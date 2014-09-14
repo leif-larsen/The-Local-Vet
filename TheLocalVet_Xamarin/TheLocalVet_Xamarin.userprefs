@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheLocalVet_Shared/VetInfo.cs">
     <Files>
-      <File FileName="TheLocalVet_iOS/ViewModel/MainPage.cs" Line="1" Column="1" />
+      <File FileName="TheLocalVet_iOS/ViewModel/MainPage.cs" Line="3" Column="3" />
+      <File FileName="TheLocalVet_iOS/ViewModel/VetList.cs" Line="3" Column="3" />
+      <File FileName="TheLocalVet_Shared/VetInfo.cs" Line="30" Column="30" />
+      <File FileName="TheLocalVet_Shared/Addresse.cs" Line="2" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

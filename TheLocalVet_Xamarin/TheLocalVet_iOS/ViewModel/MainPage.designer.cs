@@ -11,11 +11,19 @@ using System.CodeDom.Compiler;
 
 namespace TheLocalVet_iOS
 {
-	[Register ("ViewModel/MainPage")]
+	[Register ("MainPage")]
 	partial class MainPage
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton FindVetButton { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (FindVetButton != null) {
+				FindVetButton.Dispose ();
+				FindVetButton = null;
+			}
 		}
 	}
 }

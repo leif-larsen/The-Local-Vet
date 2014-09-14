@@ -28,5 +28,7 @@
 	</array>
 	<key>CFBundleDisplayName</key>
 	<string>The Local Vet</string>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard</string>
 </dict>
 </plist>

@@ -22,6 +22,7 @@
     <MtouchLink>None</MtouchLink>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -118,28 +119,7 @@
     <Compile Include="ViewModel\VetList.designer.cs">
       <DependentUpon>VetList.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\DetailedView.cs" />
-    <Compile Include="ViewModel\DetailedView.designer.cs">
-      <DependentUpon>DetailedView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\EmergencyList.cs" />
-    <Compile Include="ViewModel\EmergencyList.designer.cs">
-      <DependentUpon>EmergencyList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\EmergencyDetail.cs" />
-    <Compile Include="ViewModel\EmergencyDetail.designer.cs">
-      <DependentUpon>EmergencyDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\AddVet.cs" />
-    <Compile Include="ViewModel\AddVet.designer.cs">
-      <DependentUpon>AddVet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModel\EmergencyFront.cs" />
-    <Compile Include="ViewModel\EmergencyFront.designer.cs">
-      <DependentUpon>EmergencyFront.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
-  <Import Project="..\TheLocalVet_Shared\TheLocalVet_Shared.projitems" Label="Shared" Condition="Exists('..\TheLocalVet_Shared\TheLocalVet_Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
     <Folder Include="ViewModel\" />
