@@ -15,5 +15,16 @@ namespace TheLocalVet.Models
         public string WebSite { get; set; }
         public List<string> OpeningHours { get; set; }
         public List<ExpertiseModel> Expertise { get; set; }
+
+        public VetModel()
+        {
+            Name = string.Empty;
+            Address = new AddressModel();
+            Phone = new List<string>();
+            Email = string.Empty;
+            WebSite = string.Empty;
+            OpeningHours = new List<string>();
+            Expertise = new List<ExpertiseModel>();
+        }
     }
 }
