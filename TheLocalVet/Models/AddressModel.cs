@@ -30,7 +30,7 @@ namespace TheLocalVet.Models
             ZipNr = 0000;
 
             Latitude = 0.0;
-            Lonigitude = 0.0;
+            Longitude = 0.0;
         }
     }
 }
