@@ -40,6 +40,10 @@
     <Compile Include="Models\ExpertiseModel.cs" />
     <Compile Include="Models\VetModel.cs" />
     <Compile Include="Pages\EmergencyContactPage.cs" />
+    <Compile Include="Pages\Menu\MenuItem.cs" />
+    <Compile Include="Pages\Menu\MenuListData.cs" />
+    <Compile Include="Pages\Menu\MenuListView.cs" />
+    <Compile Include="Pages\Menu\MenuPage.cs" />
     <Compile Include="Pages\NearestVetPage.cs" />
     <Compile Include="TheLocalVet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
