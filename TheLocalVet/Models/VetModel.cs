@@ -13,8 +13,10 @@ namespace TheLocalVet.Models
         public List<string> Phone { get; set; }
         public string Email { get; set; }
         public string WebSite { get; set; }
+        public Competency MainCompetency { get; set; }
         public List<string> OpeningHours { get; set; }
         public List<ExpertiseModel> Expertise { get; set; }
+        public bool HomeVisit { get; set; }
 
         public VetModel()
         {
@@ -25,6 +27,8 @@ namespace TheLocalVet.Models
             WebSite = string.Empty;
             OpeningHours = new List<string>();
             Expertise = new List<ExpertiseModel>();
+            HomeVisit = false;
+            MainCompetency = Competency.smallvet;
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TheLocalVet.WinPhone.Resources;
+using Parse;
 
 namespace TheLocalVet.WinPhone
 {
@@ -54,6 +55,8 @@ namespace TheLocalVet.WinPhone
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
+
+            ParseClient.Initialize("eKWSJpWP5VDZV8QKfwVIVKLnjvPxsdhvl2lKI2Dd", "aKV1AIEnUtpuRVco86b6euTdz1e0PANoGmllJ9sD");
 
         }
 
