@@ -37,15 +37,20 @@ namespace TheLocalVet.WinPhone.UnitTests
         }
 
         [Test]
-        public void AssertSearchVetByPlaceBadPlaceNameFormat()
+        [ExpectedException(typeof(ArgumentException))]
+        public async void AssertSearchVetByPlaceBadPlaceNameFormat()
         {
             IParseHelper parseHelper = new ParseHelper();
+            var queryResult = await parseHelper.SearchByPlace(string.Empty);
         }
 
         [Test]
-        public void AssertSearchVetByPlaceGoodPlaceNameFormat()
+        public async void AssertSearchVetByPlaceGoodPlaceNameFormat()
         {
             IParseHelper parseHelper = new ParseHelper();
+            List<VetModel> queryResult = await parseHelper.SearchByPlace("Drammen");
+
+            CollectionAssert.IsNotEmpty(queryResult);
         }
 
         [Test]

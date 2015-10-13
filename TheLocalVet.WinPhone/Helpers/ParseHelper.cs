@@ -42,9 +42,36 @@ namespace TheLocalVet.WinPhone.Helpers
             return vetList;
         }
 
-        public Task<List<VetModel>> SearchByPlace(string placeName)
+        public async Task<List<VetModel>> SearchByPlace(string placeName)
         {
-            throw new NotImplementedException();
+            List<VetModel> vetList = new List<VetModel>();
+
+            if(!string.IsNullOrEmpty(placeName))
+            { 
+                try
+                {
+                    var query = ParseObject.GetQuery("Vets");
+                    query = query.WhereEqualTo("address_municipality", placeName);
+
+                    var result = await query.FindAsync();
+
+                    foreach(var vetData in result)
+                    {
+                        VetModel vetModel = GetVetData(vetData);
+                        vetList.Add(vetModel);
+                    }
+                }
+                catch(Exception ex)
+                {
+                    RaiseOnParseError(new MessagesEventArgs(string.Format("Error occured in ParseHelper - {0}", ex.Message)));
+                }
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
+
+            return vetList;
         }
 
         public Task<List<EmergencyVetModel>> SearchEmergencyByGeoLocation(double latitude, double longitude)
@@ -56,8 +83,6 @@ namespace TheLocalVet.WinPhone.Helpers
         {
             throw new NotImplementedException();
         }
-
- 
 
         private void RaiseOnParseError(MessagesEventArgs e)
         {
