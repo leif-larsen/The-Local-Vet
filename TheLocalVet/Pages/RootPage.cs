@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using TheLocalVet.Pages.NearestVet;
+using Xamarin.Forms;
 
 namespace TheLocalVet.Pages
 {
@@ -6,8 +7,8 @@ namespace TheLocalVet.Pages
     {
         public RootPage()
         {
-            this.Children.Add(new NearestVetPage { Title = "Nearest Vet", Icon = "" });
-            this.Children.Add(new EmergencyContactPage { Title = "Emergency", Icon = "" });
+            this.Children.Add(new NearestVetSearchResultPage { Title = "Nearest Vet", Icon = "" });
+            //this.Children.Add(new EmergencyContactPage { Title = "Emergency", Icon = "" });
         }
     }
 }

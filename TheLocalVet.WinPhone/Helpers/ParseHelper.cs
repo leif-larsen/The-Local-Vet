@@ -7,7 +7,7 @@ using Parse;
 using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 
-[assembly: Xamarin.Forms.Dependency(typeof(IParseHelper))]
+[assembly: Xamarin.Forms.Dependency(typeof(TheLocalVet.WinPhone.Helpers.ParseHelper))]
 namespace TheLocalVet.WinPhone.Helpers
 {
     public class ParseHelper : IParseHelper

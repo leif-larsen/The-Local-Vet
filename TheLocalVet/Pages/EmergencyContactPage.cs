@@ -8,16 +8,25 @@ using Xamarin.Forms;
 
 namespace TheLocalVet.Pages
 {
-    public class EmergencyContactPage : ContentPage
+    public class EmergencyContactPage : MasterDetailPage
     {
         public EmergencyContactPage()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Hello Emergency" }
-                }
-            };
+            var menuPage = new MenuPage();
+
+            ////menuPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as Menu.MenuItem);
+
+            //Master = menuPage;
+            //Detail = new NavigationPage(new EmergencyContactPage());
+        }
+
+        void NavigateTo(Menu.MenuItem menu)
+        {
+            Page displayPage = (Page)Activator.CreateInstance(menu.TargetType);
+
+            Detail = new NavigationPage(displayPage);
+
+            IsPresented = false;
         }
     }
 }
