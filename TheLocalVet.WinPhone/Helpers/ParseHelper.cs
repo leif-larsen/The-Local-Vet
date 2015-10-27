@@ -6,6 +6,7 @@ using Parse;
 
 using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
+using TheLocalVet.Languages;
 
 [assembly: Xamarin.Forms.Dependency(typeof(TheLocalVet.WinPhone.Helpers.ParseHelper))]
 namespace TheLocalVet.WinPhone.Helpers
@@ -36,7 +37,7 @@ namespace TheLocalVet.WinPhone.Helpers
             }
             catch (Exception ex)
             {
-                RaiseOnParseError(new MessagesEventArgs(string.Format("Error occured in ParseHelper - {0}", ex.Message)));
+                RaiseOnParseError(new MessagesEventArgs(string.Format("{0} - {1}", AppResources.ParseHelperError, ex.Message)));
             }
 
             return vetList;
@@ -63,7 +64,7 @@ namespace TheLocalVet.WinPhone.Helpers
                 }
                 catch(Exception ex)
                 {
-                    RaiseOnParseError(new MessagesEventArgs(string.Format("Error occured in ParseHelper - {0}", ex.Message)));
+                    RaiseOnParseError(new MessagesEventArgs(string.Format("{0} - {1}", AppResources.ParseHelperError, ex.Message)));
                 }
             }
             else

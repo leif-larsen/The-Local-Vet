@@ -4,13 +4,17 @@ using Xamarin.Forms;
 
 using TheLocalVet.ViewModels;
 using TheLocalVet.Pages;
+using TheLocalVet.Languages;
+using TheLocalVet.Interfaces;
 
 namespace TheLocalVet
 {
 	public class App : Application
 	{
 		public App ()
-		{	
+		{
+            if (Device.OS != TargetPlatform.WinPhone)
+                AppResources.Culture = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
 		}
 
         public static Page GetMainPage()
