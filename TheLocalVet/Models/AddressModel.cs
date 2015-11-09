@@ -26,5 +26,10 @@ namespace TheLocalVet.Models
             Latitude = 0.0;
             Longitude = 0.0;
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0}", Address);
+        }
     }
 }

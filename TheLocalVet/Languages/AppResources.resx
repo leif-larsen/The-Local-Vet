@@ -117,8 +117,68 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bigvet" xml:space="preserve">
+    <value>Big vet</value>
+    <comment>Competency big vet</comment>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+    <comment>Title of the distance field</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email </value>
+    <comment>Title of the email field</comment>
+  </data>
+  <data name="NearestVetSinglePageAddress" xml:space="preserve">
+    <value>Address</value>
+    <comment>Address of a single vet</comment>
+  </data>
+  <data name="NearestVetSinglePageCompetency" xml:space="preserve">
+    <value>Competency</value>
+    <comment>Title of the competency field</comment>
+  </data>
+  <data name="NearestVetSinglePageExpertise" xml:space="preserve">
+    <value>Expertise</value>
+    <comment>Title of the expertise field</comment>
+  </data>
+  <data name="NearestVetSinglePageHomeVisit" xml:space="preserve">
+    <value>Home Visit</value>
+    <comment>Title of the home visit field</comment>
+  </data>
+  <data name="NearestVetSinglePageName" xml:space="preserve">
+    <value>Name</value>
+    <comment>Name of a single vet</comment>
+  </data>
+  <data name="NearestVetSinglePageOpeningHours" xml:space="preserve">
+    <value>Opening Hours</value>
+    <comment>Title of the opening hours field</comment>
+  </data>
+  <data name="NearestVetSinglePageTitle" xml:space="preserve">
+    <value>Details</value>
+    <comment>The title of a single vet</comment>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+    <comment>Generic "No"</comment>
+  </data>
   <data name="ParseHelperError" xml:space="preserve">
     <value>Error occured in ParseHelper</value>
     <comment>When an exception is caught in ParseHelper.cs, this text will be sent, with the exception message</comment>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+    <comment>Title of the phone field</comment>
+  </data>
+  <data name="smallvet" xml:space="preserve">
+    <value>Small vet</value>
+    <comment>Competency small vet</comment>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+    <comment>Title of the website field</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Generic "Yes"</comment>
   </data>
 </root>

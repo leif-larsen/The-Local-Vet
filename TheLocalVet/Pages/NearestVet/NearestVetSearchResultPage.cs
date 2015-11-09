@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
+using TheLocalVet.Models;
 using TheLocalVet.ViewModels;
 using Xamarin.Forms;
 
@@ -33,6 +35,7 @@ namespace TheLocalVet.Pages.NearestVet
             cell.SetBinding(TextCell.DetailProperty, new Binding(path: "Address"));
 
             listView.ItemTemplate = cell;
+            listView.ItemSelected += SingleVetetIsSelectedAsync;
 
             await _vm.GetNearestVet();
             listView.ItemsSource = _vm.Vets;
@@ -43,6 +46,11 @@ namespace TheLocalVet.Pages.NearestVet
                 Padding = new Thickness(left: 0, right: 0, bottom:0, top: Device.OnPlatform(iOS: 20, Android: 0, WinPhone: 0)),
                 Children = { listView }
             };
+        }
+
+        private async void SingleVetetIsSelectedAsync(object sender, SelectedItemChangedEventArgs e)
+        {
+            await Navigation.PushAsync(new NearestVetSinglePage(e.SelectedItem as VetModel));
         }
     }
 }

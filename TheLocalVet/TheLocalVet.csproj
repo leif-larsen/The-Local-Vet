@@ -60,12 +60,14 @@
     <Compile Include="Pages\Menu\MenuPage.cs" />
     <Compile Include="Pages\NearestVetPage.cs" />
     <Compile Include="Pages\NearestVet\NearestVetSearchResultPage.cs" />
+    <Compile Include="Pages\NearestVet\NearestVetSinglePage.cs" />
     <Compile Include="TheLocalVet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Pages\RootPage.cs" />
     <Compile Include="ViewModels\NearestVetSearchResultViewModel.cs" />
+    <Compile Include="ViewModels\NearestVetSingleViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
