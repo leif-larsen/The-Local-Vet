@@ -25,26 +25,30 @@ namespace TheLocalVet.Pages.NearestVet
             TextCell addressCell = new TextCell { Text = AppResources.NearestVetSinglePageAddress };
             addressCell.SetBinding(TextCell.DetailProperty, "Address");
 
-            TextCell distanceCell = new TextCell { Text = AppResources.Distance };
-            distanceCell.SetBinding(TextCell.DetailProperty, "Distance");
+            //TextCell distanceCell = new TextCell { Text = AppResources.Distance };
+            //distanceCell.SetBinding(TextCell.DetailProperty, "Distance");
 
             TextCell phoneCell = new TextCell { Text = AppResources.Phone };
             phoneCell.SetBinding(TextCell.DetailProperty, "Phone");
+            phoneCell.SetBinding(TextCell.CommandProperty, "CallVetCommand");
 
             TextCell emailCell = new TextCell { Text = AppResources.Email };
             emailCell.SetBinding(TextCell.DetailProperty, "Email");
+            emailCell.SetBinding(TextCell.CommandProperty, "EmailVetCommand");
 
             TextCell websiteCell = new TextCell { Text = AppResources.Website };
             websiteCell.SetBinding(TextCell.DetailProperty, "Website");
-
-            TextCell openingHoursCell = new TextCell { Text = AppResources.NearestVetSinglePageOpeningHours };
-            openingHoursCell.SetBinding(TextCell.DetailProperty, "OpeningHours");
+            websiteCell.SetBinding(TextCell.CommandProperty, "VisitWebCommand");
 
             TextCell competencyCell = new TextCell { Text = AppResources.NearestVetSinglePageCompetency };
             competencyCell.SetBinding(TextCell.DetailProperty, "CompetencyString");
 
-            TextCell expertiseCell = new TextCell { Text = AppResources.NearestVetSinglePageExpertise };
-            expertiseCell.SetBinding(TextCell.DetailProperty, "Expertise");
+            //Label openingHoursLabel = new Label { Text = AppResources.NearestVetSinglePageOpeningHours };
+            //Editor openingHoursEditor = new Editor();
+            //openingHoursEditor.SetBinding(Editor.TextProperty, "OpeningHours");
+
+            //TextCell expertiseCell = new TextCell { Text = AppResources.NearestVetSinglePageExpertise };
+            //expertiseCell.SetBinding(TextCell.DetailProperty, "Expertise");
 
             TextCell homevisitCell = new TextCell { Text = AppResources.NearestVetSinglePageHomeVisit };
             homevisitCell.SetBinding(TextCell.DetailProperty, "HomeVisit");
@@ -58,18 +62,18 @@ namespace TheLocalVet.Pages.NearestVet
                     {
                         nameCell,
                         addressCell,
-                        distanceCell,
+                        //distanceCell,
                         phoneCell,
                         emailCell,
                         websiteCell,
-                        openingHoursCell,
                         competencyCell,
-                        expertiseCell,
+                        //expertiseCell,
                         homevisitCell,
-                    }
+                    },
                 }
             };
 
+            //StackLayout openingHourStack = new StackLayout { Children = { openingHoursLabel, openingHoursEditor } };
             StackLayout contentStack = new StackLayout { Children = { table } };
             Content = new ScrollView { Content = contentStack };
         }
