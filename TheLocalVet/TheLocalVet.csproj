@@ -35,6 +35,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IDialer.cs" />
     <Compile Include="Interfaces\ILocalize.cs" />
     <Compile Include="Interfaces\IParseHelper.cs" />
     <Compile Include="Languages\AppResources.Designer.cs">

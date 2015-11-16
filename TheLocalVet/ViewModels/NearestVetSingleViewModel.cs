@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using TheLocalVet.Interfaces;
 using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using Xamarin.Forms;
@@ -14,6 +15,7 @@ namespace TheLocalVet.ViewModels
     public class NearestVetSingleViewModel : BaseViewModel
     {
         private VetModel _vetModel;
+        private IDialer _phoneDialer;
 
         public RelayCommand CallVetCommand { get; private set; }
         public RelayCommand EmailVetCommand { get; private set; }
@@ -86,6 +88,8 @@ namespace TheLocalVet.ViewModels
             CallVetCommand = new RelayCommand(CallVet);
             EmailVetCommand = new RelayCommand(EmailVet);
             VisitWebCommand = new RelayCommand(VisitWeb);
+
+            _phoneDialer = DependencyService.Get<IDialer>();
         }
 
         private void VisitWeb()
@@ -103,6 +107,9 @@ namespace TheLocalVet.ViewModels
         private void CallVet()
         {
             Debug.WriteLine("calling {0}", Phone);
+
+            if (_phoneDialer != null)
+                _phoneDialer.Dial(Phone, Name);
         }
 
         private string ParseOpeningHours(List<string> openingHours)

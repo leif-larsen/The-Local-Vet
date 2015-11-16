@@ -94,11 +94,22 @@ namespace TheLocalVet.WinPhone.Helpers
         private VetModel GetVetData(ParseObject vetData)
         {
             VetModel vetModel = new VetModel();
-            vetModel.Name = vetData.Get<string>("name");
-            vetModel.Email = vetData.Get<string>("email");
-            vetModel.WebSite = vetData.Get<string>("website");
-            vetModel.MainCompetency = (Competency)Enum.Parse(typeof(Competency), vetData.Get<string>("competency"));
-            vetModel.HomeVisit = vetData.Get<bool>("homevisit");
+
+            if(vetData.ContainsKey("name"))
+                vetModel.Name = vetData.Get<string>("name");
+
+            if (vetData.ContainsKey("email"))
+                vetModel.Email = vetData.Get<string>("email");
+
+            if (vetData.ContainsKey("website"))
+                vetModel.WebSite = vetData.Get<string>("website");
+
+            if (vetData.ContainsKey("competency"))
+                vetModel.MainCompetency = (Competency)Enum.Parse(typeof(Competency), vetData.Get<string>("competency"));
+
+            if (vetData.ContainsKey("homevisit"))
+                vetModel.HomeVisit = vetData.Get<bool>("homevisit");
+
             vetModel.Address = GetVetAddress(vetData);
             vetModel.Expertise = GetVetExpertise(vetData);
             vetModel.OpeningHours = GetVetOpeningHours(vetData);
@@ -128,7 +139,11 @@ namespace TheLocalVet.WinPhone.Helpers
         {
             List<string> openingHoursList = new List<string>();
 
-            var openingHours = vetData.Get<string>("openinghours");
+            string openingHours = string.Empty;
+
+            if (vetData.ContainsKey("openingHours"))
+                openingHours = vetData.Get<string>("openinghours");
+
             var openingHoursArray = openingHours.Split(';');
 
             if(openingHoursArray != null || openingHoursArray.Length > 0)
@@ -146,7 +161,11 @@ namespace TheLocalVet.WinPhone.Helpers
         {
             List<ExpertiseModel> expertiseList = new List<ExpertiseModel>();
 
-            var expertise = vetData.Get<string>("expertise");
+            string expertise = string.Empty;
+
+            if (vetData.ContainsKey("expertise"))
+                expertise = vetData.Get<string>("expertise");
+
             var expertiseArray = expertise.Split(';');
 
             if(expertiseArray != null && expertiseArray.Length > 0)
@@ -178,15 +197,28 @@ namespace TheLocalVet.WinPhone.Helpers
         {
             AddressModel address = new AddressModel();
 
-            var geoPoint = vetData.Get<ParseGeoPoint>("geolocation");
+            ParseGeoPoint geoPoint = new ParseGeoPoint();
 
-            address.Address = vetData.Get<string>("address");
-            address.Country = vetData.Get<string>("address_country");
-            address.County = vetData.Get<string>("address_county");
-            address.Municipality = vetData.Get<string>("address_municipality");
-            address.Latitude = geoPoint.Latitude;
-            address.Longitude = geoPoint.Longitude;
+            if (vetData.ContainsKey("geolocation"))
+            {
+                geoPoint = vetData.Get<ParseGeoPoint>("geolocation");
+                address.Latitude = geoPoint.Latitude;
+                address.Longitude = geoPoint.Longitude;
+            }
 
+
+            if (vetData.ContainsKey("address"))
+                address.Address = vetData.Get<string>("address");
+
+            if (vetData.ContainsKey("address_country"))
+                address.Country = vetData.Get<string>("address_country");
+
+            if (vetData.ContainsKey("address_county"))
+                address.County = vetData.Get<string>("address_county");
+
+            if (vetData.ContainsKey("address_municipality"))
+                address.Municipality = vetData.Get<string>("address_municipality");
+            
             return address;
         }
     }
