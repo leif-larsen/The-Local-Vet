@@ -9,6 +9,7 @@ using TheLocalVet.Interfaces;
 using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using Xamarin.Forms;
+using ExternalMaps;
 
 namespace TheLocalVet.ViewModels
 {
@@ -20,6 +21,7 @@ namespace TheLocalVet.ViewModels
         public RelayCommand CallVetCommand { get; private set; }
         public RelayCommand EmailVetCommand { get; private set; }
         public RelayCommand VisitWebCommand { get; private set; }
+        public RelayCommand ViewInMapCommand { get; private set; }
 
         public string Name
         {
@@ -88,8 +90,14 @@ namespace TheLocalVet.ViewModels
             CallVetCommand = new RelayCommand(CallVet);
             EmailVetCommand = new RelayCommand(EmailVet);
             VisitWebCommand = new RelayCommand(VisitWeb);
+            ViewInMapCommand = new RelayCommand(ViewInMap);
 
             _phoneDialer = DependencyService.Get<IDialer>();
+        }
+
+        private void ViewInMap()
+        {
+            ExternalMaps.Plugin.CrossExternalMaps.Current.NavigateTo(Name, _vetModel.Address.Latitude, _vetModel.Address.Longitude);
         }
 
         private void VisitWeb()

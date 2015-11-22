@@ -188,6 +188,15 @@ namespace TheLocalVet.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to View in map.
+        /// </summary>
+        public static string ViewInMap {
+            get {
+                return ResourceManager.GetString("ViewInMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Website.
         /// </summary>
         public static string Website {

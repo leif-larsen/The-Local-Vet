@@ -53,6 +53,9 @@ namespace TheLocalVet.Pages.NearestVet
             TextCell homevisitCell = new TextCell { Text = AppResources.NearestVetSinglePageHomeVisit };
             homevisitCell.SetBinding(TextCell.DetailProperty, "HomeVisit");
 
+            TextCell viewInMapCell = new TextCell { Text = AppResources.ViewInMap };
+            viewInMapCell.SetBinding(TextCell.CommandProperty, "ViewInMapCommand");
+
             TableView table = new TableView
             {
                 Intent = TableIntent.Form,
@@ -69,6 +72,10 @@ namespace TheLocalVet.Pages.NearestVet
                         competencyCell,
                         //expertiseCell,
                         homevisitCell,
+                    },
+                    new TableSection()
+                    {
+                        viewInMapCell,
                     },
                 }
             };

@@ -179,6 +179,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="ExternalMaps.Plugin, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.1.0.5\lib\wp8\ExternalMaps.Plugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExternalMaps.Plugin.Abstractions, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.1.0.5\lib\wp8\ExternalMaps.Plugin.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\TheLocalVet\packages\MvvmLightLibs.5.2.0.0\lib\wp8\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>

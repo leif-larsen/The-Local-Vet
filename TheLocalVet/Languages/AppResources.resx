@@ -181,4 +181,8 @@
     <value>Yes</value>
     <comment>Generic "Yes"</comment>
   </data>
+  <data name="ViewInMap" xml:space="preserve">
+    <value>View in map</value>
+    <comment>Text for opening the native map application with the position of the current vet</comment>
+  </data>
 </root>
