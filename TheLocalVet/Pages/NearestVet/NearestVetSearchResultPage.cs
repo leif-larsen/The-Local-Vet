@@ -14,9 +14,9 @@ namespace TheLocalVet.Pages.NearestVet
     {
         NearestVetSearchResultViewModel _vm;
 
-        public NearestVetSearchResultPage()
+        public NearestVetSearchResultPage(string place)
         {
-            _vm = new NearestVetSearchResultViewModel();
+            _vm = new NearestVetSearchResultViewModel(this.Navigation, place);
             NavigationPage.SetHasNavigationBar(this, true);
 
             InitGui();

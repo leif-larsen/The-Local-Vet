@@ -7,7 +7,7 @@ namespace TheLocalVet.Pages
     {
         public RootPage()
         {
-            this.Children.Add(new NearestVetSearchResultPage { Title = "Nearest Vet", Icon = "" });
+            this.Children.Add(new NearestVetSearchPage { Title = "Nearest Vet", Icon = "" });
             //this.Children.Add(new EmergencyContactPage { Title = "Emergency", Icon = "" });
         }
     }

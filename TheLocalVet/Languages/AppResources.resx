@@ -185,4 +185,41 @@
     <value>View in map</value>
     <comment>Text for opening the native map application with the position of the current vet</comment>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>Generic error title</comment>
+  </data>
+  <data name="FailedToFindVet" xml:space="preserve">
+    <value>Unfortunately we could not locate any vets in the area you searched. Try again, and maybe widen the search area.</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+    <comment>Generic loading text</comment>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Generic search text</comment>
+  </data>
+  <data name="SearchNearestVetLabel" xml:space="preserve">
+    <value>Search by place or your location</value>
+  </data>
+  <data name="SearchNearestVetLocation" xml:space="preserve">
+    <value>By your location</value>
+  </data>
+  <data name="SearchNearestVetLocationLabel" xml:space="preserve">
+    <value>Search near your location</value>
+  </data>
+  <data name="SearchNearestVetPickerText" xml:space="preserve">
+    <value>Search type</value>
+    <comment>The label for the type of search you can use.</comment>
+  </data>
+  <data name="SearchNearestVetPlace" xml:space="preserve">
+    <value>By place</value>
+  </data>
+  <data name="SearchNearestVetPlaceLabel" xml:space="preserve">
+    <value>Search by place</value>
+  </data>
+  <data name="SearchPlaceIsEmpty" xml:space="preserve">
+    <value>When using search by place the text field cannot be empty.</value>
+  </data>
 </root>

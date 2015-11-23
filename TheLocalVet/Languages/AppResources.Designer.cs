@@ -89,6 +89,33 @@ namespace TheLocalVet.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unfortunately we could not locate any vets in the area you searched. Try again, and maybe widen the search area..
+        /// </summary>
+        public static string FailedToFindVet {
+            get {
+                return ResourceManager.GetString("FailedToFindVet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading.
+        /// </summary>
+        public static string Loading {
+            get {
+                return ResourceManager.GetString("Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         public static string NearestVetSinglePageAddress {
@@ -175,6 +202,78 @@ namespace TheLocalVet.Languages {
         public static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search by place or your location.
+        /// </summary>
+        public static string SearchNearestVetLabel {
+            get {
+                return ResourceManager.GetString("SearchNearestVetLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By your location.
+        /// </summary>
+        public static string SearchNearestVetLocation {
+            get {
+                return ResourceManager.GetString("SearchNearestVetLocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search near your location.
+        /// </summary>
+        public static string SearchNearestVetLocationLabel {
+            get {
+                return ResourceManager.GetString("SearchNearestVetLocationLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search type.
+        /// </summary>
+        public static string SearchNearestVetPickerText {
+            get {
+                return ResourceManager.GetString("SearchNearestVetPickerText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By place.
+        /// </summary>
+        public static string SearchNearestVetPlace {
+            get {
+                return ResourceManager.GetString("SearchNearestVetPlace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search by place.
+        /// </summary>
+        public static string SearchNearestVetPlaceLabel {
+            get {
+                return ResourceManager.GetString("SearchNearestVetPlaceLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When using search by place the text field cannot be empty..
+        /// </summary>
+        public static string SearchPlaceIsEmpty {
+            get {
+                return ResourceManager.GetString("SearchPlaceIsEmpty", resourceCulture);
             }
         }
         

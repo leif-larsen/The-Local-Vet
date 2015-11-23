@@ -179,6 +179,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Acr.UserDialogs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Acr.UserDialogs.4.1.8\lib\wp8\Acr.UserDialogs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Acr.UserDialogs.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Acr.UserDialogs.4.1.8\lib\wp8\Acr.UserDialogs.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ExternalMaps.Plugin, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.1.0.5\lib\wp8\ExternalMaps.Plugin.dll</HintPath>
       <Private>True</Private>
@@ -214,6 +222,10 @@
     </Reference>
     <Reference Include="Parse.Phone, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\TheLocalVet\packages\Parse.1.6.0\lib\wp8\Parse.Phone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Splat.1.6.2\lib\wp8\Splat.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
