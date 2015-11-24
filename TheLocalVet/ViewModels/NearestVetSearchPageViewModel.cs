@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -78,7 +79,7 @@ namespace TheLocalVet.ViewModels
             {
                 if(string.IsNullOrEmpty(SearchPlace))
                 {
-                    Error = AppResources.SearchPlaceIsEmpty;
+                    await UserDialogs.Instance.AlertAsync(AppResources.SearchPlaceIsEmpty, AppResources.Error, "OK");
                 }
                 else
                 {

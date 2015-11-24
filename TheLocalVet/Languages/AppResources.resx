@@ -225,4 +225,28 @@
   <data name="SearchNearestVetDistance" xml:space="preserve">
     <value>Distance</value>
   </data>
+  <data name="FeedbackEmailSubject" xml:space="preserve">
+    <value>The Local Vet feedback</value>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>fhjoids fsd hfoisduf jhwenf irehg9e8o g0rs gr gjpifd jvfid jofidghiofdn gviofd iofd goifd hiogdf </value>
+  </data>
+  <data name="FeedbackTitleText" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="InfoPageTitle" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>hgiordjgnoifdhgoishfiusdhfiusdgfu9dsgh us ifu sdhuf sdhofsdho fse fhosd fhosdi fodis fidos fos jfiods ohids fsd</value>
+  </data>
+  <data name="InfoTitleText" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="NearestVetPageTitle" xml:space="preserve">
+    <value>Nearest Vet</value>
+  </data>
+  <data name="SendFeedbackButtonText" xml:space="preserve">
+    <value>Send feedback</value>
+  </data>
 </root>

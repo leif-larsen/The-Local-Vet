@@ -107,11 +107,74 @@ namespace TheLocalVet.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Local Vet feedback.
+        /// </summary>
+        public static string FeedbackEmailSubject {
+            get {
+                return ResourceManager.GetString("FeedbackEmailSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to fhjoids fsd hfoisduf jhwenf irehg9e8o g0rs gr gjpifd jvfid jofidghiofdn gviofd iofd goifd hiogdf .
+        /// </summary>
+        public static string FeedbackText {
+            get {
+                return ResourceManager.GetString("FeedbackText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback.
+        /// </summary>
+        public static string FeedbackTitleText {
+            get {
+                return ResourceManager.GetString("FeedbackTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        public static string InfoPageTitle {
+            get {
+                return ResourceManager.GetString("InfoPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hgiordjgnoifdhgoishfiusdhfiusdgfu9dsgh us ifu sdhuf sdhofsdho fse fhosd fhosdi fodis fidos fos jfiods ohids fsd.
+        /// </summary>
+        public static string InfoText {
+            get {
+                return ResourceManager.GetString("InfoText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        public static string InfoTitleText {
+            get {
+                return ResourceManager.GetString("InfoTitleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading.
         /// </summary>
         public static string Loading {
             get {
                 return ResourceManager.GetString("Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Vet.
+        /// </summary>
+        public static string NearestVetPageTitle {
+            get {
+                return ResourceManager.GetString("NearestVetPageTitle", resourceCulture);
             }
         }
         
@@ -283,6 +346,15 @@ namespace TheLocalVet.Languages {
         public static string SearchPlaceIsEmpty {
             get {
                 return ResourceManager.GetString("SearchPlaceIsEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send feedback.
+        /// </summary>
+        public static string SendFeedbackButtonText {
+            get {
+                return ResourceManager.GetString("SendFeedbackButtonText", resourceCulture);
             }
         }
         
