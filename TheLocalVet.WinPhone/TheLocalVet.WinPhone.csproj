@@ -97,6 +97,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EmailSender.cs" />
+    <Compile Include="Helpers\Geolocator.cs" />
     <Compile Include="Helpers\ParseHelper.cs" />
     <Compile Include="Helpers\PhoneDialer.cs" />
     <Compile Include="LocalizedStrings.cs" />

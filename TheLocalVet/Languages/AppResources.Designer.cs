@@ -215,6 +215,15 @@ namespace TheLocalVet.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string SearchNearestVetDistance {
+            get {
+                return ResourceManager.GetString("SearchNearestVetDistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search by place or your location.
         /// </summary>
         public static string SearchNearestVetLabel {

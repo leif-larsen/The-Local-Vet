@@ -222,4 +222,7 @@
   <data name="SearchPlaceIsEmpty" xml:space="preserve">
     <value>When using search by place the text field cannot be empty.</value>
   </data>
+  <data name="SearchNearestVetDistance" xml:space="preserve">
+    <value>Distance</value>
+  </data>
 </root>

@@ -14,12 +14,18 @@ namespace TheLocalVet.Pages.NearestVet
     {
         NearestVetSearchResultViewModel _vm;
 
-        public NearestVetSearchResultPage(string place)
+        public NearestVetSearchResultPage(string place, double latittude, double longitude, double distance)
         {
-            _vm = new NearestVetSearchResultViewModel(this.Navigation, place);
+            _vm = new NearestVetSearchResultViewModel(place, latittude, longitude, distance);
+            _vm.OnSearchForVetFailed += _vm_OnSearchForVetFailed;
             NavigationPage.SetHasNavigationBar(this, true);
 
             InitGui();
+        }
+
+        private async void _vm_OnSearchForVetFailed(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
 
         private async void InitGui()

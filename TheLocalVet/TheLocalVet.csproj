@@ -37,7 +37,9 @@
   <ItemGroup>
     <Compile Include="Helpers\MiscFunctions.cs" />
     <Compile Include="Interfaces\IDialer.cs" />
+    <Compile Include="Interfaces\IGeolocator.cs" />
     <Compile Include="Interfaces\ILocalize.cs" />
+    <Compile Include="Interfaces\IMailSender.cs" />
     <Compile Include="Interfaces\IParseHelper.cs" />
     <Compile Include="Languages\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -51,9 +53,11 @@
     </Compile>
     <Compile Include="Models\AddressModel.cs" />
     <Compile Include="Models\Competency.cs" />
+    <Compile Include="Models\DistanceToVet.cs" />
     <Compile Include="Models\EmergencyVetModel.cs" />
     <Compile Include="Models\ExpertiseModel.cs" />
     <Compile Include="Models\MessagesEventArgs.cs" />
+    <Compile Include="Models\Position.cs" />
     <Compile Include="Models\VetModel.cs" />
     <Compile Include="Pages\EmergencyContactPage.cs" />
     <Compile Include="Pages\Menu\MenuItem.cs" />
@@ -109,9 +113,6 @@
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Forms">
-      <HintPath>packages\Xamarin.Forms.1.3.3.6323\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Xamarin.Forms.1.5.0.6447\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>

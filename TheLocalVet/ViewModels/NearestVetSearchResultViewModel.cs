@@ -21,7 +21,8 @@ namespace TheLocalVet.ViewModels
         private double _latitude;
         private double _longitude;
         private double _distance;
-        private INavigation _naviagtion;
+
+        public event EventHandler<EventArgs> OnSearchForVetFailed;
 
         public List<VetModel> Vets
         {
@@ -29,14 +30,13 @@ namespace TheLocalVet.ViewModels
             set { _vets = value;  OnPropertyChanged("Vets"); }
         }
 
-        public NearestVetSearchResultViewModel(INavigation navigation, string place, double latitude = 0.0, double longitude = 0.0, double distance = 0.0)
+        public NearestVetSearchResultViewModel(string place, double latitude = 0.0, double longitude = 0.0, double distance = 0.0)
         {
             _parseHelper = DependencyService.Get<IParseHelper>();
             _place = place;
             _latitude = latitude;
             _longitude = longitude;
             _distance = distance;
-            _naviagtion = navigation;
         }
 
         public async Task GetNearestVet()
@@ -50,9 +50,11 @@ namespace TheLocalVet.ViewModels
             }
 
             if (Vets.Count == 0)
-            { 
+            {
                 await UserDialogs.Instance.AlertAsync(AppResources.FailedToFindVet, AppResources.Error, "OK");
-                await _naviagtion.PopAsync();
+
+                if (OnSearchForVetFailed != null)
+                    OnSearchForVetFailed(this, new EventArgs());
             }
         }
     }

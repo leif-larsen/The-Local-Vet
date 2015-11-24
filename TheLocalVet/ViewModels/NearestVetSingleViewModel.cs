@@ -17,6 +17,7 @@ namespace TheLocalVet.ViewModels
     {
         private VetModel _vetModel;
         private IDialer _phoneDialer;
+        private IMailSender _mailSender;
 
         public RelayCommand CallVetCommand { get; private set; }
         public RelayCommand EmailVetCommand { get; private set; }
@@ -93,6 +94,7 @@ namespace TheLocalVet.ViewModels
             ViewInMapCommand = new RelayCommand(ViewInMap);
 
             _phoneDialer = DependencyService.Get<IDialer>();
+            _mailSender = DependencyService.Get<IMailSender>();
         }
 
         private void ViewInMap()
@@ -109,7 +111,7 @@ namespace TheLocalVet.ViewModels
         private void EmailVet()
         {
             Debug.WriteLine(Email);
-            Device.OpenUri(new Uri(string.Format("mailto:{0}", Email)));
+            _mailSender.SendMail(Email, string.Empty);
         }
 
         private void CallVet()
