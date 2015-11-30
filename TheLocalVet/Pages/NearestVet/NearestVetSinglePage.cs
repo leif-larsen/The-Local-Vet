@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace TheLocalVet.Pages.NearestVet
 {
-    public class NearestVetSinglePage : ContentPage
+	public class NearestVetSinglePage : ContentPage
     {
         public NearestVetSinglePage(VetModel vetModel)
         {
@@ -19,8 +19,8 @@ namespace TheLocalVet.Pages.NearestVet
 
         private void InitGui()
         {
-            TextCell nameCell = new TextCell { Text = AppResources.NearestVetSinglePageName };
-            nameCell.SetBinding(TextCell.DetailProperty, "Name");
+			TextCell nameCell = new TextCell();
+			nameCell.SetBinding(TextCell.TextProperty, "Name");
 
             TextCell addressCell = new TextCell { Text = AppResources.NearestVetSinglePageAddress };
             addressCell.SetBinding(TextCell.DetailProperty, "Address");

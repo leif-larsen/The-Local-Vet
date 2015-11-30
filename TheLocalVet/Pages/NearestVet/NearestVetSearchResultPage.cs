@@ -13,12 +13,14 @@ namespace TheLocalVet.Pages.NearestVet
     public class NearestVetSearchResultPage : ContentPage
     {
         NearestVetSearchResultViewModel _vm;
+		private INavigation _nav;
 
-        public NearestVetSearchResultPage(string place, double latittude, double longitude, double distance)
+		public NearestVetSearchResultPage(string place, double latittude, double longitude, double distance, INavigation nav)
         {
             _vm = new NearestVetSearchResultViewModel(place, latittude, longitude, distance);
             _vm.OnSearchForVetFailed += _vm_OnSearchForVetFailed;
             NavigationPage.SetHasNavigationBar(this, true);
+			_nav = nav;
 
             InitGui();
         }
@@ -56,7 +58,7 @@ namespace TheLocalVet.Pages.NearestVet
 
         private async void SingleVetetIsSelectedAsync(object sender, SelectedItemChangedEventArgs e)
         {
-            await Navigation.PushAsync(new NearestVetSinglePage(e.SelectedItem as VetModel));
+			await _nav.PushAsync(new NearestVetSinglePage(e.SelectedItem as VetModel));
         }
     }
 }

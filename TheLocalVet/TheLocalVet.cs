@@ -15,6 +15,8 @@ namespace TheLocalVet
 		{
             if (Device.OS != TargetPlatform.WinPhone)
                 AppResources.Culture = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
+
+			MainPage = new NavigationPage(new RootPage ());
 		}
 
         public static Page GetMainPage()

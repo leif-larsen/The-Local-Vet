@@ -12,9 +12,9 @@ namespace TheLocalVet.Pages.NearestVet
 {
     public class NearestVetSearchPage : ContentPage
     {
-        public NearestVetSearchPage()
+		public NearestVetSearchPage(INavigation nav)
         {
-            this.BindingContext = new NearestVetSearchPageViewModel(this.Navigation);
+            this.BindingContext = new NearestVetSearchPageViewModel(nav);
             NavigationPage.SetHasNavigationBar(this, true);
             NavigationPage.SetHasBackButton(this, false);
             InitGui();

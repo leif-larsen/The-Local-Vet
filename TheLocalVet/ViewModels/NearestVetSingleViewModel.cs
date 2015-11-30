@@ -10,14 +10,15 @@ using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using Xamarin.Forms;
 using ExternalMaps;
+using Lotz.Xam.Messaging;
 
 namespace TheLocalVet.ViewModels
 {
     public class NearestVetSingleViewModel : BaseViewModel
     {
         private VetModel _vetModel;
-        private IDialer _phoneDialer;
-        private IMailSender _mailSender;
+        //private IDialer _phoneDialer;
+        //private IMailSender _mailSender;
 
         public RelayCommand CallVetCommand { get; private set; }
         public RelayCommand EmailVetCommand { get; private set; }
@@ -89,12 +90,16 @@ namespace TheLocalVet.ViewModels
             _vetModel = vetModel;
 
             CallVetCommand = new RelayCommand(CallVet);
+			CallVetCommand.IsEnabled = true;
             EmailVetCommand = new RelayCommand(EmailVet);
+			EmailVetCommand.IsEnabled = true;
             VisitWebCommand = new RelayCommand(VisitWeb);
+			VisitWebCommand.IsEnabled = true;
             ViewInMapCommand = new RelayCommand(ViewInMap);
+			ViewInMapCommand.IsEnabled = true;
 
-            _phoneDialer = DependencyService.Get<IDialer>();
-            _mailSender = DependencyService.Get<IMailSender>();
+            //_phoneDialer = DependencyService.Get<IDialer>();
+            //_mailSender = DependencyService.Get<IMailSender>();
         }
 
         private void ViewInMap()
@@ -111,15 +116,21 @@ namespace TheLocalVet.ViewModels
         private void EmailVet()
         {
             Debug.WriteLine(Email);
-            _mailSender.SendMail(Email, string.Empty);
+            //_mailSender.SendMail(Email, string.Empty);
+			var emailTask = MessagingPlugin.EmailMessenger;
+			if (emailTask.CanSendEmail) 
+				emailTask.SendEmail (Email, string.Empty, string.Empty);
         }
 
         private void CallVet()
         {
             Debug.WriteLine("calling {0}", Phone);
 
-            if (_phoneDialer != null)
-                _phoneDialer.Dial(Phone, Name);
+            //if (_phoneDialer != null)
+            //    _phoneDialer.Dial(Phone, Name);
+			var phoneCallTask = MessagingPlugin.PhoneDialer;
+			if (phoneCallTask.CanMakePhoneCall)
+				phoneCallTask.MakePhoneCall (Phone, Name);
         }
 
         private string ParseOpeningHours(List<string> openingHours)

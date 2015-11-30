@@ -8,8 +8,8 @@ namespace TheLocalVet.Pages
     {
         public RootPage()
         {
-            this.Children.Add(new NearestVetSearchPage { Title = AppResources.NearestVetPageTitle, Icon = "" });
-            this.Children.Add(new InfoPage { Title = AppResources.InfoPageTitle, Icon = "" });
+			this.Children.Add(new NearestVetSearchPage (this.Navigation) { Title = AppResources.NearestVetPageTitle });
+            this.Children.Add(new InfoPage { Title = AppResources.InfoPageTitle});
             //this.Children.Add(new EmergencyContactPage { Title = "Emergency", Icon = "" });
         }
     }

@@ -12,7 +12,7 @@ namespace TheLocalVet.Pages
     {
         public EmergencyContactPage()
         {
-            var menuPage = new MenuPage();
+            //var menuPage = new MenuPage();
 
             ////menuPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as Menu.MenuItem);
 
