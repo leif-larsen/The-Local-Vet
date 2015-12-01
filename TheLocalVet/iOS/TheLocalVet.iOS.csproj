@@ -166,9 +166,6 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Helpers\Localize.cs" />
-    <Compile Include="Helpers\Geolocator.cs" />
-    <Compile Include="Helpers\EmailSender.cs" />
-    <Compile Include="Helpers\PhoneDialer.cs" />
     <Compile Include="Helpers\ParseHelper.cs" />
   </ItemGroup>
   <ItemGroup>

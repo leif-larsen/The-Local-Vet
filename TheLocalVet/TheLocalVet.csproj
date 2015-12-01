@@ -36,10 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Helpers\MiscFunctions.cs" />
-    <Compile Include="Interfaces\IDialer.cs" />
-    <Compile Include="Interfaces\IGeolocator.cs" />
     <Compile Include="Interfaces\ILocalize.cs" />
-    <Compile Include="Interfaces\IMailSender.cs" />
     <Compile Include="Interfaces\IParseHelper.cs" />
     <Compile Include="Languages\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -61,10 +58,6 @@
     <Compile Include="Models\VetModel.cs" />
     <Compile Include="Pages\EmergencyContactPage.cs" />
     <Compile Include="Pages\InfoPage.cs" />
-    <Compile Include="Pages\Menu\MenuItem.cs" />
-    <Compile Include="Pages\Menu\MenuListData.cs" />
-    <Compile Include="Pages\Menu\MenuListView.cs" />
-    <Compile Include="Pages\Menu\MenuPage.cs" />
     <Compile Include="Pages\NearestVet\NearestVetSearchPage.cs" />
     <Compile Include="Pages\NearestVet\NearestVetSearchResultPage.cs" />
     <Compile Include="Pages\NearestVet\NearestVetSinglePage.cs" />

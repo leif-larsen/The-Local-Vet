@@ -61,5 +61,11 @@
 	<string>LaunchScreen</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Test</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>no</string>
+	</array>
+	<key>Localization native development</key>
+	<string>en</string>
 </dict>
 </plist>
