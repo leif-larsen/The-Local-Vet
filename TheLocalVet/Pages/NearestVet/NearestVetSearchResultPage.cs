@@ -7,6 +7,7 @@ using System.Text;
 using TheLocalVet.Models;
 using TheLocalVet.ViewModels;
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages.NearestVet
 {
@@ -27,7 +28,7 @@ namespace TheLocalVet.Pages.NearestVet
 
         private async void _vm_OnSearchForVetFailed(object sender, EventArgs e)
         {
-            await Navigation.PopModalAsync();
+			await Navigation.PopAsync();
         }
 
         private async void InitGui()
@@ -46,14 +47,27 @@ namespace TheLocalVet.Pages.NearestVet
             listView.ItemSelected += SingleVetetIsSelectedAsync;
 
             await _vm.GetNearestVet();
-            listView.ItemsSource = _vm.Vets;
 
-            Content = new StackLayout
-            {
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                Padding = new Thickness(left: 0, right: 0, bottom:0, top: Device.OnPlatform(iOS: 20, Android: 0, WinPhone: 0)),
-                Children = { listView }
-            };
+			if (_vm.Vets.Count != 0) 
+			{
+				listView.ItemsSource = _vm.Vets;
+
+				Content = new StackLayout 
+				{
+					VerticalOptions = LayoutOptions.FillAndExpand,
+					Padding = new Thickness (left: 0, right: 0, bottom: 0, top: Device.OnPlatform (iOS: 20, Android: 0, WinPhone: 0)),
+					Children = { listView }
+				};
+			} 
+			else 
+			{
+				Content = new StackLayout 
+				{
+					VerticalOptions = LayoutOptions.FillAndExpand,
+					Padding = new Thickness (left: 0, right: 0, bottom: 0, top: Device.OnPlatform (iOS: 20, Android: 0, WinPhone: 0)),
+					Children = { new Label { Text = AppResources.NoVetsAvailable } }
+				};
+			}
         }
 
         private async void SingleVetetIsSelectedAsync(object sender, SelectedItemChangedEventArgs e)

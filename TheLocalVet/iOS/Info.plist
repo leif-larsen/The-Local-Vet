@@ -64,6 +64,7 @@
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>no</string>
+		<string>en</string>
 	</array>
 	<key>Localization native development</key>
 	<string>en</string>

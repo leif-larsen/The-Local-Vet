@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TheLocalVet.Helpers;
 using TheLocalVet.Interfaces;
-using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.ViewModels
 {

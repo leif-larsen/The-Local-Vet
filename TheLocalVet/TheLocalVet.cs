@@ -4,8 +4,8 @@ using Xamarin.Forms;
 
 using TheLocalVet.ViewModels;
 using TheLocalVet.Pages;
-using TheLocalVet.Languages;
 using TheLocalVet.Interfaces;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet
 {

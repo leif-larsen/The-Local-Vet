@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TheLocalVet.Interfaces;
-using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using TheLocalVet.Pages.NearestVet;
 using Xamarin.Forms;
 using Geolocator.Plugin;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.ViewModels
 {

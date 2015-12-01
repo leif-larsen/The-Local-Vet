@@ -1,6 +1,6 @@
-﻿using TheLocalVet.Languages;
-using TheLocalVet.Pages.NearestVet;
+﻿using TheLocalVet.Pages.NearestVet;
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages
 {

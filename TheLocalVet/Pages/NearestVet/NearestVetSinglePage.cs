@@ -1,8 +1,8 @@
 ﻿using System;
-using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using TheLocalVet.ViewModels;
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages.NearestVet
 {

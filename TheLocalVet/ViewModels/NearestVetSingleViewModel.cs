@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using TheLocalVet.Interfaces;
-using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using Xamarin.Forms;
 using ExternalMaps;
 using Lotz.Xam.Messaging;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.ViewModels
 {
@@ -88,41 +88,61 @@ namespace TheLocalVet.ViewModels
             _vetModel = vetModel;
 
             CallVetCommand = new RelayCommand(CallVet);
-			CallVetCommand.IsEnabled = true;
+
+			if(!string.IsNullOrEmpty(Phone))
+				CallVetCommand.IsEnabled = true;
+			
             EmailVetCommand = new RelayCommand(EmailVet);
-			EmailVetCommand.IsEnabled = true;
+
+			if(!string.IsNullOrEmpty(Email))
+				EmailVetCommand.IsEnabled = true;
+			
             VisitWebCommand = new RelayCommand(VisitWeb);
-			VisitWebCommand.IsEnabled = true;
+
+			if(!string.IsNullOrEmpty(Website))
+				VisitWebCommand.IsEnabled = true;
+			
             ViewInMapCommand = new RelayCommand(ViewInMap);
-			ViewInMapCommand.IsEnabled = true;
+
+			if(!string.IsNullOrEmpty(Address))
+				ViewInMapCommand.IsEnabled = true;
         }
 
         private void ViewInMap()
         {
-            ExternalMaps.Plugin.CrossExternalMaps.Current.NavigateTo(Name, _vetModel.Address.Latitude, _vetModel.Address.Longitude);
+			if(!string.IsNullOrEmpty(Address))
+            	ExternalMaps.Plugin.CrossExternalMaps.Current.NavigateTo(Name, _vetModel.Address.Latitude, _vetModel.Address.Longitude);
         }
 
         private void VisitWeb()
         {
             Debug.WriteLine("{0} - {1}", Website, new Uri(Website));
-            Device.OpenUri(new Uri(Website));
+			if(!string.IsNullOrEmpty(Website))
+            	Device.OpenUri(new Uri(Website));
         }
 
         private void EmailVet()
         {
             Debug.WriteLine(Email);
-			var emailTask = MessagingPlugin.EmailMessenger;
-			if (emailTask.CanSendEmail)
-				emailTask.SendEmail (new EmailMessageBuilder().To(Email).Build());
+
+			if (!string.IsNullOrEmpty (Email)) 
+			{
+				var emailTask = MessagingPlugin.EmailMessenger;
+				if (emailTask.CanSendEmail)
+					emailTask.SendEmail (new EmailMessageBuilder ().To (Email).Build ());
+			}
         }
 
         private void CallVet()
         {
             Debug.WriteLine("calling {0}", Phone);
 
-			var phoneCallTask = MessagingPlugin.PhoneDialer;
-			if (phoneCallTask.CanMakePhoneCall)
-				phoneCallTask.MakePhoneCall (Phone, Name);
+			if (!string.IsNullOrEmpty (Phone)) 
+			{
+				var phoneCallTask = MessagingPlugin.PhoneDialer;
+				if (phoneCallTask.CanMakePhoneCall)
+					phoneCallTask.MakePhoneCall (Phone, Name);
+			}
         }
 
         private string ParseOpeningHours(List<string> openingHours)

@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using Parse;
 
 using TheLocalVet.Models;
-using TheLocalVet.Languages;
 using TheLocalVet.Interfaces;
 
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 [assembly:Dependency(typeof(TheLocalVet.Droid.Helpers.ParseHelper))]
 namespace TheLocalVet.Droid.Helpers

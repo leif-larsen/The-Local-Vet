@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
-using TheLocalVet.Languages;
 using TheLocalVet.ViewModels;
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages
 {
@@ -25,9 +25,6 @@ namespace TheLocalVet.Pages
             infoText.SetBinding(IsFocusedProperty, "IsFocused");
             infoText.SetBinding(Editor.IsEnabledProperty, "IsFocused");
 
-            //Label feedbackTextLabel = new Label { Text = AppResources.FeedbackTitleText };
-            //Editor feedbackText = new Editor { Text = AppResources.FeedbackText };
-
             Button sendFeedbackButton = new Button { Text = AppResources.SendFeedbackButtonText };
             sendFeedbackButton.SetBinding(Button.CommandProperty, "SendFeedbackCommand");
 
@@ -37,8 +34,6 @@ namespace TheLocalVet.Pages
                 {
                     infoTextLabel,
                     infoText,
-                    //feedbackTextLabel,
-                    //feedbackText,
                     sendFeedbackButton,
                 }
             };

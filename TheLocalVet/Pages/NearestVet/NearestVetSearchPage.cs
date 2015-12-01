@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
-using TheLocalVet.Languages;
 using TheLocalVet.Models;
 using TheLocalVet.ViewModels;
 using Xamarin.Forms;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages.NearestVet
 {

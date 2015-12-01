@@ -4,8 +4,8 @@ using TheLocalVet.Interfaces;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using TheLocalVet.Models;
-using TheLocalVet.Languages;
 using Parse;
+using TheLocalVet.Languages;
 
 [assembly:Dependency(typeof(TheLocalVet.iOS.Helpers.ParseHelper))]
 namespace TheLocalVet.iOS.Helpers
