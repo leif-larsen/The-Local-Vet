@@ -150,4 +150,7 @@
       <LastGenOutput>AppResources.nb.Designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Languages\AppResources.en-US.resx" />
+  </ItemGroup>
 </Project>
