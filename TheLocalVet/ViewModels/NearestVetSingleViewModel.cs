@@ -17,8 +17,6 @@ namespace TheLocalVet.ViewModels
     public class NearestVetSingleViewModel : BaseViewModel
     {
         private VetModel _vetModel;
-        //private IDialer _phoneDialer;
-        //private IMailSender _mailSender;
 
         public RelayCommand CallVetCommand { get; private set; }
         public RelayCommand EmailVetCommand { get; private set; }
@@ -97,9 +95,6 @@ namespace TheLocalVet.ViewModels
 			VisitWebCommand.IsEnabled = true;
             ViewInMapCommand = new RelayCommand(ViewInMap);
 			ViewInMapCommand.IsEnabled = true;
-
-            //_phoneDialer = DependencyService.Get<IDialer>();
-            //_mailSender = DependencyService.Get<IMailSender>();
         }
 
         private void ViewInMap()
@@ -116,18 +111,15 @@ namespace TheLocalVet.ViewModels
         private void EmailVet()
         {
             Debug.WriteLine(Email);
-            //_mailSender.SendMail(Email, string.Empty);
 			var emailTask = MessagingPlugin.EmailMessenger;
-			if (emailTask.CanSendEmail) 
-				emailTask.SendEmail (Email, string.Empty, string.Empty);
+			if (emailTask.CanSendEmail)
+				emailTask.SendEmail (new EmailMessageBuilder().To(Email).Build());
         }
 
         private void CallVet()
         {
             Debug.WriteLine("calling {0}", Phone);
 
-            //if (_phoneDialer != null)
-            //    _phoneDialer.Dial(Phone, Name);
 			var phoneCallTask = MessagingPlugin.PhoneDialer;
 			if (phoneCallTask.CanMakePhoneCall)
 				phoneCallTask.MakePhoneCall (Phone, Name);
@@ -153,17 +145,9 @@ namespace TheLocalVet.ViewModels
             {
                 returnData = string.Empty;
             }
-            //else if(phones.Count == 1)
-            //{
-            //    returnData = phones.First();
-            //}
             else
             {
                 returnData = phones.First();
-                //foreach(var phone in phones)
-                //{
-                //    returnData += string.Format("{0}, ", phone);
-                //}
             }
 
             return returnData;

@@ -14,7 +14,7 @@ namespace TheLocalVet.Pages
         public InfoPage()
         {
             this.BindingContext = new InfoPageViewModel();
-
+			Title = AppResources.InfoPageTitle;
             InitGui();
         }
 
