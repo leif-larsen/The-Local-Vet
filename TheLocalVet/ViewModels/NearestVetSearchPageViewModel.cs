@@ -17,7 +17,6 @@ namespace TheLocalVet.ViewModels
     public class NearestVetSearchPageViewModel : BaseViewModel 
     {
         private INavigation _navigation;
-        //private IGeolocator _location;
 
         public RelayCommand SearchCommand { get; private set; }
 
@@ -59,7 +58,6 @@ namespace TheLocalVet.ViewModels
             SearchCommand = new RelayCommand(Search);
             SearchCommand.IsEnabled = true;
 
-            //_location = DependencyService.Get<IGeolocator>();
             SelectedSearchType = 0;
             Distance = 3;
         }
@@ -68,15 +66,11 @@ namespace TheLocalVet.ViewModels
         {
             if(SelectedSearchType == 0)
             {
-                //if(_location != null)
-                //{
 				var locator = CrossGeolocator.Current;
 				var position = await locator.GetPositionAsync (5000);
-                //var position = await _location.GetPositionAsync(5000);
                 double distance = GetChoosenDistance();
                 Debug.WriteLine("{0} {1} {2}", position.Latitude, position.Longitude, distance);
 				await _navigation.PushAsync(new NearestVetSearchResultPage(string.Empty, position.Latitude, position.Longitude, distance, _navigation));
-                //}
             }
             else
             {
@@ -87,6 +81,7 @@ namespace TheLocalVet.ViewModels
                 else
                 {
 					await _navigation.PushAsync(new NearestVetSearchResultPage(SearchPlace, 0, 0, 0, _navigation));
+					SearchPlace = string.Empty;
                 }
             }
         }

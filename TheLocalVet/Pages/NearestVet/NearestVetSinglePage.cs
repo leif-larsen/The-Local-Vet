@@ -12,7 +12,7 @@ namespace TheLocalVet.Pages.NearestVet
         {
             this.BindingContext = new NearestVetSingleViewModel(vetModel);
             NavigationPage.SetHasNavigationBar(this, true);
-            NavigationPage.SetHasBackButton(this, true);     
+            NavigationPage.SetHasBackButton(this, true); 
 
             InitGui();
         }

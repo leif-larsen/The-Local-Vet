@@ -8,6 +8,7 @@ using TheLocalVet.Models;
 using TheLocalVet.ViewModels;
 using Xamarin.Forms;
 using TheLocalVet.Languages;
+using System.Threading;
 
 namespace TheLocalVet.Pages.NearestVet
 {
@@ -15,6 +16,11 @@ namespace TheLocalVet.Pages.NearestVet
     {
         NearestVetSearchResultViewModel _vm;
 		private INavigation _nav;
+		private ListView _listView = new ListView
+		{
+			HorizontalOptions = LayoutOptions.FillAndExpand,
+			VerticalOptions = LayoutOptions.FillAndExpand
+		};
 
 		public NearestVetSearchResultPage(string place, double latittude, double longitude, double distance, INavigation nav)
         {
@@ -33,30 +39,24 @@ namespace TheLocalVet.Pages.NearestVet
 
         private async void InitGui()
         {
-            ListView listView = new ListView
-            {
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalOptions = LayoutOptions.FillAndExpand
-            };
-
             var cell = new DataTemplate(typeof(TextCell));
             cell.SetBinding(TextCell.TextProperty, "Name");
             cell.SetBinding(TextCell.DetailProperty, new Binding(path: "Address"));
 
-            listView.ItemTemplate = cell;
-            listView.ItemSelected += SingleVetetIsSelectedAsync;
+            _listView.ItemTemplate = cell;
+            _listView.ItemSelected += SingleVetetIsSelectedAsync;
 
             await _vm.GetNearestVet();
 
 			if (_vm.Vets.Count != 0) 
 			{
-				listView.ItemsSource = _vm.Vets;
+				_listView.ItemsSource = _vm.Vets;
 
 				Content = new StackLayout 
 				{
 					VerticalOptions = LayoutOptions.FillAndExpand,
 					Padding = new Thickness (left: 0, right: 0, bottom: 0, top: Device.OnPlatform (iOS: 20, Android: 0, WinPhone: 0)),
-					Children = { listView }
+					Children = { _listView }
 				};
 			} 
 			else 
@@ -72,7 +72,9 @@ namespace TheLocalVet.Pages.NearestVet
 
         private async void SingleVetetIsSelectedAsync(object sender, SelectedItemChangedEventArgs e)
         {
-			await _nav.PushAsync(new NearestVetSinglePage(e.SelectedItem as VetModel));
+			VetModel vet = e.SelectedItem as VetModel;
+
+			await _nav.PushAsync(new NearestVetSinglePage(vet));
         }
     }
 }
