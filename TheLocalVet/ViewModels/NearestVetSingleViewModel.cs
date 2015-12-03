@@ -8,7 +8,7 @@ using System.Windows.Input;
 using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using Xamarin.Forms;
-using ExternalMaps;
+using Plugin.ExternalMaps;
 using Lotz.Xam.Messaging;
 using TheLocalVet.Languages;
 
@@ -111,7 +111,7 @@ namespace TheLocalVet.ViewModels
         private void ViewInMap()
         {
 			if(!string.IsNullOrEmpty(Address))
-            	ExternalMaps.Plugin.CrossExternalMaps.Current.NavigateTo(Name, _vetModel.Address.Latitude, _vetModel.Address.Longitude);
+				Plugin.ExternalMaps.CrossExternalMaps.Current.NavigateTo(Name, _vetModel.Address.Latitude, _vetModel.Address.Longitude);
         }
 
         private void VisitWeb()

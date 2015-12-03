@@ -9,8 +9,9 @@ using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using TheLocalVet.Pages.NearestVet;
 using Xamarin.Forms;
-using Geolocator.Plugin;
+using Plugin.Geolocator;
 using TheLocalVet.Languages;
+using TheLocalVet.Pages;
 
 namespace TheLocalVet.ViewModels
 {

@@ -29,6 +29,12 @@ namespace TheLocalVet.Pages.NearestVet
             NavigationPage.SetHasNavigationBar(this, true);
 			_nav = nav;
 
+			ToolbarItem toolbarItem = new ToolbarItem ("Filter", null, async () => {
+				await _nav.PushModalAsync(new FilterPage());
+			}, 0, 0);
+
+			//ToolbarItems.Add (toolbarItem);
+
             InitGui();
         }
 
