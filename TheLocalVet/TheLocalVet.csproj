@@ -43,6 +43,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Languages\AppResources.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.en-US.resx</DependentUpon>
+    </Compile>
     <Compile Include="Languages\AppResources.nb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -142,16 +147,19 @@
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
   <ItemGroup>
-    <Content Include="Languages\AppResources.resx">
+    <EmbeddedResource Include="Languages\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="Languages\AppResources.nb.resx">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\AppResources.nb.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.nb.Designer.cs</LastGenOutput>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Languages\AppResources.en-US.resx" />
+    <EmbeddedResource Include="Languages\AppResources.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

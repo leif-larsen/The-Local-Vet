@@ -68,7 +68,7 @@ namespace TheLocalVet.ViewModels
             if(SelectedSearchType == 0)
             {
 				var locator = CrossGeolocator.Current;
-				var position = await locator.GetPositionAsync (5000);
+				var position = await locator.GetPositionAsync (10000);
                 double distance = GetChoosenDistance();
                 Debug.WriteLine("{0} {1} {2}", position.Latitude, position.Longitude, distance);
 				await _navigation.PushAsync(new NearestVetSearchResultPage(string.Empty, position.Latitude, position.Longitude, distance, _navigation));

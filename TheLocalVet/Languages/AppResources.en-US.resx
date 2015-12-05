@@ -129,6 +129,38 @@
     <value>Email </value>
     <comment>Title of the email field</comment>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>Generic error title</comment>
+  </data>
+  <data name="FailedToFindVet" xml:space="preserve">
+    <value>Unfortunately we could not locate any vets in the area you searched. Try again, and maybe widen the search area.</value>
+  </data>
+  <data name="FeedbackEmailSubject" xml:space="preserve">
+    <value>The Local Vet feedback</value>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>fhjoids fsd hfoisduf jhwenf irehg9e8o g0rs gr gjpifd jvfid jofidghiofdn gviofd iofd goifd hiogdf </value>
+  </data>
+  <data name="FeedbackTitleText" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="InfoPageTitle" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>hgiordjgnoifdhgoishfiusdhfiusdgfu9dsgh us ifu sdhuf sdhofsdho fse fhosd fhosdi fodis fidos fos jfiods ohids fsd</value>
+  </data>
+  <data name="InfoTitleText" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+    <comment>Generic loading text</comment>
+  </data>
+  <data name="NearestVetPageTitle" xml:space="preserve">
+    <value>Nearest Vet</value>
+  </data>
   <data name="NearestVetSinglePageAddress" xml:space="preserve">
     <value>Address</value>
     <comment>Address of a single vet</comment>
@@ -169,36 +201,12 @@
     <value>Phone</value>
     <comment>Title of the phone field</comment>
   </data>
-  <data name="smallvet" xml:space="preserve">
-    <value>Small vet</value>
-    <comment>Competency small vet</comment>
-  </data>
-  <data name="Website" xml:space="preserve">
-    <value>Website</value>
-    <comment>Title of the website field</comment>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
-    <comment>Generic "Yes"</comment>
-  </data>
-  <data name="ViewInMap" xml:space="preserve">
-    <value>View in map</value>
-    <comment>Text for opening the native map application with the position of the current vet</comment>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Error</value>
-    <comment>Generic error title</comment>
-  </data>
-  <data name="FailedToFindVet" xml:space="preserve">
-    <value>Unfortunately we could not locate any vets in the area you searched. Try again, and maybe widen the search area.</value>
-  </data>
-  <data name="Loading" xml:space="preserve">
-    <value>Loading</value>
-    <comment>Generic loading text</comment>
-  </data>
   <data name="Search" xml:space="preserve">
     <value>Search</value>
     <comment>Generic search text</comment>
+  </data>
+  <data name="SearchNearestVetDistance" xml:space="preserve">
+    <value>Distance</value>
   </data>
   <data name="SearchNearestVetLabel" xml:space="preserve">
     <value>Search by place or your location</value>
@@ -222,31 +230,23 @@
   <data name="SearchPlaceIsEmpty" xml:space="preserve">
     <value>When using search by place the text field cannot be empty.</value>
   </data>
-  <data name="SearchNearestVetDistance" xml:space="preserve">
-    <value>Distance</value>
-  </data>
-  <data name="FeedbackEmailSubject" xml:space="preserve">
-    <value>The Local Vet feedback</value>
-  </data>
-  <data name="FeedbackText" xml:space="preserve">
-    <value>fhjoids fsd hfoisduf jhwenf irehg9e8o g0rs gr gjpifd jvfid jofidghiofdn gviofd iofd goifd hiogdf </value>
-  </data>
-  <data name="FeedbackTitleText" xml:space="preserve">
-    <value>Feedback</value>
-  </data>
-  <data name="InfoPageTitle" xml:space="preserve">
-    <value>Info</value>
-  </data>
-  <data name="InfoText" xml:space="preserve">
-    <value>hgiordjgnoifdhgoishfiusdhfiusdgfu9dsgh us ifu sdhuf sdhofsdho fse fhosd fhosdi fodis fidos fos jfiods ohids fsd</value>
-  </data>
-  <data name="InfoTitleText" xml:space="preserve">
-    <value>Info</value>
-  </data>
-  <data name="NearestVetPageTitle" xml:space="preserve">
-    <value>Nearest Vet</value>
-  </data>
   <data name="SendFeedbackButtonText" xml:space="preserve">
     <value>Send feedback</value>
+  </data>
+  <data name="smallvet" xml:space="preserve">
+    <value>Small vet</value>
+    <comment>Competency small vet</comment>
+  </data>
+  <data name="ViewInMap" xml:space="preserve">
+    <value>View in map</value>
+    <comment>Text for opening the native map application with the position of the current vet</comment>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+    <comment>Title of the website field</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Generic "Yes"</comment>
   </data>
 </root>

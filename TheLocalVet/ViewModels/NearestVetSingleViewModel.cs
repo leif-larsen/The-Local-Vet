@@ -116,7 +116,7 @@ namespace TheLocalVet.ViewModels
 
         private void VisitWeb()
         {
-            Debug.WriteLine("{0} - {1}", Website, new Uri(Website));
+            //Debug.WriteLine("{0} - {1}", Website, new Uri(Website));
 			if(!string.IsNullOrEmpty(Website))
             	Device.OpenUri(new Uri(Website));
         }

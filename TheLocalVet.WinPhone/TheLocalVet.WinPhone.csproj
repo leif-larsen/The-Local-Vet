@@ -97,10 +97,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\EmailSender.cs" />
-    <Compile Include="Helpers\Geolocator.cs" />
     <Compile Include="Helpers\ParseHelper.cs" />
-    <Compile Include="Helpers\PhoneDialer.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -149,6 +146,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="PluginsHelp\GeolocatorReadme.txt" />
     <Content Include="README_FIRST.txt" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -182,19 +180,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Acr.UserDialogs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Acr.UserDialogs.4.1.8\lib\wp8\Acr.UserDialogs.dll</HintPath>
+      <HintPath>..\TheLocalVet\packages\Acr.UserDialogs.4.2.0\lib\wp8\Acr.UserDialogs.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Acr.UserDialogs.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Acr.UserDialogs.4.1.8\lib\wp8\Acr.UserDialogs.Interface.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ExternalMaps.Plugin, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.1.0.5\lib\wp8\ExternalMaps.Plugin.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ExternalMaps.Plugin.Abstractions, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.1.0.5\lib\wp8\ExternalMaps.Plugin.Abstractions.dll</HintPath>
+      <HintPath>..\TheLocalVet\packages\Acr.UserDialogs.4.2.0\lib\wp8\Acr.UserDialogs.Interface.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
@@ -209,21 +199,46 @@
       <HintPath>..\TheLocalVet\packages\MvvmLightLibs.5.2.0.0\lib\wp8\GalaSoft.MvvmLight.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Lotz.Xam.Messaging, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugins.Messaging.2.3.0\lib\wp8\Lotz.Xam.Messaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Lotz.Xam.Messaging.Abstractions, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugins.Messaging.2.3.0\lib\wp8\Lotz.Xam.Messaging.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\TheLocalVet\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <HintPath>..\TheLocalVet\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\TheLocalVet\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Parse, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Parse.1.6.0\lib\wp8\Parse.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.0.5813.39035, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\NUnit.3.0.1\lib\dotnet\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Parse.Phone, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Parse.1.6.0\lib\wp8\Parse.Phone.dll</HintPath>
+    <Reference Include="Parse, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Parse.1.6.2\lib\wp8\Parse.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Parse.Phone, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Parse.1.6.2\lib\wp8\Parse.Phone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.ExternalMaps, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.2.0.0\lib\wp8\Plugin.ExternalMaps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.ExternalMaps.Abstractions, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.2.0.0\lib\wp8\Plugin.ExternalMaps.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Geolocator, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.Geolocator.2.0.0\lib\wp8\Plugin.Geolocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.Geolocator.2.0.0\lib\wp8\Plugin.Geolocator.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -234,20 +249,20 @@
       <HintPath>..\TheLocalVet\packages\MvvmLightLibs.5.2.0.0\lib\wp8\System.Windows.Interactivity.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.Forms.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\lib\WP80\Xamarin.Forms.Core.dll</HintPath>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\lib\WP80\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\lib\WP80\Xamarin.Forms.Platform.dll</HintPath>
+      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\lib\WP80\Xamarin.Forms.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.Forms.Platform.WP8, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\lib\WP80\Xamarin.Forms.Platform.WP8.dll</HintPath>
+    <Reference Include="Xamarin.Forms.Platform.WP8, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\lib\WP80\Xamarin.Forms.Platform.WP8.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.Forms.Xaml, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\lib\WP80\Xamarin.Forms.Xaml.dll</HintPath>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\lib\WP80\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -266,8 +281,8 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-    <Error Condition="!Exists('..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
   </Target>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Import Project="..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\TheLocalVet\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\TheLocalVet\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
 </Project>
