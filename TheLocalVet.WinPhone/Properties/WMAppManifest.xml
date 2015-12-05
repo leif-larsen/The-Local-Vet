@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
-  <DefaultLanguage xmlns="" code="en-US" />
+  <DefaultLanguage xmlns="" code="nb" />
   <Languages xmlns="">
     <Language code="nb" />
     <Language code="nb-NO" />
   </Languages>
-  <App xmlns="" ProductID="{8ffff8f7-6c36-4e40-bb00-621671ed3a10}" Title="The Local Vet" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="TheLocalVet.WinPhone author" Description="An app to find you nearest vet and emergency vet contact." Publisher="TheLocalVet.WinPhone" PublisherID="{7c7c4a58-b07f-45b7-9c8d-55ee587851b3}">
+  <App xmlns="" ProductID="{8ffff8f7-6c36-4e40-bb00-621671ed3a10}" Title="Din Lokale Dyrlege" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Ing. Leif H. Larsen" Description="An app to find you nearest vet and emergency vet contact." Publisher="Ing. Leif H. Larsen" PublisherID="{7c7c4a58-b07f-45b7-9c8d-55ee587851b3}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

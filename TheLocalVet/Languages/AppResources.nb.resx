@@ -117,8 +117,151 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Test" xml:space="preserve">
-    <value>Testing</value>
-    <comment>Just a test</comment>
+  <data name="bigvet" xml:space="preserve">
+    <value>Stordyrsveterinær</value>
+    <comment>Competency big vet</comment>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distanse</value>
+    <comment>Title of the distance field</comment>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-post</value>
+    <comment>Title of the email field</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Feil</value>
+    <comment>Generic error title</comment>
+  </data>
+  <data name="FailedToFindVet" xml:space="preserve">
+    <value>Vi klarte ikke å finne noen dyrleger i ditt område. Forsøk igjen, og prøv å utvid søkeområdet.</value>
+  </data>
+  <data name="FeedbackEmailSubject" xml:space="preserve">
+    <value>Tilbakemelding fra Din Lokale Dyrlege</value>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>fhjoids fsd hfoisduf jhwenf irehg9e8o g0rs gr gjpifd jvfid jofidghiofdn gviofd iofd goifd hiogdf </value>
+  </data>
+  <data name="FeedbackTitleText" xml:space="preserve">
+    <value>Tilbakemelding</value>
+  </data>
+  <data name="FilterButton" xml:space="preserve">
+    <value>Filtrer</value>
+  </data>
+  <data name="FilterOnLabel" xml:space="preserve">
+    <value>Filtrer på</value>
+  </data>
+  <data name="FilterPageTitle" xml:space="preserve">
+    <value>Filtrer</value>
+  </data>
+  <data name="InfoPageTitle" xml:space="preserve">
+    <value>Informasjon</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>hgiordjgnoifdhgoishfiusdhfiusdgfu9dsgh us ifu sdhuf sdhofsdho fse fhosd fhosdi fodis fidos fos jfiods ohids fsd</value>
+  </data>
+  <data name="InfoTitleText" xml:space="preserve">
+    <value>Informasjon</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Laster</value>
+    <comment>Generic loading text</comment>
+  </data>
+  <data name="NearestVetPageTitle" xml:space="preserve">
+    <value>Nærmeste dyrlege</value>
+  </data>
+  <data name="NearestVetSinglePageAddress" xml:space="preserve">
+    <value>Adresse</value>
+    <comment>Address of a single vet</comment>
+  </data>
+  <data name="NearestVetSinglePageCompetency" xml:space="preserve">
+    <value>Kompetanse</value>
+    <comment>Title of the competency field</comment>
+  </data>
+  <data name="NearestVetSinglePageEmergencyCall" xml:space="preserve">
+    <value>Vaktservice</value>
+  </data>
+  <data name="NearestVetSinglePageExpertise" xml:space="preserve">
+    <value>Ekspertise</value>
+    <comment>Title of the expertise field</comment>
+  </data>
+  <data name="NearestVetSinglePageHomeVisit" xml:space="preserve">
+    <value>Hjemmebesøk</value>
+    <comment>Title of the home visit field</comment>
+  </data>
+  <data name="NearestVetSinglePageName" xml:space="preserve">
+    <value>Navn</value>
+    <comment>Name of a single vet</comment>
+  </data>
+  <data name="NearestVetSinglePageOpeningHours" xml:space="preserve">
+    <value>Åpningstider</value>
+    <comment>Title of the opening hours field</comment>
+  </data>
+  <data name="NearestVetSinglePageTitle" xml:space="preserve">
+    <value>Detaljer</value>
+    <comment>The title of a single vet</comment>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nei</value>
+    <comment>Generic "No"</comment>
+  </data>
+  <data name="ParseHelperError" xml:space="preserve">
+    <value>En feil har oppstått i ParseHelper.</value>
+    <comment>When an exception is caught in ParseHelper.cs, this text will be sent, with the exception message</comment>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+    <comment>Title of the phone field</comment>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Søk</value>
+    <comment>Generic search text</comment>
+  </data>
+  <data name="SearchNearestVetDistance" xml:space="preserve">
+    <value>Distanse</value>
+  </data>
+  <data name="SearchNearestVetLabel" xml:space="preserve">
+    <value>Søk etter sted eller rundt din lokasjon</value>
+  </data>
+  <data name="SearchNearestVetLocation" xml:space="preserve">
+    <value>Din lokasjon</value>
+  </data>
+  <data name="SearchNearestVetLocationLabel" xml:space="preserve">
+    <value>Søk i nærheten av din lokasjon</value>
+  </data>
+  <data name="SearchNearestVetPickerText" xml:space="preserve">
+    <value>Type søk</value>
+    <comment>The label for the type of search you can use.</comment>
+  </data>
+  <data name="SearchNearestVetPlace" xml:space="preserve">
+    <value>Sted</value>
+  </data>
+  <data name="SearchNearestVetPlaceLabel" xml:space="preserve">
+    <value>Søk etter sted</value>
+  </data>
+  <data name="SearchPlaceIsEmpty" xml:space="preserve">
+    <value>Når du søker etter sted må du fylle ut stedsfeltet.</value>
+  </data>
+  <data name="SendFeedbackButtonText" xml:space="preserve">
+    <value>Send tilbakemelding</value>
+  </data>
+  <data name="smallvet" xml:space="preserve">
+    <value>Smådyrsveterinær</value>
+    <comment>Competency small vet</comment>
+  </data>
+  <data name="SortByLabel" xml:space="preserve">
+    <value>Sorter etter</value>
+  </data>
+  <data name="ViewInMap" xml:space="preserve">
+    <value>Vis i kart</value>
+    <comment>Text for opening the native map application with the position of the current vet</comment>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Hjemmeside</value>
+    <comment>Title of the website field</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+    <comment>Generic "Yes"</comment>
   </data>
 </root>
