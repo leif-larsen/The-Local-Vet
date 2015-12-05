@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+             xmlns:viewModel="clr-namespace:TheLocalVet.ViewModels"
+             x:Class="TheLocalVet.Pages.InfoPage">
+    <ContentPage.BindingContext>
+        <viewModel:InfoPageViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+	    <Label Text="{i18n:Translate InfoTitleText }" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Editor Text="{i18n:Translate InfoText}" />
+        <Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" />
+    </StackLayout>
+</ContentPage>

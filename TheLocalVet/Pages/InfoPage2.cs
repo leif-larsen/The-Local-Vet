@@ -9,9 +9,9 @@ using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages
 {
-    public class InfoPage : ContentPage
+    public class InfoPage2 : ContentPage
     {
-        public InfoPage()
+        public InfoPage2()
         {
             this.BindingContext = new InfoPageViewModel();
 			Title = AppResources.InfoPageTitle;
