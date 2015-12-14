@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+				x:Class="TheLocalVet.Pages.NearestVetSearchPage">
+
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="{i18n:Translate SearchNearestVetLabel}" />
+			<Picker Title="{i18n:Translate SearchNearestVetPickerText}" SelectedIndex="{Binding SelectedSearchType}">
+				<Picker.Items>
+					<x:String>Søk rundt din lokasjon</x:String>
+					<x:String>Søk etter sted</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<Picker Title="{i18n:Translate SearchNearestVetDistance}" IsVisible="{Binding IsDistanceFieldVisible}" SelectedIndex="{Binding Distance}" >
+				<Picker.Items>
+					<x:String>1 km</x:String>
+					<x:String>2 km</x:String>
+					<x:String>5 km</x:String>
+					<x:String>10 km</x:String>
+					<x:String>20 km</x:String>
+					<x:String>50 km</x:String>
+					<x:String>100 km</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<Entry Text="{Binding SearchPlace}" IsVisible="{Binding IsPlaceFieldVisible}" />
+
+			<Button Command="{Binding SearchCommand}" Text="{i18n:Translate Search}" />
+		</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>

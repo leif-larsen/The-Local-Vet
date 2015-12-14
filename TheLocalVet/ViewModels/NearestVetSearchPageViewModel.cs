@@ -7,11 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
-using TheLocalVet.Pages.NearestVet;
+using TheLocalVet.Pages;
 using Xamarin.Forms;
 using Plugin.Geolocator;
 using TheLocalVet.Languages;
-using TheLocalVet.Pages;
 
 namespace TheLocalVet.ViewModels
 {
@@ -34,7 +33,7 @@ namespace TheLocalVet.ViewModels
         public int SelectedSearchType
         {
             get { return _selectedSearchType; }
-            set { _selectedSearchType = value;  OnPropertyChanged("SelectedSearchType"); }
+			set { _selectedSearchType = value;  OnPropertyChanged("SelectedSearchType"); OnPropertyChanged ("IsPlaceFieldVisible"); OnPropertyChanged ("IsDistanceFieldVisible"); }
         }
 
         private int _distance;
@@ -52,6 +51,67 @@ namespace TheLocalVet.ViewModels
             get { return _error; }
             set { _error = value;  OnPropertyChanged("Error"); }
         }
+
+		public bool IsPlaceFieldVisible
+		{
+			get 
+			{
+				if (SelectedSearchType == 0)
+					return false;
+				else
+					return true;
+			}
+		}
+
+		public bool IsDistanceFieldVisible
+		{
+			get 
+			{
+				if (SelectedSearchType == 0)
+					return true;
+				else
+					return false;
+			}
+		}
+
+		public List<string> Distances = new List<string> ();
+
+		private void GetDistances()
+		{
+			var distances = Enum.GetValues (typeof(DistanceToVet));
+			foreach (DistanceToVet value in distances) {
+				string title;
+
+				switch (value) {
+				case DistanceToVet.km1:
+					title = "1 km";
+					break;
+				case DistanceToVet.km2:
+					title = "2 km";
+					break;
+				case DistanceToVet.km5:
+					title = "5 km";
+					break;
+				case DistanceToVet.km10:
+					title = "10 km";
+					break;
+				case DistanceToVet.km20:
+					title = "20 km";
+					break;
+				case DistanceToVet.km50:
+					title = "50 km";
+					break;
+				case DistanceToVet.km100:
+					title = "100 km";
+					break;
+				default:
+					title = "10 km";
+					break;
+				}
+
+				Distances.Add (title);
+			}
+		}
 
 		public NearestVetSearchPageViewModel(INavigation navigation)
         {

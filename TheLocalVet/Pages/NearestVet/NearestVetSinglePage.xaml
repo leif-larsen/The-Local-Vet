@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+			x:Class="TheLocalVet.Pages.NearestVetSinglePage">
+
+	<ContentPage.Content>
+
+		<StackLayout>
+			<Label Text="{Binding Name}" />
+			<Button Text="{Binding Phone}" Command="{Binding CallVetCommand}" />
+			<Label Text="{Binding Address}" />
+			<Button Text="{Binding Email}" Command="{Binding EmailVetCommand}" />
+			<Button Text="{Binding Website}" Command="{Binding VisitWebCommand}" />
+			<Label Text="{i18n:Translate NearestVetSinglePageCompetency}" />
+			<Label Text="{Binding CompetencyString}" />
+			<Label Text="{Binding HomeVisit}" />
+			<Button Text="{i18n:Translate ViewInMap}" Command="{Binding ViewInMapCommand}" />
+		</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>

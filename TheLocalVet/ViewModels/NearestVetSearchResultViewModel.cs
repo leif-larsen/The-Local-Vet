@@ -9,6 +9,7 @@ using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using Xamarin.Forms;
 using TheLocalVet.Languages;
+using System.Collections.ObjectModel;
 
 namespace TheLocalVet.ViewModels
 {
@@ -16,7 +17,7 @@ namespace TheLocalVet.ViewModels
     {
         private IParseHelper _parseHelper;
 
-        private List<VetModel> _vets = new List<VetModel>();
+		private ObservableCollection<VetModel> _vets = new ObservableCollection<VetModel>();
         private string _place;
         private double _latitude;
         private double _longitude;
@@ -24,7 +25,7 @@ namespace TheLocalVet.ViewModels
 
         public event EventHandler<EventArgs> OnSearchForVetFailed;
 
-        public List<VetModel> Vets
+        public ObservableCollection<VetModel> Vets
         {
             get { return _vets; }
             set { _vets = value;  OnPropertyChanged("Vets"); }

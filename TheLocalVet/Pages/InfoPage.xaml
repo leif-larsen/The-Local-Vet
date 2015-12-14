@@ -10,7 +10,7 @@
 
     <StackLayout>
 	    <Label Text="{i18n:Translate InfoTitleText }" VerticalOptions="Center" HorizontalOptions="Center" />
-        <Editor Text="{i18n:Translate InfoText}" />
+        <Label Text="{i18n:Translate InfoText}" VerticalOptions="Center" HorizontalOptions="Center"  />
         <Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" />
     </StackLayout>
 </ContentPage>

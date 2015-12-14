@@ -40,9 +40,9 @@ namespace TheLocalVet.ViewModels
             get
             {
                 if (_vetModel.HomeVisit)
-                    return AppResources.Yes;
+					return "Tilbyr hjemmebesøk";
                 else
-                    return AppResources.No;
+                    return "Tilbyr ikke hjemmebesøk";
             }
             set { OnPropertyChanged("HomeVisit"); }
         }

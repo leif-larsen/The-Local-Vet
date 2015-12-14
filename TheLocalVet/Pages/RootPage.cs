@@ -1,4 +1,4 @@
-﻿using TheLocalVet.Pages.NearestVet;
+﻿using TheLocalVet.Pages;
 using Xamarin.Forms;
 using TheLocalVet.Languages;
 

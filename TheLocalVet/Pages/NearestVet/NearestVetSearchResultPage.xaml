@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+				x:Class="TheLocalVet.Pages.NearestVetSearchResultPage">
+
+	<ContentPage.Content>
+			<StackLayout>
+				<ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected">
+					<DataTemplate>
+						<TextCell Text="{Binding Path=Name.ToString()}" Detail="{Binding Path=Address.ToString()}" />
+					</DataTemplate>
+				</ListView>
+			</StackLayout>
+	</ContentPage.Content>
+
+</ContentPage>

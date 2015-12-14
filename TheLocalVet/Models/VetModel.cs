@@ -30,5 +30,10 @@ namespace TheLocalVet.Models
             HomeVisit = false;
             MainCompetency = Competency.smallvet;
         }
+
+		public override string ToString ()
+		{
+			return string.Format ("{0}", Name);
+		}
     }
 }

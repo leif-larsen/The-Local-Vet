@@ -67,9 +67,6 @@
     <Compile Include="Pages\InfoPage.xaml.cs">
       <DependentUpon>InfoPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\NearestVet\NearestVetSearchPage.cs" />
-    <Compile Include="Pages\NearestVet\NearestVetSearchResultPage.cs" />
-    <Compile Include="Pages\NearestVet\NearestVetSinglePage.cs" />
     <Compile Include="TheLocalVet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
@@ -80,7 +77,19 @@
     <Compile Include="ViewModels\NearestVetSearchResultViewModel.cs" />
     <Compile Include="ViewModels\NearestVetSingleViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
-    <Compile Include="Pages\FilterPage.cs" />
+    <Compile Include="Pages\NearestVet\NearestVetSinglePage.xaml.cs">
+      <DependentUpon>NearestVetSinglePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NearestVet\NearestVetSearchResultPage.xaml.cs">
+      <DependentUpon>NearestVetSearchResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NearestVet\NearestVetSearchPage.xaml.cs">
+      <DependentUpon>NearestVetSearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\BindablePicker.cs" />
+    <Compile Include="Pages\FilterPage.xaml.cs">
+      <DependentUpon>FilterPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -158,6 +167,18 @@
     <EmbeddedResource Include="Languages\AppResources.nb.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.nb.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\NearestVet\NearestVetSinglePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\NearestVet\NearestVetSearchResultPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\NearestVet\NearestVetSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FilterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
