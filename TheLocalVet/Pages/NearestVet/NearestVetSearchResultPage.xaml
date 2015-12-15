@@ -3,15 +3,39 @@
 				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
 				x:Class="TheLocalVet.Pages.NearestVetSearchResultPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>			
+			<Style x:Key="RegularTextLabel" TargetType="Label">
+				<Setter Property="FontSize" Value="28" />
+			</Style>
+
+			<Style x:Key="ListViewStyle" TargetType="ListView">
+				<Setter Property="SeparatorVisibility" Value="None" />
+			</Style>
+
+			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
+			</Color>
+		</ResourceDictionary>
+	</ContentPage.Resources>
 
 	<ContentPage.Content>
+		<ScrollView BackgroundColor="White">
 			<StackLayout>
-				<ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="130" />
+					</Grid.RowDefinitions>
+					<Image Source="interface11.jpg" Grid.Row="0" />
+				</Grid>
+
+				<ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected" Style="{StaticResource ListViewStyle}">
 					<DataTemplate>
-						<TextCell Text="{Binding Path=Name.ToString()}" Detail="{Binding Path=Address.ToString()}" />
+						<TextCell Text="{Binding Path=Name.ToString()}" Detail="{Binding Path=Address.ToString()}" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" />
 					</DataTemplate>
 				</ListView>
 			</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 
 </ContentPage>

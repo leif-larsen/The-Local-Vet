@@ -4,32 +4,64 @@
 				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
 				x:Class="TheLocalVet.Pages.NearestVetSearchPage">
 
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="TitleText" TargetType="Label">
+				<Setter Property="FontSize" Value="20" />
+			</Style>
+			<Style x:Key="RegularTextButton" TargetType="Button">
+				<Setter Property="FontSize" Value="28" />
+			</Style>
+			<Style x:Key="RegularTextLabel" TargetType="Label">
+				<Setter Property="FontSize" Value="28" />
+			</Style>
+
+			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
+				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
+			</Color>
+		</ResourceDictionary>
+	</ContentPage.Resources>
 	<ContentPage.Content>
-		<StackLayout>
-			<Label Text="{i18n:Translate SearchNearestVetLabel}" />
-			<Picker Title="{i18n:Translate SearchNearestVetPickerText}" SelectedIndex="{Binding SelectedSearchType}">
-				<Picker.Items>
-					<x:String>Søk rundt din lokasjon</x:String>
-					<x:String>Søk etter sted</x:String>
-				</Picker.Items>
-			</Picker>
+		<ScrollView BackgroundColor="White">
+			<StackLayout>
 
-			<Picker Title="{i18n:Translate SearchNearestVetDistance}" IsVisible="{Binding IsDistanceFieldVisible}" SelectedIndex="{Binding Distance}" >
-				<Picker.Items>
-					<x:String>1 km</x:String>
-					<x:String>2 km</x:String>
-					<x:String>5 km</x:String>
-					<x:String>10 km</x:String>
-					<x:String>20 km</x:String>
-					<x:String>50 km</x:String>
-					<x:String>100 km</x:String>
-				</Picker.Items>
-			</Picker>
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="130" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+					<Image Source="interface11.jpg" Grid.Row="0" />
 
-			<Entry Text="{Binding SearchPlace}" IsVisible="{Binding IsPlaceFieldVisible}" />
+					<Label Text="{i18n:Translate SearchNearestVetLabel}" Grid.Row="1" HorizontalOptions="CenterAndExpand" Style="{StaticResource TitleText}" TextColor="{StaticResource TitleColor}" />
+				</Grid>
 
-			<Button Command="{Binding SearchCommand}" Text="{i18n:Translate Search}" />
-		</StackLayout>
+					<Picker Title="{i18n:Translate SearchNearestVetPickerText}" WidthRequest="250" SelectedIndex="{Binding SelectedSearchType}" HorizontalOptions="CenterAndExpand" >
+						<Picker.Items>
+							<x:String>Søk rundt din lokasjon</x:String>
+							<x:String>Søk etter sted</x:String>
+						</Picker.Items>
+					</Picker>
+
+					<Picker Title="{i18n:Translate SearchNearestVetDistance}" WidthRequest="250" IsVisible="{Binding IsDistanceFieldVisible}" SelectedIndex="{Binding Distance}" HorizontalOptions="CenterAndExpand">
+						<Picker.Items>
+							<x:String>1 km</x:String>
+							<x:String>2 km</x:String>
+							<x:String>5 km</x:String>
+							<x:String>10 km</x:String>
+							<x:String>20 km</x:String>
+							<x:String>50 km</x:String>
+							<x:String>100 km</x:String>
+						</Picker.Items>
+					</Picker>
+
+					<Entry Text="{Binding SearchPlace}" WidthRequest="250" IsVisible="{Binding IsPlaceFieldVisible}" HorizontalOptions="CenterAndExpand" TextColor="Black" />
+
+					<Button Command="{Binding SearchCommand}" Text="{i18n:Translate Search}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" />
+			</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 
 </ContentPage>

@@ -9,8 +9,8 @@ using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using Xamarin.Forms;
 using Plugin.ExternalMaps;
-using Lotz.Xam.Messaging;
 using TheLocalVet.Languages;
+using Plugin.Messaging;
 
 namespace TheLocalVet.ViewModels
 {

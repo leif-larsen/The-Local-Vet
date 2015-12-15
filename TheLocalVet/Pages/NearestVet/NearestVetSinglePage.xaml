@@ -2,21 +2,71 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+			Title="{Binding Name}"
 			x:Class="TheLocalVet.Pages.NearestVetSinglePage">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			
+			<Style x:Key="TitleText" TargetType="Label">
+				<Setter Property="FontSize" Value="45" />
+			</Style>
+			<Style x:Key="RegularTextButton" TargetType="Button">
+				<Setter Property="FontSize" Value="18" />
+			</Style>
+			<Style x:Key="RegularTextLabel" TargetType="Label">
+				<Setter Property="FontSize" Value="18" />
+			</Style>
+
+			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
+				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
+			</Color>
+		</ResourceDictionary>
+	</ContentPage.Resources>
 
 	<ContentPage.Content>
 
-		<StackLayout>
-			<Label Text="{Binding Name}" />
-			<Button Text="{Binding Phone}" Command="{Binding CallVetCommand}" />
-			<Label Text="{Binding Address}" />
-			<Button Text="{Binding Email}" Command="{Binding EmailVetCommand}" />
-			<Button Text="{Binding Website}" Command="{Binding VisitWebCommand}" />
-			<Label Text="{i18n:Translate NearestVetSinglePageCompetency}" />
-			<Label Text="{Binding CompetencyString}" />
-			<Label Text="{Binding HomeVisit}" />
-			<Button Text="{i18n:Translate ViewInMap}" Command="{Binding ViewInMapCommand}" />
-		</StackLayout>
+		<ScrollView BackgroundColor="White">
+			<StackLayout HorizontalOptions="CenterAndExpand">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="130" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="25" />
+					</Grid.RowDefinitions>
+					<Image Source="interface11.jpg" Grid.Row="0" />
+					<Label Text="{Binding Name}" TextColor="{StaticResource TitleColor}" Grid.Row="1" HorizontalOptions="CenterAndExpand" />
+					<Button Text="{Binding Phone}" Style="{StaticResource RegularTextButton}" Command="{Binding CallVetCommand}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" Image="telefon1.jpg"  Grid.Row="2" />
+				</Grid>
+
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+					</Grid.RowDefinitions>
+					<Label Text="{Binding Address}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" HorizontalOptions="StartAndExpand" />
+					<Button Text="{Binding Email}" Command="{Binding EmailVetCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="1" HorizontalOptions="StartAndExpand" />
+					<Button Text="{Binding Website}" Command="{Binding VisitWebCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="2" HorizontalOptions="StartAndExpand" />
+				</Grid>
+
+				<Grid RowSpacing="5">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+					<Label Text="{i18n:Translate NearestVetSinglePageCompetency}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" HorizontalOptions="StartAndExpand" />
+					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="1" HorizontalOptions="StartAndExpand" />
+					<Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="2" HorizontalOptions="StartAndExpand" />
+				</Grid>
+
+				<Button Text="{i18n:Translate ViewInMap}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextButton}" Command="{Binding ViewInMapCommand}" HorizontalOptions="Center" />
+			</StackLayout>
+		</ScrollView>
 
 	</ContentPage.Content>
 </ContentPage>

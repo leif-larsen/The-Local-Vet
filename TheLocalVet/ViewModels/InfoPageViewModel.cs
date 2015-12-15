@@ -5,8 +5,8 @@ using System.Reflection.Emit;
 using System.Text;
 using TheLocalVet.Interfaces;
 using Xamarin.Forms;
-using Lotz.Xam.Messaging;
 using TheLocalVet.Languages;
+using Plugin.Messaging;
 
 namespace TheLocalVet.ViewModels
 {

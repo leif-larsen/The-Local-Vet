@@ -17,6 +17,9 @@ namespace TheLocalVet.iOS
 
 			ParseClient.Initialize("eKWSJpWP5VDZV8QKfwVIVKLnjvPxsdhvl2lKI2Dd", "aKV1AIEnUtpuRVco86b6euTdz1e0PANoGmllJ9sD");
 
+			UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB (149,149,149);
+			UINavigationBar.Appearance.TintColor = UIColor.White;
+
 			// Code for starting up the Xamarin Test Cloud Agent
 			#if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
