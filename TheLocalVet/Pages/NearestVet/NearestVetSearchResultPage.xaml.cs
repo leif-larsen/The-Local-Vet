@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using TheLocalVet.ViewModels;
 using TheLocalVet.Models;
+using System.Diagnostics;
 
 namespace TheLocalVet.Pages
 {
@@ -15,7 +16,7 @@ namespace TheLocalVet.Pages
 		public NearestVetSearchResultPage (string place, double latittude, double longitude, double distance, INavigation nav)
 		{
 			InitializeComponent ();
-			_vm = new NearestVetSearchResultViewModel(place, latittude, longitude, distance);
+			_vm = new NearestVetSearchResultViewModel(place, nav, latittude, longitude, distance);
 			BindingContext = _vm;
 			_vm.OnSearchForVetFailed += OnSearchForVetFailed;
 			GetVets ();

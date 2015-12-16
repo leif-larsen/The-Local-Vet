@@ -35,6 +35,11 @@ namespace TheLocalVet.ViewModels
             set { OnPropertyChanged("Address"); }
         }
 
+		public bool IsAddressVisible
+		{
+			get { return string.IsNullOrEmpty (Address) ? false : true; }
+		}
+
         public string HomeVisit
         {
             get
@@ -59,17 +64,38 @@ namespace TheLocalVet.ViewModels
             set { OnPropertyChanged("CompetencyString"); }
         }
 
+		public bool IsEmailWebSitePhoneVisible
+		{
+			get 
+			{
+				if (!string.IsNullOrEmpty (Email) || !string.IsNullOrEmpty (Address) || !string.IsNullOrEmpty (Website))
+					return true;
+				else
+					return false;
+			}
+		}
+
         public string Email
         {
             get { return _vetModel.Email; }
             set { OnPropertyChanged("Email"); }
         }
 
+		public bool IsEmailVisible
+		{
+			get { return string.IsNullOrEmpty (Email) ? false : true; }
+		}
+
         public string Website
         {
             get { return _vetModel.WebSite; }
             set { OnPropertyChanged("Website"); }
         }
+
+		public bool IsWebsiteVisible
+		{
+			get { return string.IsNullOrEmpty (Website) ? false : true; }
+		}
 
         public string Phone
         {

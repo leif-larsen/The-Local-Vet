@@ -3,6 +3,64 @@
 				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
 				x:Class="TheLocalVet.Pages.FilterPage">
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="TitleText" TargetType="Label">
+				<Setter Property="FontSize" Value="20" />
+			</Style>
+			<Style x:Key="RegularTextButton" TargetType="Button">
+				<Setter Property="FontSize" Value="28" />
+			</Style>
+			<Style x:Key="RegularTextLabel" TargetType="Label">
+				<Setter Property="FontSize" Value="15" />
+			</Style>
+
+			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
+				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
+			</Color>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
 	<ContentPage.Content>
+		<StackLayout BackgroundColor="White">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="130" />
+				</Grid.RowDefinitions>
+				<Image Source="interface11.jpg" Grid.Row="0" />
+			</Grid>
+
+			<Label Text="Filtrer på" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
+
+				<Picker Title="Filtrer på" Grid.Row="1" WidthRequest="250" SelectedIndex="{Binding SelectedFilterType}" HorizontalOptions="CenterAndExpand" >
+					<Picker.Items>
+						<x:String>Kompetanse</x:String>
+						<x:String>Hjemmebesøk</x:String>
+					</Picker.Items>
+				</Picker>
+
+			<Label Text="Kompetanse" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
+				<Picker Title="Kompetanse" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="250" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
+					<Picker.Items>
+						<x:String>Smådyrsveterinær</x:String>
+						<x:String>Stordyrsveterinær</x:String>
+					</Picker.Items>
+				</Picker>
+
+			<Label Text="Hjemmebesøk" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
+				<Picker Title="Hjemmebesøk" IsEnabled="{Binding IsHomeVisitAvailable}" WidthRequest="250" SelectedIndex="{Binding SelectedSearchType}" HorizontalOptions="CenterAndExpand" >
+					<Picker.Items>
+						<x:String>Ja</x:String>
+						<x:String>Nei</x:String>
+					</Picker.Items>
+				</Picker>
+
+				<Button Text="Filtrer" Command="{Binding CloseWindowCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextButton}" />
+				<Button Text="Nullstill" Command="{Binding ResetFilterCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextButton}" />
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

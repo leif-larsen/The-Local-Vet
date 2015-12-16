@@ -42,15 +42,15 @@
 					<Button Text="{Binding Phone}" Style="{StaticResource RegularTextButton}" Command="{Binding CallVetCommand}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" Image="telefon1.jpg"  Grid.Row="2" />
 				</Grid>
 
-				<Grid>
+				<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">
 					<Grid.RowDefinitions>
 						<RowDefinition Height="25" />
 						<RowDefinition Height="25" />
 						<RowDefinition Height="25" />
 					</Grid.RowDefinitions>
-					<Label Text="{Binding Address}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" HorizontalOptions="StartAndExpand" />
-					<Button Text="{Binding Email}" Command="{Binding EmailVetCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="1" HorizontalOptions="StartAndExpand" />
-					<Button Text="{Binding Website}" Command="{Binding VisitWebCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="2" HorizontalOptions="StartAndExpand" />
+					<Label Text="{Binding Address}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" HorizontalOptions="StartAndExpand" />
+					<Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="1" HorizontalOptions="StartAndExpand" />
+					<Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="2" HorizontalOptions="StartAndExpand" />
 				</Grid>
 
 				<Grid RowSpacing="5">
