@@ -8,9 +8,9 @@ using Android.App;
 [assembly: AssemblyTitle ("TheLocalVet.Droid")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
-[assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("leiflarsen")]
+[assembly: AssemblyCompany ("Ing. Leif H. Larsen")]
+[assembly: AssemblyProduct ("The Local Vet")]
+[assembly: AssemblyCopyright ("Ing. Leif H. Larsen")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

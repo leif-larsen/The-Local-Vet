@@ -8,6 +8,7 @@
     <ContentPage.BindingContext>
         <viewModel:InfoPageViewModel />
     </ContentPage.BindingContext>
+    <ContentPage.Title>Informasjon</ContentPage.Title>
 
     <StackLayout>
         <Label Text="{i18n:Translate InfoText}" VerticalOptions="Center" HorizontalOptions="Center"  />
