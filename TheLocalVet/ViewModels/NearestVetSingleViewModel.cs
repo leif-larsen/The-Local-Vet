@@ -32,7 +32,7 @@ namespace TheLocalVet.ViewModels
         public string Address
         {
             get { return _vetModel.Address.ToString(); }
-			set { OnPropertyChanged("Address"); OnPropertyChanged ("Zip"); OnPropertyChanged ("AddressStreet"); }
+			set { OnPropertyChanged("Address"); OnPropertyChanged ("Zip"); OnPropertyChanged ("AddressStreet"); OnPropertyChanged ("AddressWidth"); }
         }
 
 		public bool IsAddressVisible
@@ -68,7 +68,7 @@ namespace TheLocalVet.ViewModels
 				{
 					var temp = Address.Split (',');
 					if (!string.IsNullOrEmpty (temp [1]))
-						return temp [1].Substring(1);
+						return string.Format("{0} - ",temp [1].Substring(1));
 					else
 						return string.Empty;
 				} 
@@ -77,7 +77,16 @@ namespace TheLocalVet.ViewModels
 					return string.Empty;
 				}
 			}
-			set { OnPropertyChanged ("Zip"); }
+			set { OnPropertyChanged ("Zip"); OnPropertyChanged ("AddressWidth"); }
+		}
+
+		public string AddressWidth
+		{
+			get 
+			{ 
+				return (Zip.Length * 2).ToString ();
+			}
+			set { OnPropertyChanged ("AddressWidth"); }
 		}
 
         public string HomeVisit
@@ -103,6 +112,18 @@ namespace TheLocalVet.ViewModels
             }
             set { OnPropertyChanged("CompetencyString"); }
         }
+
+		public bool IsMapVisible
+		{
+			get 
+			{
+				if (_vetModel.Address.Latitude != 0.0 && _vetModel.Address.Longitude != 0.0)
+					return true;
+				else
+					return false;
+			}
+			set { OnPropertyChanged ("IsMapVisible"); }
+		}
 
 		public bool IsEmailWebSitePhoneVisible
 		{
