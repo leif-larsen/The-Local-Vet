@@ -5,7 +5,7 @@
 				x:Class="TheLocalVet.Pages.NearestVetSearchResultPage">
 
 	<ContentPage.ToolbarItems>
-		<ToolbarItem Text="Filtrer" Order="Primary" Command="{Binding OpenFilterCommand}" />
+		<ToolbarItem Text="Filter" Order="Primary" Command="{Binding OpenFilterCommand}" />
 	</ContentPage.ToolbarItems>
 
 	<ContentPage.Resources>

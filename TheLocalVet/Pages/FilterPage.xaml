@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+				Title="Filtrer"
 				x:Class="TheLocalVet.Pages.FilterPage">
 
 	<ContentPage.Resources>
@@ -34,14 +35,14 @@
 				<Image Source="interface11.jpg" Grid.Row="0" />
 			</Grid>
 
-			<Label Text="Filtrer på" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
+			<!--<Label Text="Filtrer på" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
 
 				<Picker Title="Filtrer på" Grid.Row="1" WidthRequest="250" SelectedIndex="{Binding SelectedFilterType}" HorizontalOptions="CenterAndExpand" >
 					<Picker.Items>
 						<x:String>Kompetanse</x:String>
 						<x:String>Hjemmebesøk</x:String>
 					</Picker.Items>
-				</Picker>
+				</Picker>-->
 
 			<Label Text="Kompetanse" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
 				<Picker Title="Kompetanse" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="250" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
@@ -51,16 +52,16 @@
 					</Picker.Items>
 				</Picker>
 
-			<Label Text="Hjemmebesøk" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
+			<!--<Label Text="Hjemmebesøk" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
 				<Picker Title="Hjemmebesøk" IsEnabled="{Binding IsHomeVisitAvailable}" WidthRequest="250" SelectedIndex="{Binding SelectedSearchType}" HorizontalOptions="CenterAndExpand" >
 					<Picker.Items>
 						<x:String>Ja</x:String>
 						<x:String>Nei</x:String>
 					</Picker.Items>
-				</Picker>
+				</Picker>-->
 
-				<Button Text="Filtrer" Command="{Binding CloseWindowCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextButton}" />
-				<Button Text="Nullstill" Command="{Binding ResetFilterCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextButton}" />
+				<Button Text="Filtrer" Command="{Binding CloseWindowCommand}" TextColor="{StaticResource LabelColor}" />
+				<Button Text="Nullstill" Command="{Binding ResetFilterCommand}" TextColor="{StaticResource LabelColor}" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

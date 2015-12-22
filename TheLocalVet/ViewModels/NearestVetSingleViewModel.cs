@@ -32,12 +32,52 @@ namespace TheLocalVet.ViewModels
         public string Address
         {
             get { return _vetModel.Address.ToString(); }
-            set { OnPropertyChanged("Address"); }
+			set { OnPropertyChanged("Address"); OnPropertyChanged ("Zip"); OnPropertyChanged ("AddressStreet"); }
         }
 
 		public bool IsAddressVisible
 		{
 			get { return string.IsNullOrEmpty (Address) ? false : true; }
+		}
+
+		public string AddressStreet
+		{
+			get 
+			{
+				if (!string.IsNullOrEmpty (Address)) 
+				{
+					var temp = Address.Split (',');
+					if (!string.IsNullOrEmpty (temp [0]))
+						return temp [0];
+					else
+						return string.Empty;
+				} 
+				else 
+				{
+					return string.Empty;
+				}
+			}
+			set { OnPropertyChanged ("AddressStreet"); }
+		}
+
+		public string Zip
+		{
+			get 
+			{
+				if (!string.IsNullOrEmpty (Address)) 
+				{
+					var temp = Address.Split (',');
+					if (!string.IsNullOrEmpty (temp [1]))
+						return temp [1].Substring(1);
+					else
+						return string.Empty;
+				} 
+				else 
+				{
+					return string.Empty;
+				}
+			}
+			set { OnPropertyChanged ("Zip"); }
 		}
 
         public string HomeVisit

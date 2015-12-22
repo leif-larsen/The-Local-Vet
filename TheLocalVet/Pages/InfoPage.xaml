@@ -3,15 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
              xmlns:viewModel="clr-namespace:TheLocalVet.ViewModels"
-             Title="Informasjon"
              x:Class="TheLocalVet.Pages.InfoPage">
     <ContentPage.BindingContext>
         <viewModel:InfoPageViewModel />
     </ContentPage.BindingContext>
-    <ContentPage.Title>Informasjon</ContentPage.Title>
 
-    <StackLayout>
-        <Label Text="{i18n:Translate InfoText}" VerticalOptions="Center" HorizontalOptions="Center"  />
-        <Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" />
+    <ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="TitleText" TargetType="Label">
+				<Setter Property="FontSize" Value="20" />
+			</Style>
+			<Style x:Key="RegularTextLabel" TargetType="Label">
+				<Setter Property="FontSize" Value="15" />
+			</Style>
+
+			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
+			</Color>
+			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
+				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+			</Color>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+    <StackLayout BackgroundColor="White">
+    	<Grid>
+    		<Grid.RowDefinitions>
+    			<RowDefinition Height="130" />
+    			<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Image Source="interface11.jpg" Grid.Row="0" />
+        	<Label Text="Informasjon" Grid.Row="1" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource TitleColor}" Style="{StaticResource TitleText}" />
+		</Grid>
+
+		<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="25" />
+				<RowDefinition Height="25" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="10" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="10" />
+			</Grid.ColumnDefinitions>
+        </Grid>
+        	<Label Text="Om du har generelle tilbakemeldinger til appen, eller mener det mangler en dyrlege, ta gjerne kontakt ved å klikke på knappen under." VerticalOptions="Center" HorizontalOptions="FillAndExpand" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}"  />
+        	<Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" TextColor="{StaticResource LabelColor}" />
     </StackLayout>
 </ContentPage>

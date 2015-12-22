@@ -8,6 +8,7 @@ namespace TheLocalVet.Pages
     {
         public RootPage()
         {
+			Title = "Din Lokale Dyrlege";
             Children.Add( new NearestVetSearchPage (this.Navigation) { Title = AppResources.NearestVetPageTitle, Icon = "search_75" });
             Children.Add( new InfoPage { Title = AppResources.InfoPageTitle, Icon = "info_75"});
             //this.Children.Add(new EmergencyContactPage { Title = "Emergency", Icon = "" });

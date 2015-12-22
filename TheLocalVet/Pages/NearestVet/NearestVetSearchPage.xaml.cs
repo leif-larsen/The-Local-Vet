@@ -11,6 +11,7 @@ namespace TheLocalVet.Pages
 		public NearestVetSearchPage (INavigation nav)
 		{
 			InitializeComponent ();
+			Title = "Søk";
 			this.BindingContext = new NearestVetSearchPageViewModel(nav);
 			NavigationPage.SetHasNavigationBar(this, true);
 			NavigationPage.SetHasBackButton(this, false);

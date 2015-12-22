@@ -47,24 +47,36 @@
 						<RowDefinition Height="25" />
 						<RowDefinition Height="25" />
 						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
 					</Grid.RowDefinitions>
-					<Label Text="{Binding Address}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" HorizontalOptions="StartAndExpand" />
-					<Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="1" HorizontalOptions="StartAndExpand" />
-					<Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Row="2" HorizontalOptions="StartAndExpand" />
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="10" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="10" />
+					</Grid.ColumnDefinitions>
+					<Label Text="{Binding AddressStreet}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Column="1" Grid.Row="1" HorizontalOptions="StartAndExpand" />
+					<Label Text="{Binding Zip}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Column="1" Grid.Row="2" HorizontalOptions="StartAndExpand" />
+					<Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="3" HorizontalOptions="StartAndExpand" />
+					<Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="StartAndExpand" />
 				</Grid>
 
-				<Grid RowSpacing="5">
+				<Grid>
 					<Grid.RowDefinitions>
-						<RowDefinition Height="*" />
-						<RowDefinition Height="*" />
-						<RowDefinition Height="*" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
+						<RowDefinition Height="25" />
 					</Grid.RowDefinitions>
-					<Label Text="{i18n:Translate NearestVetSinglePageCompetency}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" HorizontalOptions="StartAndExpand" />
-					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="1" HorizontalOptions="StartAndExpand" />
-					<Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="2" HorizontalOptions="StartAndExpand" />
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="10" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="10" />
+					</Grid.ColumnDefinitions>
+					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="1" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+					<Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="2" Grid.Column="1" HorizontalOptions="StartAndExpand" />
 				</Grid>
 
-				<Button Text="{i18n:Translate ViewInMap}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextButton}" Command="{Binding ViewInMapCommand}" HorizontalOptions="Center" />
+				<Button Text="{i18n:Translate ViewInMap}" TextColor="{StaticResource LabelColor}" Command="{Binding ViewInMapCommand}" HorizontalOptions="Center" />
 			</StackLayout>
 		</ScrollView>
 

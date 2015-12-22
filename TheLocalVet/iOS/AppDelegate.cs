@@ -19,6 +19,7 @@ namespace TheLocalVet.iOS
 
 			UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB (149,149,149);
 			UINavigationBar.Appearance.TintColor = UIColor.White;
+			UINavigationBar.Appearance.SetTitleTextAttributes (new UITextAttributes { TextColor = UIColor.White } );
 
 			// Code for starting up the Xamarin Test Cloud Agent
 			#if ENABLE_TEST_CLOUD

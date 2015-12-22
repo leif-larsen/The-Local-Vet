@@ -13,6 +13,7 @@ namespace TheLocalVet.Pages
         public InfoPage()
         {
             InitializeComponent();
+			Title = "Informasjon";
         }
     }
 }
