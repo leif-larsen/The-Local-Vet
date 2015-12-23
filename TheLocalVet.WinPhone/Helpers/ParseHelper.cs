@@ -7,6 +7,7 @@ using Parse;
 using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using TheLocalVet.Languages;
+using System.Collections.ObjectModel;
 
 [assembly: Xamarin.Forms.Dependency(typeof(TheLocalVet.WinPhone.Helpers.ParseHelper))]
 namespace TheLocalVet.WinPhone.Helpers
@@ -15,9 +16,9 @@ namespace TheLocalVet.WinPhone.Helpers
     {
         public event EventHandler<MessagesEventArgs> OnParseError;
         
-        public async Task<List<VetModel>> SearchByGeoLocation(double latitude, double longitude, double distance)
+        public async Task<ObservableCollection<VetModel>> SearchByGeoLocation(double latitude, double longitude, double distance)
         {
-            List<VetModel> vetList = new List<VetModel>();
+            ObservableCollection<VetModel> vetList = new ObservableCollection<VetModel>();
 
             try
             { 
@@ -43,9 +44,9 @@ namespace TheLocalVet.WinPhone.Helpers
             return vetList;
         }
 
-        public async Task<List<VetModel>> SearchByPlace(string placeName)
+        public async Task<ObservableCollection<VetModel>> SearchByPlace(string placeName)
         {
-            List<VetModel> vetList = new List<VetModel>();
+            ObservableCollection<VetModel> vetList = new ObservableCollection<VetModel>();
 
             if(!string.IsNullOrEmpty(placeName))
             { 
@@ -75,12 +76,12 @@ namespace TheLocalVet.WinPhone.Helpers
             return vetList;
         }
 
-        public Task<List<EmergencyVetModel>> SearchEmergencyByGeoLocation(double latitude, double longitude)
+        public Task<ObservableCollection<EmergencyVetModel>> SearchEmergencyByGeoLocation(double latitude, double longitude)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<EmergencyVetModel>> SearchEmergencyByPlace(string placeName)
+        public Task<ObservableCollection<EmergencyVetModel>> SearchEmergencyByPlace(string placeName)
         {
             throw new NotImplementedException();
         }

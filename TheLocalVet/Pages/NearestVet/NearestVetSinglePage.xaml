@@ -37,7 +37,7 @@
 
 	<ContentPage.Content>
 
-		<ScrollView BackgroundColor="White">
+		<ScrollView>
 			<StackLayout HorizontalOptions="CenterAndExpand">
 				<Grid>
 					<Grid.RowDefinitions>

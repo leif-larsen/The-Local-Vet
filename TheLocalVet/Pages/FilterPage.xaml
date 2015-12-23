@@ -27,7 +27,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<StackLayout BackgroundColor="White">
+		<StackLayout>
 			<Grid>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="130" />

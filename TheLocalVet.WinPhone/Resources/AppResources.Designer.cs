@@ -79,7 +79,7 @@ namespace TheLocalVet.WinPhone.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Local Vet.
+        ///   Looks up a localized string similar to Din Lokale Dyrlege.
         /// </summary>
         public static string ApplicationTitle {
             get {

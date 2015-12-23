@@ -157,7 +157,10 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="PluginsHelp\GeolocatorReadme.txt" />
+    <Content Include="interface11.jpg" />
+    <Content Include="iphone_120.png" />
+    <Content Include="iphone_180.png" />
+    <Content Include="iphone_75.png" />
     <Content Include="README_FIRST.txt" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -216,12 +219,12 @@
       <HintPath>..\TheLocalVet\packages\MvvmLightLibs.5.2.0.0\lib\wp8\GalaSoft.MvvmLight.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Lotz.Xam.Messaging, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xam.Plugins.Messaging.2.3.0\lib\wp8\Lotz.Xam.Messaging.dll</HintPath>
+    <Reference Include="Lotz.Xam.Messaging, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugins.Messaging.3.0.0\lib\wp8\Lotz.Xam.Messaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Lotz.Xam.Messaging.Abstractions, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xam.Plugins.Messaging.2.3.0\lib\wp8\Lotz.Xam.Messaging.Abstractions.dll</HintPath>
+    <Reference Include="Lotz.Xam.Messaging.Abstractions, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugins.Messaging.3.0.0\lib\wp8\Lotz.Xam.Messaging.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
@@ -250,12 +253,12 @@
       <HintPath>..\TheLocalVet\packages\Xam.Plugin.ExternalMaps.2.0.0\lib\wp8\Plugin.ExternalMaps.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Plugin.Geolocator, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xam.Plugin.Geolocator.2.0.0\lib\wp8\Plugin.Geolocator.dll</HintPath>
+    <Reference Include="Plugin.Geolocator, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.Geolocator.3.0.3\lib\wp8\Plugin.Geolocator.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Plugin.Geolocator.Abstractions, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\TheLocalVet\packages\Xam.Plugin.Geolocator.2.0.0\lib\wp8\Plugin.Geolocator.Abstractions.dll</HintPath>
+    <Reference Include="Plugin.Geolocator.Abstractions, Version=3.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\TheLocalVet\packages\Xam.Plugin.Geolocator.3.0.3\lib\wp8\Plugin.Geolocator.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">

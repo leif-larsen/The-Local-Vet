@@ -16,7 +16,7 @@
 
 			<Style x:Key="ListViewStyle" TargetType="ListView">
 				<Setter Property="SeparatorVisibility" Value="None" />
-			</Style>
+			</Style>s
 
 			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
 				<x:Arguments><x:String>#666666</x:String></x:Arguments>
@@ -25,7 +25,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<ScrollView BackgroundColor="White">
+		<ScrollView>
 			<StackLayout>
 				<Grid>
 					<Grid.RowDefinitions>

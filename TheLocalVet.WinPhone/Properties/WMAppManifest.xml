@@ -6,7 +6,7 @@
     <Language code="nb-NO" />
   </Languages>
   <App xmlns="" ProductID="{8ffff8f7-6c36-4e40-bb00-621671ed3a10}" Title="Din Lokale Dyrlege" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Ing. Leif H. Larsen" Description="An app to find you nearest vet and emergency vet contact." Publisher="Ing. Leif H. Larsen" PublisherID="{7c7c4a58-b07f-45b7-9c8d-55ee587851b3}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">iphone_75.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
@@ -19,10 +19,10 @@
     <Tokens>
       <PrimaryToken TokenID="TheLocalVet.WinPhoneToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">iphone_75.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>TheLocalVet.WinPhone</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">iphone_180.png</BackgroundImageURI>
+          <Title>Lokal Dyrlege</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>
