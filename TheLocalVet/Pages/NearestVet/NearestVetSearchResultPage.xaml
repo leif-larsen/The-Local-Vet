@@ -2,11 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
+                Title="Søkeresultater"
 				x:Class="TheLocalVet.Pages.NearestVetSearchResultPage">
 
 	<ContentPage.ToolbarItems>
-		<ToolbarItem Text="Filter" Order="Primary" Command="{Binding OpenFilterCommand}" />
-	</ContentPage.ToolbarItems>
+        <ToolbarItem Text="Filter" Order="Primary" Command="{Binding OpenFilterCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource" WinPhone="filter3.png" />
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
 
 	<ContentPage.Resources>
 		<ResourceDictionary>			
@@ -31,7 +36,7 @@
 					<Grid.RowDefinitions>
 						<RowDefinition Height="130" />
 					</Grid.RowDefinitions>
-					<Image Source="interface11.jpg" Grid.Row="0" />
+                    <Image Source="transparent.png" Grid.Row="0" />
 				</Grid>
 
 				<!--//<Label Text="Sorter på" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" HorizontalOptions="CenterAndExpand" />

@@ -7,7 +7,7 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("The Local Vet")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("App to find the vets that are nearest to you")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ing. Leif H. Larsen")]
 [assembly: AssemblyProduct("TheLocalVet.WinPhone")]

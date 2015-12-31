@@ -16,6 +16,13 @@
 				<Setter Property="FontSize" Value="28" />
 			</Style>
 
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="0" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+
 			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
 				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
 			</Color>
@@ -33,33 +40,43 @@
 						<RowDefinition Height="130" />
 						<RowDefinition Height="*" />
 					</Grid.RowDefinitions>
-					<Image Source="interface11.jpg" Grid.Row="0" />
+					<Image Source="transparent.png" Grid.Row="0" />
 
 					<Label Text="{i18n:Translate SearchNearestVetLabel}" Grid.Row="1" HorizontalOptions="CenterAndExpand" Style="{StaticResource TitleText}" TextColor="{StaticResource TitleColor}" />
 				</Grid>
 
-					<Picker Title="{i18n:Translate SearchNearestVetPickerText}" WidthRequest="250" SelectedIndex="{Binding SelectedSearchType}" HorizontalOptions="CenterAndExpand" >
-						<Picker.Items>
-							<x:String>Søk rundt din lokasjon</x:String>
-							<x:String>Søk etter sted</x:String>
-						</Picker.Items>
-					</Picker>
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="350" />
+                    </Grid.ColumnDefinitions>
 
-					<Picker Title="{i18n:Translate SearchNearestVetDistance}" WidthRequest="250" IsVisible="{Binding IsDistanceFieldVisible}" SelectedIndex="{Binding Distance}" HorizontalOptions="CenterAndExpand">
-						<Picker.Items>
-							<x:String>1 km</x:String>
-							<x:String>2 km</x:String>
-							<x:String>5 km</x:String>
-							<x:String>10 km</x:String>
-							<x:String>20 km</x:String>
-							<x:String>50 km</x:String>
-							<x:String>100 km</x:String>
-						</Picker.Items>
-					</Picker>
+                    <Picker Title="{i18n:Translate SearchNearestVetPickerText}" SelectedIndex="{Binding SelectedSearchType}" Grid.Row="0" Grid.Column="0" >
+                        <Picker.Items>
+                            <x:String>Søk rundt din lokasjon</x:String>
+                            <x:String>Søk etter sted</x:String>
+                        </Picker.Items>
+                    </Picker>
 
-					<Entry Text="{Binding SearchPlace}" WidthRequest="250" IsVisible="{Binding IsPlaceFieldVisible}" HorizontalOptions="CenterAndExpand" TextColor="Black" />
+                    <Picker Title="{i18n:Translate SearchNearestVetDistance}" IsVisible="{Binding IsDistanceFieldVisible}" SelectedIndex="{Binding Distance}" Grid.Row="1" Grid.Column="0">
+                        <Picker.Items>
+                            <x:String>1 km</x:String>
+                            <x:String>2 km</x:String>
+                            <x:String>5 km</x:String>
+                            <x:String>10 km</x:String>
+                            <x:String>20 km</x:String>
+                            <x:String>50 km</x:String>
+                            <x:String>100 km</x:String>
+                        </Picker.Items>
+                    </Picker>
 
-					<Button Command="{Binding SearchCommand}" Text="{i18n:Translate Search}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" />
+                    <Entry Text="{Binding SearchPlace}" IsVisible="{Binding IsPlaceFieldVisible}" TextColor="Black" Grid.Row="1" Grid.Column="0" />
+                </Grid>
+
+			    <Button Command="{Binding SearchCommand}" Style="{StaticResource ButtonStyle}"  Text="{i18n:Translate Search}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

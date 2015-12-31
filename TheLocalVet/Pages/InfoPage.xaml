@@ -17,7 +17,14 @@
 				<Setter Property="FontSize" Value="15" />
 			</Style>
 
-			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="0" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+
+               <Color x:FactoryMethod="FromHex" x:Key="LabelColor">
 				<x:Arguments><x:String>#666666</x:String></x:Arguments>
 			</Color>
 			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
@@ -32,7 +39,7 @@
     			<RowDefinition Height="130" />
     			<RowDefinition Height="*" />
 			</Grid.RowDefinitions>
-			<Image Source="interface11.jpg" Grid.Row="0" />
+            <Image Source="transparent.png" Grid.Row="0" />
         	<Label Text="Informasjon" Grid.Row="1" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource TitleColor}" Style="{StaticResource TitleText}" />
 		</Grid>
 
@@ -48,6 +55,6 @@
 			</Grid.ColumnDefinitions>
         </Grid>
         	<Label Text="Om du har generelle tilbakemeldinger til appen, eller mener det mangler en dyrlege, ta gjerne kontakt ved å klikke på knappen under." VerticalOptions="Center" HorizontalOptions="FillAndExpand" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}"  />
-        	<Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" TextColor="{StaticResource LabelColor}" />
+        	<Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" />
     </StackLayout>
 </ContentPage>

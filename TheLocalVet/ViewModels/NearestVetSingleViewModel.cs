@@ -68,7 +68,7 @@ namespace TheLocalVet.ViewModels
 				{
 					var temp = Address.Split (',');
 					if (!string.IsNullOrEmpty (temp [1]))
-						return string.Format("{0} - ",temp [1].Substring(1));
+						return string.Format("{0} ",temp [1].Substring(1));
 					else
 						return string.Empty;
 				} 
@@ -139,7 +139,7 @@ namespace TheLocalVet.ViewModels
         public string Email
         {
             get { return _vetModel.Email; }
-            set { OnPropertyChanged("Email"); }
+            set { OnPropertyChanged("Email"); ChangeVisibility(); }
         }
 
 		public bool IsEmailVisible
@@ -149,8 +149,14 @@ namespace TheLocalVet.ViewModels
 
         public string Website
         {
-            get { return _vetModel.WebSite; }
-            set { OnPropertyChanged("Website"); }
+            get
+            {
+                if (!string.IsNullOrEmpty(_vetModel.WebSite))
+                    return string.Format("www.{0}", _vetModel.WebSite.Substring(7));
+                else
+                    return string.Empty;
+            }
+            set { OnPropertyChanged("Website"); ChangeVisibility(); }
         }
 
 		public bool IsWebsiteVisible
@@ -161,7 +167,7 @@ namespace TheLocalVet.ViewModels
         public string Phone
         {
             get { return ParsePhone(_vetModel.Phone); }
-            set { OnPropertyChanged("Phone"); }
+            set { OnPropertyChanged("Phone"); ChangeVisibility(); }
         }
 
         public string OpeningHours
@@ -206,6 +212,15 @@ namespace TheLocalVet.ViewModels
             //Debug.WriteLine("{0} - {1}", Website, new Uri(Website));
 			if(!string.IsNullOrEmpty(Website))
             	Device.OpenUri(new Uri(Website));
+        }
+
+        private void ChangeVisibility()
+        {
+            OnPropertyChanged("IsWebsiteVisible");
+            OnPropertyChanged("IsEmailVisible");
+            OnPropertyChanged("IsMapVisible");
+            OnPropertyChanged("IsEmailWebSitePhoneVisible");
+            OnPropertyChanged("IsWebsiteVisible");
         }
 
         private void EmailVet()

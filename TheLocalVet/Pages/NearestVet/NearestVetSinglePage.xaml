@@ -22,11 +22,21 @@
 			</Style>
 
 			<Style x:Key="ItalicText" TargetType="Button">
-				<Setter Property="FontAttributes" Value="Italic" />
-				<Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="0" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="FontSize" Value="18" />
 			</Style>
 
-			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="BorderRadius" Value="0" />
+                <Setter Property="BorderColor" Value="Black" />
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+                
+            <Color x:FactoryMethod="FromHex" x:Key="TitleColor">
 				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
 			</Color>
 			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
@@ -43,22 +53,23 @@
 					<Grid.RowDefinitions>
 						<RowDefinition Height="130" />
 						<RowDefinition Height="*" />
-						<RowDefinition Height="*" />
 						<RowDefinition Height="25" />
+						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
-					<Image Source="interface11.jpg" Grid.Row="0" />
+                    <Image Source="transparent.png" Grid.Row="0" />
 					<Label Text="{Binding Name}" Style="{StaticResource BoldText}" TextColor="{StaticResource TitleColor}" Grid.Row="1" HorizontalOptions="CenterAndExpand" />
 					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="2" HorizontalOptions="CenterAndExpand" />
-					<Button Text="{Binding Phone}" Style="{StaticResource RegularTextButton}" Command="{Binding CallVetCommand}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" Image="telefon1.jpg"  Grid.Row="3" />
+                    <Button Text="{Binding Phone}" Command="{Binding CallVetCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="3" VerticalOptions="Start" />
 				</Grid>
 
 				<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">
 					<Grid.RowDefinitions>
 						<RowDefinition Height="25" />
 						<RowDefinition Height="25" />
-						<RowDefinition Height="25" />
-						<RowDefinition Height="25" />
-						<RowDefinition Height="25" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="10" />
@@ -73,11 +84,11 @@
 							<ColumnDefinition Width="*" />
 						</Grid.ColumnDefinitions>
 						<Label Text="{Binding Zip}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Column="0" HorizontalOptions="Start" />
-						<Button Text="{i18n:Translate ViewInMap}" Grid.Column="1" Style="{StaticResource ItalicText}" TextColor="{StaticResource LabelColor}" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" />
-					</Grid>
+                    </Grid>
+                    <Button Text="{i18n:Translate ViewInMap}" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="{StaticResource LabelColor}" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
 
-					<Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="3" HorizontalOptions="StartAndExpand" />
-					<Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource RegularTextButton}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="StartAndExpand" />
+                    <Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
 				</Grid>
 
 				<Grid>
@@ -91,7 +102,7 @@
 						<ColumnDefinition Width="*" />
 						<ColumnDefinition Width="10" />
 					</Grid.ColumnDefinitions>
-					<Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="2" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+					<Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" Grid.Column="1" HorizontalOptions="StartAndExpand" />
 				</Grid>
 
 			</StackLayout>
