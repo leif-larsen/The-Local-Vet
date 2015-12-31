@@ -1,0 +1,6 @@
+<MarketplaceDetails>
+  <SmallAppTile>WP_300.png</SmallAppTile>
+  <ScreenShots>Screen1.png;Screen3.png;Screen4.png;Screen2.png;;;;;</ScreenShots>
+  <ScreenShotsWXGA>Screen1WXGA.png;Screen2WXGA.png;Screen3WXGA.png;;;;;;</ScreenShotsWXGA>
+  <ScreenShots720P>Screen1_720.png;Screen2_720.png;Screen3_720.png;;;;;;</ScreenShots720P>
+</MarketplaceDetails>

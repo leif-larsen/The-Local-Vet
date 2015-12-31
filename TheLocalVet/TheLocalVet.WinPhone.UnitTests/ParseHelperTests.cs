@@ -9,6 +9,7 @@ using TheLocalVet.Models;
 using TheLocalVet.WinPhone.Helpers;
 using FakeItEasy;
 using Parse;
+using System.Collections.ObjectModel;
 
 namespace TheLocalVet.WinPhone.UnitTests
 {
@@ -19,7 +20,7 @@ namespace TheLocalVet.WinPhone.UnitTests
         public async void AssertSearchVetByGeoLocationBadCoordinates()
         {
             IParseHelper parseHelper = new ParseHelper();
-            List<VetModel> queryResult = await parseHelper.SearchByGeoLocation(180, 340, 10);
+            ObservableCollection<VetModel> queryResult = await parseHelper.SearchByGeoLocation(180, 340, 10);
 
             CollectionAssert.IsEmpty(queryResult);
         }
@@ -31,7 +32,7 @@ namespace TheLocalVet.WinPhone.UnitTests
             ParseClient.Initialize("eKWSJpWP5VDZV8QKfwVIVKLnjvPxsdhvl2lKI2Dd", "aKV1AIEnUtpuRVco86b6euTdz1e0PANoGmllJ9sD");
 
             IParseHelper parseHelper = new ParseHelper();
-            List<VetModel> queryResult = await parseHelper.SearchByGeoLocation(59.7507026, 10.161479999999983, 10);
+            ObservableCollection<VetModel> queryResult = await parseHelper.SearchByGeoLocation(59.7507026, 10.161479999999983, 10);
 
             CollectionAssert.IsNotEmpty(queryResult);
         }
@@ -48,7 +49,7 @@ namespace TheLocalVet.WinPhone.UnitTests
         public async void AssertSearchVetByPlaceGoodPlaceNameFormat()
         {
             IParseHelper parseHelper = new ParseHelper();
-            List<VetModel> queryResult = await parseHelper.SearchByPlace("Drammen");
+            ObservableCollection<VetModel> queryResult = await parseHelper.SearchByPlace("Drammen");
 
             CollectionAssert.IsNotEmpty(queryResult);
         }
