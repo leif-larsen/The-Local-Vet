@@ -28,7 +28,7 @@
 				<x:Arguments><x:String>#666666</x:String></x:Arguments>
 			</Color>
 			<Color x:FactoryMethod="FromHex" x:Key="TitleColor">
-				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
 			</Color>
 		</ResourceDictionary>
 	</ContentPage.Resources>
@@ -36,25 +36,27 @@
     <StackLayout>
     	<Grid>
     		<Grid.RowDefinitions>
+    			<RowDefinition Height="30" />
     			<RowDefinition Height="130" />
     			<RowDefinition Height="*" />
 			</Grid.RowDefinitions>
-            <Image Source="transparent.png" Grid.Row="0" />
-        	<Label Text="Informasjon" Grid.Row="1" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource TitleColor}" Style="{StaticResource TitleText}" />
+            <Image Source="transparent.png" Grid.Row="1" />
 		</Grid>
 
-		<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">
+		<Grid>
 			<Grid.RowDefinitions>
-				<RowDefinition Height="25" />
-				<RowDefinition Height="25" />
+				<RowDefinition Height="30" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="Auto" />
 			</Grid.RowDefinitions>
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="10" />
 				<ColumnDefinition Width="*" />
 				<ColumnDefinition Width="10" />
 			</Grid.ColumnDefinitions>
+        	<Label Text="Informasjon" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource TitleColor}" Style="{StaticResource TitleText}" Grid.Row="0" Grid.Column="1" />
+			<Label Text="Om du har generelle tilbakemeldinger til appen, eller mener det mangler en dyrlege, ta gjerne kontakt ved å klikke på knappen under." VerticalOptions="Center" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}"  />
+        	<Button Text="{i18n:Translate SendFeedbackButtonText}" WidthRequest="350" Command="{Binding SendFeedbackCommand}" Style="{StaticResource ButtonStyle}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" Grid.Row="2" Grid.Column="1" />
         </Grid>
-        	<Label Text="Om du har generelle tilbakemeldinger til appen, eller mener det mangler en dyrlege, ta gjerne kontakt ved å klikke på knappen under." VerticalOptions="Center" HorizontalOptions="FillAndExpand" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}"  />
-        	<Button Text="{i18n:Translate SendFeedbackButtonText}" Command="{Binding SendFeedbackCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" />
     </StackLayout>
 </ContentPage>

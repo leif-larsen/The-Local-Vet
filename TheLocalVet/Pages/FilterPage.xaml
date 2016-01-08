@@ -24,7 +24,7 @@
             </Style>
 
             <Color x:FactoryMethod="FromHex" x:Key="TitleColor">
-				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
 			</Color>
 			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
 				<x:Arguments><x:String>#666666</x:String></x:Arguments>
@@ -36,9 +36,10 @@
 		<StackLayout>
 			<Grid>
 				<Grid.RowDefinitions>
+					<RowDefinition Height="30" />
 					<RowDefinition Height="130" />
 				</Grid.RowDefinitions>
-				<Image Source="transparent.png" Grid.Row="0" />
+				<Image Source="transparent.png" Grid.Row="1" />
 			</Grid>
 
 			<!--<Label Text="Filtrer på" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
@@ -51,7 +52,7 @@
 				</Picker>-->
 
 			<Label Text="Kompetanse" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
-				<Picker Title="Kompetanse" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="250" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
+				<Picker Title="Kompetanse" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="350" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
 					<Picker.Items>
 						<x:String>Smådyrsveterinær</x:String>
 						<x:String>Stordyrsveterinær</x:String>
@@ -65,9 +66,19 @@
 						<x:String>Nei</x:String>
 					</Picker.Items>
 				</Picker>-->
-
-				<Button Text="Filtrer" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}"  TextColor="{StaticResource LabelColor}" />
-				<Button Text="Nullstill" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}"  TextColor="{StaticResource LabelColor}" />
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="10" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="10" />
+					</Grid.ColumnDefinitions>
+					<Button Text="Filtrer" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="350" TextColor="{StaticResource LabelColor}" HorizontalOptions="Center" />
+					<Button Text="Nullstill" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="350" TextColor="{StaticResource LabelColor}" HorizontalOptions="Center" />
+				</Grid>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

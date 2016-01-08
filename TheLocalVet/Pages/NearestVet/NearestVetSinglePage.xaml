@@ -37,7 +37,7 @@
             </Style>
                 
             <Color x:FactoryMethod="FromHex" x:Key="TitleColor">
-				<x:Arguments><x:String>#3E3E3E</x:String></x:Arguments>
+				<x:Arguments><x:String>#666666</x:String></x:Arguments>
 			</Color>
 			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
 				<x:Arguments><x:String>#666666</x:String></x:Arguments>
@@ -51,15 +51,16 @@
 			<StackLayout HorizontalOptions="CenterAndExpand">
 				<Grid>
 					<Grid.RowDefinitions>
+						<RowDefinition Height="30" />
 						<RowDefinition Height="130" />
 						<RowDefinition Height="*" />
 						<RowDefinition Height="25" />
 						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
-                    <Image Source="transparent.png" Grid.Row="0" />
-					<Label Text="{Binding Name}" Style="{StaticResource BoldText}" TextColor="{StaticResource TitleColor}" Grid.Row="1" HorizontalOptions="CenterAndExpand" />
-					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="2" HorizontalOptions="CenterAndExpand" />
-                    <Button Text="{Binding Phone}" Command="{Binding CallVetCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="3" VerticalOptions="Start" />
+                    <Image Source="transparent.png" Grid.Row="1" />
+					<Label Text="{Binding Name}" Style="{StaticResource BoldText}" TextColor="{StaticResource TitleColor}" Grid.Row="2" HorizontalOptions="CenterAndExpand" />
+					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="3" HorizontalOptions="CenterAndExpand" />
+                    <Button Text="{Binding Phone}" WidthRequest="350" Command="{Binding CallVetCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" />
 				</Grid>
 
 				<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">
@@ -85,10 +86,10 @@
 						</Grid.ColumnDefinitions>
 						<Label Text="{Binding Zip}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Column="0" HorizontalOptions="Start" />
                     </Grid>
-                    <Button Text="{i18n:Translate ViewInMap}" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="{StaticResource LabelColor}" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate ViewInMap}" WidthRequest="350" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="{StaticResource LabelColor}" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
 
-                    <Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
-                    <Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{Binding Email}" IsVisible="{Binding IsEmailVisible}" WidthRequest="350" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{Binding Website}" IsVisible="{Binding IsWebsiteVisible}" WidthRequest="350" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
 				</Grid>
 
 				<Grid>

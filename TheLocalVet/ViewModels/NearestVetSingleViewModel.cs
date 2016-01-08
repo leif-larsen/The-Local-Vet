@@ -152,7 +152,7 @@ namespace TheLocalVet.ViewModels
             get
             {
                 if (!string.IsNullOrEmpty(_vetModel.WebSite))
-                    return string.Format("www.{0}", _vetModel.WebSite.Substring(7));
+                    return string.Format("{0}", _vetModel.WebSite.Substring(7));
                 else
                     return string.Empty;
             }
@@ -210,8 +210,8 @@ namespace TheLocalVet.ViewModels
         private void VisitWeb()
         {
             //Debug.WriteLine("{0} - {1}", Website, new Uri(Website));
-			if(!string.IsNullOrEmpty(Website))
-            	Device.OpenUri(new Uri(Website));
+			if(!string.IsNullOrEmpty(_vetModel.WebSite))
+				Device.OpenUri(new Uri(_vetModel.WebSite));
         }
 
         private void ChangeVisibility()
@@ -229,9 +229,9 @@ namespace TheLocalVet.ViewModels
 
 			if (!string.IsNullOrEmpty (Email)) 
 			{
-				var emailTask = MessagingPlugin.EmailMessenger;
-				if (emailTask.CanSendEmail)
-					emailTask.SendEmail (new EmailMessageBuilder ().To (Email).Build ());
+				//var emailTask = MessagingPlugin.EmailMessenger;
+				if (MessagingPlugin.EmailMessenger.CanSendEmail)
+					MessagingPlugin.EmailMessenger.SendEmail (new EmailMessageBuilder ().To (Email).Build ());
 			}
         }
 
@@ -241,9 +241,9 @@ namespace TheLocalVet.ViewModels
 
 			if (!string.IsNullOrEmpty (Phone)) 
 			{
-				var phoneCallTask = MessagingPlugin.PhoneDialer;
-				if (phoneCallTask.CanMakePhoneCall)
-					phoneCallTask.MakePhoneCall (Phone, Name);
+				//var phoneCallTask = MessagingPlugin.PhoneDialer;
+				if (MessagingPlugin.PhoneDialer.CanMakePhoneCall)
+					MessagingPlugin.PhoneDialer.MakePhoneCall (Phone, Name);
 			}
         }
 
