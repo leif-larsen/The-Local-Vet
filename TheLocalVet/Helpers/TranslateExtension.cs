@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Resources;
 using TheLocalVet.Interfaces;
-using TheLocalVet.Languages;
+using TheLocalVet;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

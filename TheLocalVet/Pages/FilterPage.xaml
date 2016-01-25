@@ -76,8 +76,8 @@
 						<ColumnDefinition Width="*" />
 						<ColumnDefinition Width="10" />
 					</Grid.ColumnDefinitions>
-					<Button Text="Filtrer" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="350" TextColor="{StaticResource LabelColor}" HorizontalOptions="Center" />
-					<Button Text="Nullstill" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="350" TextColor="{StaticResource LabelColor}" HorizontalOptions="Center" />
+					<Button Text="{i18n:Translate Filter}" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
+					<Button Text="{i18n:Translate Reset}" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
 				</Grid>
 		</StackLayout>
 	</ContentPage.Content>

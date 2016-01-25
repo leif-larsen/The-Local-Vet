@@ -249,4 +249,19 @@
   <data name="SendFeedbackButtonText" xml:space="preserve">
     <value>Send feedback</value>
   </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>If you have general feedback in regards to the app, or think a vet is missing, please feel free to contact me by clicking the button beneath.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+  	<value>Filter</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+  	<value>Reset</value>
+  </data>
+  <data name="OpenWeb" xml:space="preserve">
+  	<value>Visit web site</value>
+  </data>
+  <data name="SendMail" xml:space="preserve">
+  	<value>Send e-mail</value>
+  </data>
 </root>

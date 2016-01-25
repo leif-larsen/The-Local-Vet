@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using TheLocalVet.ViewModels;
 using TheLocalVet.Pages;
 using TheLocalVet.Interfaces;
+using TheLocalVet;
 using TheLocalVet.Languages;
 
 namespace TheLocalVet

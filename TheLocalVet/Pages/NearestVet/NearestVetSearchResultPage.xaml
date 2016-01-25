@@ -6,7 +6,7 @@
 				x:Class="TheLocalVet.Pages.NearestVetSearchResultPage">
 
 	<ContentPage.ToolbarItems>
-        <ToolbarItem Text="Filter" Order="Primary" Command="{Binding OpenFilterCommand}">
+        <ToolbarItem Text="{i18n:Translate Filter}" Order="Primary" Command="{Binding OpenFilterCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource" WinPhone="filter3.png" />
             </ToolbarItem.Icon>

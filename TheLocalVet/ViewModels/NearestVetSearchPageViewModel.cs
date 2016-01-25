@@ -10,6 +10,7 @@ using TheLocalVet.Models;
 using TheLocalVet.Pages;
 using Xamarin.Forms;
 using Plugin.Geolocator;
+using TheLocalVet;
 using TheLocalVet.Languages;
 
 namespace TheLocalVet.ViewModels

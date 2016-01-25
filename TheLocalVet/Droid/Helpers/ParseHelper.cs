@@ -8,8 +8,9 @@ using TheLocalVet.Models;
 using TheLocalVet.Interfaces;
 
 using Xamarin.Forms;
-using TheLocalVet.Languages;
+using TheLocalVet;
 using System.Collections.ObjectModel;
+using TheLocalVet.Languages;
 
 [assembly:Dependency(typeof(TheLocalVet.Droid.Helpers.ParseHelper))]
 namespace TheLocalVet.Droid.Helpers

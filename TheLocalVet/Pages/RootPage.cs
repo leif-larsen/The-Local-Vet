@@ -1,5 +1,6 @@
 ﻿using TheLocalVet.Pages;
 using Xamarin.Forms;
+using TheLocalVet;
 using TheLocalVet.Languages;
 
 namespace TheLocalVet.Pages

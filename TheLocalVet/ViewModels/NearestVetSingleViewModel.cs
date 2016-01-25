@@ -9,8 +9,9 @@ using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using Xamarin.Forms;
 using Plugin.ExternalMaps;
-using TheLocalVet.Languages;
+using TheLocalVet;
 using Plugin.Messaging;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.ViewModels
 {

@@ -8,9 +8,10 @@ using TheLocalVet.Helpers;
 using TheLocalVet.Interfaces;
 using TheLocalVet.Models;
 using Xamarin.Forms;
-using TheLocalVet.Languages;
+using TheLocalVet;
 using System.Collections.ObjectModel;
 using TheLocalVet.Pages;
+using TheLocalVet.Languages;
 
 namespace TheLocalVet.ViewModels
 {

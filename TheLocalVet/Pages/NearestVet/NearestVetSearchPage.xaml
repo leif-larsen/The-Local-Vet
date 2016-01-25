@@ -77,7 +77,7 @@
                     <Entry Text="{Binding SearchPlace}" IsVisible="{Binding IsPlaceFieldVisible}" TextColor="White" Grid.Row="1" Grid.Column="0" />
                 </Grid>
 
-			    <Button Command="{Binding SearchCommand}" Style="{StaticResource ButtonStyle}" WidthRequest="350"  Text="{i18n:Translate Search}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" />
+			    <Button Command="{Binding SearchCommand}" Style="{StaticResource ButtonStyle}" WidthRequest="350"  Text="{i18n:Translate Search}" HorizontalOptions="Center" TextColor="White" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>
