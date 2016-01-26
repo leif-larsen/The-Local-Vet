@@ -264,4 +264,7 @@
   <data name="SendMail" xml:space="preserve">
   	<value>Send e-mail</value>
   </data>
+  <data name="SearchResults" xml:space="preserve">
+  	<value>Search results</value>
+  </data>
 </root>

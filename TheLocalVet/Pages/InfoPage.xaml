@@ -56,7 +56,7 @@
 			</Grid.ColumnDefinitions>
         	<Label Text="Informasjon" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource TitleColor}" Style="{StaticResource TitleText}" Grid.Row="0" Grid.Column="1" />
 			<Label Text="{i18n:Translate FeedbackText}" VerticalOptions="Center" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}"  />
-        	<Button Text="{i18n:Translate SendFeedbackButtonText}" WidthRequest="350" Command="{Binding SendFeedbackCommand}" Style="{StaticResource ButtonStyle}" HorizontalOptions="Center" TextColor="White" Grid.Row="2" Grid.Column="1" />
+        	<Button Text="{i18n:Translate SendFeedbackButtonText}" WidthRequest="350" Command="{Binding SendFeedbackCommand}" Style="{StaticResource ButtonStyle}" HorizontalOptions="Center" TextColor="{StaticResource LabelColor}" Grid.Row="2" Grid.Column="1" />
         </Grid>
     </StackLayout>
 </ContentPage>

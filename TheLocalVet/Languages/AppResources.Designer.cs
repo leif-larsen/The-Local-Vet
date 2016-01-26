@@ -292,5 +292,11 @@ namespace TheLocalVet.Languages {
                 return ResourceManager.GetString("SendMail", resourceCulture);
             }
         }
+        
+        public static string SearchResults {
+            get {
+                return ResourceManager.GetString("SearchResults", resourceCulture);
+            }
+        }
     }
 }

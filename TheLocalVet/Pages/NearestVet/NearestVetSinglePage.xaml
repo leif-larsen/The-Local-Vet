@@ -60,7 +60,7 @@
                     <Image Source="transparent.png" Grid.Row="1" />
 					<Label Text="{Binding Name}" Style="{StaticResource BoldText}" TextColor="{StaticResource TitleColor}" Grid.Row="2" HorizontalOptions="CenterAndExpand" />
 					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="3" HorizontalOptions="CenterAndExpand" />
-                    <Button Text="{Binding Phone}" WidthRequest="350" Command="{Binding CallVetCommand}" TextColor="White" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Button Text="{Binding Phone}" WidthRequest="250" Command="{Binding CallVetCommand}" TextColor="{StaticResource LabelColor}" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" />
 				</Grid>
 
 				<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">
@@ -86,10 +86,10 @@
 						</Grid.ColumnDefinitions>
 						<Label Text="{Binding Zip}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Column="0" HorizontalOptions="Start" />
                     </Grid>
-                    <Button Text="{i18n:Translate ViewInMap}" WidthRequest="350" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="White" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate ViewInMap}" WidthRequest="250" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="{StaticResource LabelColor}" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
 
-                    <Button Text="{i18n:Translate OpenWeb}" IsVisible="{Binding IsEmailVisible}" WidthRequest="350" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
-                    <Button Text="{i18n:Translate SendMail}" IsVisible="{Binding IsWebsiteVisible}" WidthRequest="350" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate OpenWeb}" IsVisible="{Binding IsEmailVisible}" WidthRequest="350" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate SendMail}" IsVisible="{Binding IsWebsiteVisible}" WidthRequest="350" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
 				</Grid>
 
 				<Grid>

@@ -279,4 +279,7 @@
   <data name="SendMail" xml:space="preserve">
   	<value>Send e-post</value>
   </data>
+  <data name="SearchResults" xml:space="preserve">
+  	<value>Søkeresultater</value>
+  </data>
 </root>

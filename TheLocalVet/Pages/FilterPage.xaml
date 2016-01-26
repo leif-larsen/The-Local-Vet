@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 				xmlns:i18n="clr-namespace:TheLocalVet.Helpers;assembly=TheLocalVet"
-				Title="Filtrer"
+				Title="{i18n:Translate Filter}"
 				x:Class="TheLocalVet.Pages.FilterPage">
 
 	<ContentPage.Resources>
@@ -51,8 +51,8 @@
 					</Picker.Items>
 				</Picker>-->
 
-			<Label Text="Kompetanse" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
-				<Picker Title="Kompetanse" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="350" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
+			<Label Text="{i18n:Translate NearestVetSinglePageCompetency}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
+				<Picker Title="{i18n:Translate NearestVetSinglePageCompetency}" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="250" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
 					<Picker.Items>
 						<x:String>Smådyrsveterinær</x:String>
 						<x:String>Stordyrsveterinær</x:String>
@@ -76,8 +76,8 @@
 						<ColumnDefinition Width="*" />
 						<ColumnDefinition Width="10" />
 					</Grid.ColumnDefinitions>
-					<Button Text="{i18n:Translate Filter}" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
-					<Button Text="{i18n:Translate Reset}" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
+					<Button Text="{i18n:Translate Filter}" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="250" TextColor="{StaticResource LabelColor}" HorizontalOptions="Center" />
+					<Button Text="{i18n:Translate Reset}" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="250" TextColor="{StaticResource LabelColor}" HorizontalOptions="Center" />
 				</Grid>
 		</StackLayout>
 	</ContentPage.Content>
