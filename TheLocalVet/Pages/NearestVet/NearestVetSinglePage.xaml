@@ -57,10 +57,15 @@
 						<RowDefinition Height="25" />
 						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
-                    <Image Source="transparent.png" Grid.Row="1" />
-					<Label Text="{Binding Name}" Style="{StaticResource BoldText}" TextColor="{StaticResource TitleColor}" Grid.Row="2" HorizontalOptions="CenterAndExpand" />
-					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="3" HorizontalOptions="CenterAndExpand" />
-                    <Button Text="{Binding Phone}" WidthRequest="350" Command="{Binding CallVetCommand}" TextColor="White" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" />
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="10" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="10" />
+					</Grid.ColumnDefinitions>
+                    <Image Source="transparent.png" Grid.Row="1" Grid.Column="1" />
+					<Label Text="{Binding Name}" Style="{StaticResource BoldText}" Grid.Column="1" TextColor="{StaticResource TitleColor}" Grid.Row="2" HorizontalOptions="CenterAndExpand" />
+					<Label Text="{Binding CompetencyString}" TextColor="{StaticResource LabelColor}" Grid.Column="1" Style="{StaticResource RegularTextLabel}" Grid.Row="3" HorizontalOptions="CenterAndExpand" />
+                    <Button Text="{Binding Phone}" WidthRequest="350" Command="{Binding CallVetCommand}" Grid.Column="1" TextColor="White" Style="{StaticResource ButtonStyle}" Image="phone.png" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" />
 				</Grid>
 
 				<Grid IsVisible="{Binding IsEmailWebSitePhoneVisible}">

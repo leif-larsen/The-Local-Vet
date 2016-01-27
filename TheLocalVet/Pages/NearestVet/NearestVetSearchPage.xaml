@@ -39,7 +39,7 @@
 					<Grid.RowDefinitions>
 						<RowDefinition Height="30" />
 						<RowDefinition Height="130" />
-						<RowDefinition Height="*" />
+						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
 					<Image Source="transparent.png" Grid.Row="1" />
 
@@ -74,7 +74,7 @@
                         </Picker.Items>
                     </Picker>
 
-                    <Entry Text="{Binding SearchPlace}" IsVisible="{Binding IsPlaceFieldVisible}" TextColor="{StaticResource LabelColor}" Grid.Row="1" Grid.Column="0" />
+                    <Entry Text="{Binding SearchPlace}" IsVisible="{Binding IsPlaceFieldVisible}" TextColor="White" Grid.Row="1" Grid.Column="0" />
                 </Grid>
 
 			    <Button Command="{Binding SearchCommand}" Style="{StaticResource ButtonStyle}" WidthRequest="350"  Text="{i18n:Translate Search}" HorizontalOptions="Center" TextColor="White" />
