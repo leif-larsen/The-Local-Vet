@@ -267,4 +267,7 @@
   <data name="SearchResults" xml:space="preserve">
   	<value>Search results</value>
   </data>
+  <data name="NoGeolocation" xml:space="preserve">
+  	<value>Your location could not be acquired, try searching for place instead.</value>
+  </data>
 </root>

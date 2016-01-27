@@ -128,11 +128,26 @@ namespace TheLocalVet.ViewModels
         {
             if(SelectedSearchType == 0)
             {
-				var locator = CrossGeolocator.Current;
-				var position = await locator.GetPositionAsync (10000);
-                double distance = GetChoosenDistance();
-                Debug.WriteLine("{0} {1} {2}", position.Latitude, position.Longitude, distance);
-				await _navigation.PushAsync(new NearestVetSearchResultPage(string.Empty, position.Latitude, position.Longitude, distance, _navigation));
+				try 
+				{
+					var locator = CrossGeolocator.Current;
+					locator.DesiredAccuracy = 50;
+
+					if (locator.IsGeolocationEnabled) {
+						var position = await locator.GetPositionAsync (10000);
+						double distance = GetChoosenDistance ();
+						Debug.WriteLine ("{0} {1} {2}", position.Latitude, position.Longitude, distance);
+						await _navigation.PushAsync (new NearestVetSearchResultPage (string.Empty, position.Latitude, position.Longitude, distance, _navigation));
+					} 
+					else 
+					{
+						await UserDialogs.Instance.AlertAsync (AppResources.NoGeolocation, AppResources.Error, "OK");
+					}
+				}
+				catch(Exception ex) 
+				{
+					await UserDialogs.Instance.AlertAsync (string.Format("{0}", ex), AppResources.Error, "OK");
+				}
             }
             else
             {

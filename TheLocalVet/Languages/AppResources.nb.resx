@@ -282,4 +282,7 @@
   <data name="SearchResults" xml:space="preserve">
   	<value>Søkeresultater</value>
   </data>
+  <data name="NoGeolocation" xml:space="preserve">
+  	<value>Din posisjon er ikke tilgjengelig, prøv å søke etter sted istedenfor.</value>
+  </data>
 </root>

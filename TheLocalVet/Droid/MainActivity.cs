@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 using Parse;
 using Acr.UserDialogs;
+using Plugin.Permissions;
 
 namespace TheLocalVet.Droid
 {
@@ -25,6 +26,11 @@ namespace TheLocalVet.Droid
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
 			LoadApplication (new App ());
+		}
+
+		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+		{
+			PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 		}
 	}
 }
