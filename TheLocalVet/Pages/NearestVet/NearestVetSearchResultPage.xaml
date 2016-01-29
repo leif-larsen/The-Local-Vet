@@ -30,7 +30,6 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<ScrollView>
 			<StackLayout>
 				<Grid>
 					<Grid.RowDefinitions>
@@ -54,7 +53,6 @@
 					</DataTemplate>
 				</ListView>
 			</StackLayout>
-		</ScrollView>
 	</ContentPage.Content>
 
 </ContentPage>

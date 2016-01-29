@@ -146,7 +146,8 @@ namespace TheLocalVet.ViewModels
 				}
 				catch(Exception ex) 
 				{
-					await UserDialogs.Instance.AlertAsync (string.Format("{0}", ex), AppResources.Error, "OK");
+					Debug.WriteLine ("{0}", ex);
+					await UserDialogs.Instance.AlertAsync (AppResources.NoGeolocation, AppResources.Error, "OK");
 				}
             }
             else

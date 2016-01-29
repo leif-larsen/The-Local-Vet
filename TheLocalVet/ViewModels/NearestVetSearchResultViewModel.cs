@@ -126,8 +126,11 @@ namespace TheLocalVet.ViewModels
         {
             using (UserDialogs.Instance.Loading(AppResources.Loading))
             { 
-                if (!string.IsNullOrEmpty(_place))
-					_fullVetList = await _parseHelper.SearchByPlace(MiscFunctions.UpperCaseFirst(_place));
+                if (!string.IsNullOrEmpty(_place)) 
+				{
+					string place = MiscFunctions.UpperCaseFirst (_place);
+					_fullVetList = await _parseHelper.SearchByPlace(place.Trim());
+				}
                 else
 					_fullVetList = await _parseHelper.SearchByGeoLocation(_latitude, _longitude, _distance);
 				

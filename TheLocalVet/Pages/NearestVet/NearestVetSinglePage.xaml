@@ -93,8 +93,8 @@
                     </Grid>
                     <Button Text="{i18n:Translate ViewInMap}" WidthRequest="350" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="White" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
 
-                    <Button Text="{i18n:Translate OpenWeb}" IsVisible="{Binding IsEmailVisible}" WidthRequest="350" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
-                    <Button Text="{i18n:Translate SendMail}" IsVisible="{Binding IsWebsiteVisible}" WidthRequest="350" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate SendMail}" IsVisible="{Binding IsEmailVisible}" WidthRequest="350" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate OpenWeb}" IsVisible="{Binding IsWebsiteVisible}" WidthRequest="350" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
 				</Grid>
 
 				<Grid>
