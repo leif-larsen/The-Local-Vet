@@ -91,10 +91,10 @@
 						</Grid.ColumnDefinitions>
 						<Label Text="{Binding Zip}" IsVisible="{Binding IsAddressVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Column="0" HorizontalOptions="Start" />
                     </Grid>
-                    <Button Text="{i18n:Translate ViewInMap}" WidthRequest="350" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="White" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate ViewInMap}" Grid.Column="1" Grid.Row="3"  Style="{StaticResource ItalicText}" TextColor="White" Command="{Binding ViewInMapCommand}" IsVisible="{Binding IsMapVisible}" HorizontalOptions="StartAndExpand" />
 
-                    <Button Text="{i18n:Translate SendMail}" IsVisible="{Binding IsEmailVisible}" WidthRequest="350" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="4" HorizontalOptions="Start" VerticalOptions="Start" />
-                    <Button Text="{i18n:Translate OpenWeb}" IsVisible="{Binding IsWebsiteVisible}" WidthRequest="350" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="5" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button Text="{i18n:Translate SendMail}" IsVisible="{Binding IsEmailVisible}" Command="{Binding EmailVetCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="4" HorizontalOptions="StartAndExpand" />
+                    <Button Text="{i18n:Translate OpenWeb}" IsVisible="{Binding IsWebsiteVisible}" Command="{Binding VisitWebCommand}" Style="{StaticResource ButtonStyle}" TextColor="White" Grid.Column="1" Grid.Row="5" HorizontalOptions="StartAndExpand" />
 				</Grid>
 
 				<Grid>

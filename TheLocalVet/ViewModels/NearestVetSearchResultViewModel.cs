@@ -117,8 +117,13 @@ namespace TheLocalVet.ViewModels
 					break;
 				}
 			}
+            
+            if (!updateVetList.Any(vet => vet.Distance == 0.0))
+                updateVetList.OrderBy(vet => vet.Distance);
+            else
+                updateVetList.OrderBy(vet => vet.Name);
 
-			Vets.Clear ();
+            Vets.Clear ();
 			Vets = updateVetList;
 		}
 
@@ -133,8 +138,14 @@ namespace TheLocalVet.ViewModels
 				}
                 else
 					_fullVetList = await _parseHelper.SearchByGeoLocation(_latitude, _longitude, _distance);
-				
-				var temp = _fullVetList.OrderBy (vet => vet.Name);
+
+                IOrderedEnumerable<VetModel> temp;
+
+                if (!_fullVetList.Any(vet => vet.Distance == 0.0))
+                    temp = _fullVetList.OrderBy(vet => vet.Distance);
+                else
+                    temp = _fullVetList.OrderBy(vet => vet.Name);
+
 				foreach (var entry in temp)
 					Vets.Add (entry);
             }

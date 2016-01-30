@@ -17,6 +17,10 @@ namespace TheLocalVet.Models
         public List<string> OpeningHours { get; set; }
         public List<ExpertiseModel> Expertise { get; set; }
         public bool HomeVisit { get; set; }
+        public bool EmergencyService { get; set; }
+        public string EmergencyPhone { get; set; }
+        public double Distance { get; set; }
+        public string DistanceString { get; set; }
 
         public VetModel()
         {
@@ -29,6 +33,10 @@ namespace TheLocalVet.Models
             Expertise = new List<ExpertiseModel>();
             HomeVisit = false;
             MainCompetency = Competency.smallvet;
+            EmergencyService = false;
+            EmergencyPhone = string.Empty;
+            Distance = 0.0;
+            DistanceString = string.Empty;
         }
 
 		public override string ToString ()

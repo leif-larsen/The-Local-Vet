@@ -33,6 +33,7 @@ namespace TheLocalVet.WinPhone.Helpers
                 {
                     VetModel vetModel = GetVetData(vetData);
 
+                    GetDistance(vetModel, geoPoint);
                     vetList.Add(vetModel);
                 }
             }
@@ -53,7 +54,7 @@ namespace TheLocalVet.WinPhone.Helpers
                 try
                 {
                     var query = ParseObject.GetQuery("Vets");
-                    query = query.WhereEqualTo("address_municipality", placeName);
+                    query = query.WhereEqualTo("address_municipality", placeName).WhereContains("address", placeName);
 
                     var result = await query.FindAsync();
 
@@ -110,6 +111,12 @@ namespace TheLocalVet.WinPhone.Helpers
 
             if (vetData.ContainsKey("homevisit"))
                 vetModel.HomeVisit = vetData.Get<bool>("homevisit");
+
+            if (vetData.ContainsKey("emergencyService"))
+                vetModel.EmergencyService = vetData.Get<bool>("emergencyService");
+
+            if (vetData.ContainsKey("emergencyPhone"))
+                vetModel.EmergencyPhone = vetData.Get<string>("emergencyPhone");
 
             vetModel.Address = GetVetAddress(vetData);
             vetModel.Expertise = GetVetExpertise(vetData);
@@ -221,6 +228,13 @@ namespace TheLocalVet.WinPhone.Helpers
                 address.Municipality = vetData.Get<string>("address_municipality");
             
             return address;
+        }
+
+        private void GetDistance(VetModel vetModel, ParseGeoPoint yourPosition)
+        {
+            ParseGeoPoint vetGeoPoint = new ParseGeoPoint(vetModel.Address.Latitude, vetModel.Address.Longitude);
+            vetModel.Distance = yourPosition.DistanceTo(vetGeoPoint).Kilometers;
+            vetModel.DistanceString = string.Format("{0}: {1:0.##} km", AppResources.Distance, vetModel.Distance);
         }
     }
 }

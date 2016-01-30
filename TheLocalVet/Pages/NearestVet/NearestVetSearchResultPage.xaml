@@ -17,9 +17,13 @@
 		<ResourceDictionary>			
 			<Style x:Key="RegularTextLabel" TargetType="Label">
 				<Setter Property="FontSize" Value="20" />
-			</Style>
+            </Style>
+            
+            <Style x:Key="DetailTextLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+            </Style>
 
-			<Style x:Key="ListViewStyle" TargetType="ListView">
+            <Style x:Key="ListViewStyle" TargetType="ListView">
 				<Setter Property="SeparatorVisibility" Value="None" />
 			</Style>s
 
@@ -46,12 +50,26 @@
 						<x:String>Kompetanse</x:String>
 					</Picker.Items>
 				</Picker>-->
+            <ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected" Style="{StaticResource ListViewStyle}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Vertical" Padding="10">
+                                    <Label Text="{Binding Name}" Style="{StaticResource RegularTextLabel}" TextColor="White"></Label>
+                                    <Label Text="{Binding DistanceString}" Style="{StaticResource DetailTextLabel}" TextColor="{StaticResource LabelColor}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-				<ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected" Style="{StaticResource ListViewStyle}">
-					<DataTemplate>
-						<TextCell Text="{Binding Path=Name}" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" />
-					</DataTemplate>
-				</ListView>
+				<!--<ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected" Style="{StaticResource ListViewStyle}">
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Distance}" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" />
+                    </DataTemplate>
+                </ListView>-->
 			</StackLayout>
 	</ContentPage.Content>
 
