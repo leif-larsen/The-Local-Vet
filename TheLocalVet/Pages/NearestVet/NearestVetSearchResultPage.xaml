@@ -5,7 +5,7 @@
                 Title="{i18n:Translate SearchResults}"
 				x:Class="TheLocalVet.Pages.NearestVetSearchResultPage">
 
-	<ContentPage.ToolbarItems>
+    <ContentPage.ToolbarItems>
         <ToolbarItem Text="{i18n:Translate Filter}" Order="Primary" Command="{Binding OpenFilterCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource" WinPhone="filter3.png" />
@@ -13,43 +13,53 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 
-	<ContentPage.Resources>
-		<ResourceDictionary>			
-			<Style x:Key="RegularTextLabel" TargetType="Label">
-				<Setter Property="FontSize" Value="20" />
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="RegularTextLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
             </Style>
-            
+
             <Style x:Key="DetailTextLabel" TargetType="Label">
                 <Setter Property="FontSize" Value="12" />
             </Style>
 
             <Style x:Key="ListViewStyle" TargetType="ListView">
-				<Setter Property="SeparatorVisibility" Value="None" />
-			</Style>s
+                <Setter Property="SeparatorVisibility" Value="None" />
+            </Style> s
 
-			<Color x:FactoryMethod="FromHex" x:Key="LabelColor">
-				<x:Arguments><x:String>#666666</x:String></x:Arguments>
-			</Color>
-		</ResourceDictionary>
-	</ContentPage.Resources>
+            <Color x:FactoryMethod="FromHex" x:Key="LabelColor">
+                <x:Arguments>
+                    <x:String>#666666</x:String>
+                </x:Arguments>
+            </Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-	<ContentPage.Content>
-			<StackLayout>
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition Height="30" />
-						<RowDefinition Height="130" />
-					</Grid.RowDefinitions>
-                    <Image Source="transparent.png" Grid.Row="1" />
-				</Grid>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="130" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <Image Source="transparent.png" Grid.Row="1" Grid.Column="1" />
 
-				<!--//<Label Text="Sorter på" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" HorizontalOptions="CenterAndExpand" />
-				<Picker Title="{i18n:Translate SearchNearestVetPickerText}" WidthRequest="250" SelectedIndex="{Binding SortOn}" HorizontalOptions="CenterAndExpand" >
-					<Picker.Items>
-						<x:String>Alfabetisk</x:String>
-						<x:String>Kompetanse</x:String>
-					</Picker.Items>
-				</Picker>-->
+                <Label Text="{i18n:Translate Sort}" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="1" />
+                <Picker Title="{i18n:Translate SearchNearestVetPickerText}" SelectedIndex="{Binding SortOn}" Grid.Row="3" Grid.Column="1" >
+                    <Picker.Items>
+                        <x:String>Distanse</x:String>
+                        <x:String>Alfabetisk</x:String>
+                    </Picker.Items>
+                </Picker>
+            </Grid>
+
             <ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected" Style="{StaticResource ListViewStyle}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -64,13 +74,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-				<!--<ListView ItemsSource="{Binding Vets}" ItemSelected="OnSingleVetSelected" Style="{StaticResource ListViewStyle}">
-                    <DataTemplate>
-                        <TextCell Text="{Binding Name}" Detail="{Binding Distance}" Style="{StaticResource RegularTextLabel}" TextColor="{StaticResource LabelColor}" />
-                    </DataTemplate>
-                </ListView>-->
-			</StackLayout>
-	</ContentPage.Content>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

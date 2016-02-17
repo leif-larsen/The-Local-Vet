@@ -140,7 +140,7 @@
     <value>Tilbakemelding fra Din Lokale Dyrlege</value>
   </data>
   <data name="FeedbackText" xml:space="preserve">
-    <value>fhjoids fsd hfoisduf jhwenf irehg9e8o g0rs gr gjpifd jvfid jofidghiofdn gviofd iofd goifd hiogdf </value>
+    <value>Om du har generelle tilbakemeldinger til appen, eller mener det mangler en dyrlege, ta gjerne kontakt ved å klikke på knappen under.</value>
   </data>
   <data name="FeedbackTitleText" xml:space="preserve">
     <value>Tilbakemelding</value>
@@ -264,25 +264,25 @@
     <value>Ja</value>
     <comment>Generic "Yes"</comment>
   </data>
-  <data name="FeedbackText" xml:space="preserve">
-    <value>Om du har generelle tilbakemeldinger til appen, eller mener det mangler en dyrlege, ta gjerne kontakt ved å klikke på knappen under.</value>
-  </data>
   <data name="Filter" xml:space="preserve">
-  	<value>Filtrer</value>
+    <value>Filtrer</value>
   </data>
   <data name="Reset" xml:space="preserve">
-  	<value>Nullstill</value>
+    <value>Nullstill</value>
   </data>
   <data name="OpenWeb" xml:space="preserve">
-  	<value>Besøk webside</value>
+    <value>Besøk webside</value>
   </data>
   <data name="SendMail" xml:space="preserve">
-  	<value>Send e-post</value>
+    <value>Send e-post</value>
   </data>
   <data name="SearchResults" xml:space="preserve">
-  	<value>Søkeresultater</value>
+    <value>Søkeresultater</value>
   </data>
   <data name="NoGeolocation" xml:space="preserve">
-  	<value>Din posisjon er ikke tilgjengelig, prøv å søke etter sted istedenfor.</value>
+    <value>Din posisjon er ikke tilgjengelig, prøv å søke etter sted istedenfor.</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Sorter</value>
   </data>
 </root>

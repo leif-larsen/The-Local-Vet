@@ -34,51 +34,42 @@
 
 	<ContentPage.Content>
 		<StackLayout>
-			<Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="130" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <Image Source="transparent.png" Grid.Row="1" Grid.Column="1" />
+
+                <Label Text="{i18n:Translate NearestVetSinglePageCompetency}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="1" />
+                <Picker Title="{i18n:Translate NearestVetSinglePageCompetency}" IsEnabled="{Binding IsCompetencyVisible}" SelectedIndex="{Binding SelectedCompetency}" Grid.Row="3" Grid.Column="1" >
+                    <Picker.Items>
+                        <x:String>Smådyrsveterinær</x:String>
+                        <x:String>Stordyrsveterinær</x:String>
+                    </Picker.Items>
+                </Picker>
+            </Grid>
+            
+            <Grid>
 				<Grid.RowDefinitions>
-					<RowDefinition Height="30" />
-					<RowDefinition Height="130" />
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
 				</Grid.RowDefinitions>
-				<Image Source="transparent.png" Grid.Row="1" />
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="10" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="10" />
+				</Grid.ColumnDefinitions>
+				<Button Text="{i18n:Translate Filter}" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
+				<Button Text="{i18n:Translate Reset}" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
 			</Grid>
-
-			<!--<Label Text="Filtrer på" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
-
-				<Picker Title="Filtrer på" Grid.Row="1" WidthRequest="250" SelectedIndex="{Binding SelectedFilterType}" HorizontalOptions="CenterAndExpand" >
-					<Picker.Items>
-						<x:String>Kompetanse</x:String>
-						<x:String>Hjemmebesøk</x:String>
-					</Picker.Items>
-				</Picker>-->
-
-			<Label Text="{i18n:Translate NearestVetSinglePageCompetency}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
-				<Picker Title="{i18n:Translate NearestVetSinglePageCompetency}" IsEnabled="{Binding IsCompetencyVisible}" WidthRequest="350" SelectedIndex="{Binding SelectedCompetency}" HorizontalOptions="CenterAndExpand" >
-					<Picker.Items>
-						<x:String>Smådyrsveterinær</x:String>
-						<x:String>Stordyrsveterinær</x:String>
-					</Picker.Items>
-				</Picker>
-
-			<!--<Label Text="Hjemmebesøk" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" HorizontalOptions="CenterAndExpand" />
-				<Picker Title="Hjemmebesøk" IsEnabled="{Binding IsHomeVisitAvailable}" WidthRequest="250" SelectedIndex="{Binding SelectedSearchType}" HorizontalOptions="CenterAndExpand" >
-					<Picker.Items>
-						<x:String>Ja</x:String>
-						<x:String>Nei</x:String>
-					</Picker.Items>
-				</Picker>-->
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition Height="Auto" />
-						<RowDefinition Height="Auto" />
-					</Grid.RowDefinitions>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="10" />
-						<ColumnDefinition Width="*" />
-						<ColumnDefinition Width="10" />
-					</Grid.ColumnDefinitions>
-					<Button Text="{i18n:Translate Filter}" Command="{Binding CloseWindowCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="0" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
-					<Button Text="{i18n:Translate Reset}" Command="{Binding ResetFilterCommand}" Style="{StaticResource ButtonStyle}" Grid.Row="1" Grid.Column="1" WidthRequest="350" TextColor="White" HorizontalOptions="Center" />
-				</Grid>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

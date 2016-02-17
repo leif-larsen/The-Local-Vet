@@ -45,25 +45,25 @@ namespace TheLocalVet.ViewModels
 
 		private void Resort()
 		{
-			ObservableCollection<VetModel> tempList = Vets;
-			IOrderedEnumerable<VetModel> temp;
+            ObservableCollection<VetModel> tempList = new ObservableCollection<VetModel>();
+
+            foreach(var vet in Vets)
+            {
+                tempList.Add(vet);
+            }
 
 			switch(SortOn)
 			{
-			case 0:
-				temp = tempList.OrderBy (vet => vet.Name);
-				break;
-			case 1:
-				temp =tempList.OrderBy(vet => vet.MainCompetency);
-				break;
-			default:
-				temp =tempList.OrderBy (vet => vet.Name);
-				break;
+                case 0:
+                default:
+                    Vets.Clear();
+                    Vets = new ObservableCollection<VetModel>(tempList.OrderBy(vet => vet.Distance));
+				    break;
+			    case 1:
+                    Vets.Clear();
+                    Vets = new ObservableCollection<VetModel>(tempList.OrderBy(vet => vet.Name));
+                    break;
 			}
-
-			Vets.Clear ();
-			foreach (var tmp in temp)
-				Vets.Add (tmp);
 
 			OnPropertyChanged ("Vets");
 		}
