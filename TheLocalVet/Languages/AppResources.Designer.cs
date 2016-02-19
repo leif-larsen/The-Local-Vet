@@ -89,6 +89,15 @@ namespace TheLocalVet.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Offers emergency service.
+        /// </summary>
+        public static string EmergencyService {
+            get {
+                return ResourceManager.GetString("EmergencyService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
         public static string Error {
@@ -139,6 +148,15 @@ namespace TheLocalVet.Languages {
         public static string Filter {
             get {
                 return ResourceManager.GetString("Filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Offers homevisit.
+        /// </summary>
+        public static string HomeVisit {
+            get {
+                return ResourceManager.GetString("HomeVisit", resourceCulture);
             }
         }
         
@@ -260,11 +278,29 @@ namespace TheLocalVet.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Does not offer emergency service.
+        /// </summary>
+        public static string NoEmergencyService {
+            get {
+                return ResourceManager.GetString("NoEmergencyService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your location could not be acquired, try searching for place instead..
         /// </summary>
         public static string NoGeolocation {
             get {
                 return ResourceManager.GetString("NoGeolocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Does not offer homevisit.
+        /// </summary>
+        public static string NoHomeVisit {
+            get {
+                return ResourceManager.GetString("NoHomeVisit", resourceCulture);
             }
         }
         

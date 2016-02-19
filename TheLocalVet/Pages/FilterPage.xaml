@@ -53,6 +53,8 @@
                     <Picker.Items>
                         <x:String>Smådyrsveterinær</x:String>
                         <x:String>Stordyrsveterinær</x:String>
+                        <x:String>Tilbyr vaktservice</x:String>
+                        <x:String>Tilbyr hjemmebesøk</x:String>
                     </Picker.Items>
                 </Picker>
             </Grid>

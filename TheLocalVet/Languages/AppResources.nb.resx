@@ -285,4 +285,16 @@
   <data name="Sort" xml:space="preserve">
     <value>Sorter</value>
   </data>
+  <data name="EmergencyService" xml:space="preserve">
+    <value>Tilbyr vakttjeneste</value>
+  </data>
+  <data name="NoEmergencyService" xml:space="preserve">
+    <value>Tilbyr ikke vakttjeneste</value>
+  </data>
+  <data name="HomeVisit" xml:space="preserve">
+    <value>Tilbyr hjemmebesøk</value>
+  </data>
+  <data name="NoHomeVisit" xml:space="preserve">
+    <value>Tilbyr ikke hjemmebesøk</value>
+  </data>
 </root>

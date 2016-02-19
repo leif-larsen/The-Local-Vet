@@ -101,15 +101,17 @@
 					<Grid.RowDefinitions>
 						<RowDefinition Height="25" />
 						<RowDefinition Height="25" />
-						<RowDefinition Height="25" />
+						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="10" />
 						<ColumnDefinition Width="*" />
 						<ColumnDefinition Width="10" />
 					</Grid.ColumnDefinitions>
-					<Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" Grid.Column="1" HorizontalOptions="StartAndExpand" />
-				</Grid>
+                    <Label Text="{Binding HomeVisit}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="0" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+                    <Label Text="{Binding EmergencyService}" IsVisible="{Binding IsEmergencyVisible}" TextColor="{StaticResource LabelColor}" Style="{StaticResource RegularTextLabel}" Grid.Row="1" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+                    <Button Text="{Binding EmergencyPhone}" IsVisible="{Binding IsEmergencyVisible}" Command="{Binding CallEmergencyCommand}" TextColor="White" Style="{StaticResource ButtonStyle}" Grid.Row="2" Grid.Column="1" HorizontalOptions="StartAndExpand" />
+                </Grid>
 
 			</StackLayout>
 		</ScrollView>

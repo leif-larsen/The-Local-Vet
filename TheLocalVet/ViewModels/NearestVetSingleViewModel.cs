@@ -23,6 +23,7 @@ namespace TheLocalVet.ViewModels
         public RelayCommand EmailVetCommand { get; private set; }
         public RelayCommand VisitWebCommand { get; private set; }
         public RelayCommand ViewInMapCommand { get; private set; }
+        public RelayCommand CallEmergencyCommand { get; private set; }
 
         public string Name
         {
@@ -92,13 +93,7 @@ namespace TheLocalVet.ViewModels
 
         public string HomeVisit
         {
-            get
-            {
-                if (_vetModel.HomeVisit)
-					return "Tilbyr hjemmebesøk";
-                else
-                    return "Tilbyr ikke hjemmebesøk";
-            }
+            get { return _vetModel.HomeVisit ? AppResources.HomeVisit : AppResources.NoHomeVisit; }
             set { OnPropertyChanged("HomeVisit"); }
         }
 
@@ -177,6 +172,23 @@ namespace TheLocalVet.ViewModels
             set { OnPropertyChanged("OpeningHours"); }
         }
 
+        public string EmergencyService
+        {
+            get { return _vetModel.EmergencyService ? AppResources.EmergencyService : AppResources.NoEmergencyService; }
+            set { OnPropertyChanged("EmergencyService"); }
+        }
+
+        public string EmergencyPhone
+        {
+            get { return _vetModel.EmergencyPhone; }
+            set { OnPropertyChanged("EmergencyPhone"); }
+        }
+
+        public bool IsEmergencyVisible
+        {
+            get { return _vetModel.EmergencyService ? true : false; }
+        }
+
         public NearestVetSingleViewModel(VetModel vetModel)
         {
             _vetModel = vetModel;
@@ -200,6 +212,11 @@ namespace TheLocalVet.ViewModels
 
 			if(!string.IsNullOrEmpty(Address))
 				ViewInMapCommand.IsEnabled = true;
+
+            CallEmergencyCommand = new RelayCommand(CallEmergency);
+
+            if (!string.IsNullOrEmpty(EmergencyPhone))
+                CallEmergencyCommand.IsEnabled = true;
         }
 
         private void ViewInMap()
@@ -222,6 +239,7 @@ namespace TheLocalVet.ViewModels
             OnPropertyChanged("IsMapVisible");
             OnPropertyChanged("IsEmailWebSitePhoneVisible");
             OnPropertyChanged("IsWebsiteVisible");
+            OnPropertyChanged("IsEmergencyVisible");
         }
 
         private void EmailVet()
@@ -246,6 +264,17 @@ namespace TheLocalVet.ViewModels
 				if (MessagingPlugin.PhoneDialer.CanMakePhoneCall)
 					MessagingPlugin.PhoneDialer.MakePhoneCall (Phone, Name);
 			}
+        }
+        private void CallEmergency()
+        {
+            Debug.WriteLine("calling {0}", EmergencyPhone);
+
+            if (!string.IsNullOrEmpty(EmergencyPhone))
+            {
+                //var phoneCallTask = MessagingPlugin.PhoneDialer;
+                if (MessagingPlugin.PhoneDialer.CanMakePhoneCall)
+                    MessagingPlugin.PhoneDialer.MakePhoneCall(EmergencyPhone, Name);
+            }
         }
 
         private string ParseOpeningHours(List<string> openingHours)

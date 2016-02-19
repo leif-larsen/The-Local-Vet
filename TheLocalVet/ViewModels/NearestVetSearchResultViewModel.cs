@@ -102,8 +102,11 @@ namespace TheLocalVet.ViewModels
 				switch(filterType)
 				{
 				case "MainCompetency":
-					if (vet.MainCompetency.ToString ().Equals (filterValue))
-						updateVetList.Add (vet);
+                    if (vet.MainCompetency.ToString().Equals(filterValue))
+                        updateVetList.Add(vet);
+                    else if (filterValue.Equals("emergencyservice")) if (vet.EmergencyService) updateVetList.Add(vet);
+                    else if (filterValue.Equals("homevisit"))
+                        if (vet.HomeVisit) updateVetList.Add(vet);
 					break;
 				case "HomeVisit":
 					if (vet.HomeVisit.ToString ().Equals (filterValue))

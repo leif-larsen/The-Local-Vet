@@ -135,7 +135,13 @@ namespace TheLocalVet.ViewModels
 			case 1:
 				returnString = "bigvet";
 				break;
-			}
+            case 2:
+                returnString = "emergencyservice";
+                break;
+            case 3:
+                returnString = "homevisit";
+                break;
+            }
 
 			return returnString;
 		}
