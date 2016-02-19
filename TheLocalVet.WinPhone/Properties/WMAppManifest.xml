@@ -5,7 +5,7 @@
     <Language code="nb" />
     <Language code="nb-NO" />
   </Languages>
-  <App xmlns="" ProductID="{8ffff8f7-6c36-4e40-bb00-621671ed3a10}" Title="Din Lokale Dyrlege" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Ing. Leif H. Larsen" Description="Dette er en app som har som formål å opplyse om den nærmeste dyrlegen i området rundt deg, eller et område du søker på." Publisher="Ing. Leif H. Larsen" PublisherID="{7c7c4a58-b07f-45b7-9c8d-55ee587851b3}">
+  <App xmlns="" ProductID="{8ffff8f7-6c36-4e40-bb00-621671ed3a10}" Title="Din Lokale Dyrlege" RuntimeType="Silverlight" Version="1.1.0.0" Genre="apps.normal" Author="Ing. Leif H. Larsen" Description="Dette er en app som har som formål å opplyse om den nærmeste dyrlegen i området rundt deg, eller et område du søker på." Publisher="Ing. Leif H. Larsen" PublisherID="{7c7c4a58-b07f-45b7-9c8d-55ee587851b3}">
     <IconPath IsRelative="true" IsResource="false">iphone_75.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
